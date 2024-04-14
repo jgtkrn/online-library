@@ -1,0 +1,1601 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >WebhooksService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/subscription/webhooks.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addExtraEndDate" >addExtraEndDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#customerSubscriptionUpdatedEventAction" >customerSubscriptionUpdatedEventAction</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#downgradeUserSubscription" >downgradeUserSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getexpiredSubscription" >getexpiredSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#handleWebhooks" >handleWebhooks</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#insertBonusToOwnerReferral" >insertBonusToOwnerReferral</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#insertFreeReferralCodeSubscription" >insertFreeReferralCodeSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#invoicePaymentConfirmationAction" >invoicePaymentConfirmationAction</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#invoicePaymentSucceededEventAction" >invoicePaymentSucceededEventAction</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#proccesSuccessPayment" >proccesSuccessPayment</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(response: <a href="../injectables/Response.html" target="_self">Response</a>, stripe: <a href="../classes/StripeHelper.html" target="_self">StripeHelper</a>, userService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>, subscriptionService: <a href="../injectables/SubscriptionService.html" target="_self">SubscriptionService</a>, emailSender: <a href="../classes/EmailSender.html" target="_self">EmailSender</a>, userPaymentRepository: <a href="../interfaces/User.html" target="_self">Repository&lt;UserPaymentEntity&gt;</a>, userSubscriptionRepository: <a href="../entitys/UserSubscriptionEntity.html" target="_self">Repository&lt;UserSubscriptionEntity&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/modules/subscription/webhooks.service.ts:27</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>response</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Response.html" target="_self" >Response</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>stripe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/StripeHelper.html" target="_self" >StripeHelper</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>subscriptionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SubscriptionService.html" target="_self" >SubscriptionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>emailSender</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/EmailSender.html" target="_self" >EmailSender</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userPaymentRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/User.html" target="_self" >Repository&lt;UserPaymentEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userSubscriptionRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/UserSubscriptionEntity.html" target="_self" >Repository&lt;UserSubscriptionEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addExtraEndDate"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addExtraEndDate</b></span>
+                        <a href="#addExtraEndDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addExtraEndDate(subscription_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="288"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:288</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subscription_id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customerSubscriptionUpdatedEventAction"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>customerSubscriptionUpdatedEventAction</b></span>
+                        <a href="#customerSubscriptionUpdatedEventAction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>customerSubscriptionUpdatedEventAction(subscriptionId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, subscriptionStatus: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, subscriptionTrialEnd: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pendingSetupIntent?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subscriptionId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscriptionStatus</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscriptionTrialEnd</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pendingSetupIntent</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downgradeUserSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>downgradeUserSubscription</b></span>
+                        <a href="#downgradeUserSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>downgradeUserSubscription(stripeCustomerId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="349"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:349</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stripeCustomerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getexpiredSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getexpiredSubscription</b></span>
+                        <a href="#getexpiredSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getexpiredSubscription(subscription)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="338"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:338</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subscription</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleWebhooks"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>handleWebhooks</b></span>
+                        <a href="#handleWebhooks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleWebhooks(request_body)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request_body</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="insertBonusToOwnerReferral"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>insertBonusToOwnerReferral</b></span>
+                        <a href="#insertBonusToOwnerReferral"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>insertBonusToOwnerReferral(referral_code, subscriptionId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="222"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:222</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>referral_code</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscriptionId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="insertFreeReferralCodeSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>insertFreeReferralCodeSubscription</b></span>
+                        <a href="#insertFreeReferralCodeSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>insertFreeReferralCodeSubscription(user_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, referral_code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, user_label: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, subscriptionId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="298"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:298</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user_id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>referral_code</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user_label</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscriptionId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="invoicePaymentConfirmationAction"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>invoicePaymentConfirmationAction</b></span>
+                        <a href="#invoicePaymentConfirmationAction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>invoicePaymentConfirmationAction(emailData: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emailData</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="invoicePaymentSucceededEventAction"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>invoicePaymentSucceededEventAction</b></span>
+                        <a href="#invoicePaymentSucceededEventAction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>invoicePaymentSucceededEventAction(subscriptionId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, paymentIntentId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, periodStart: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, periodEnd: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, amount: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subscriptionId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>paymentIntentId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>periodStart</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>periodEnd</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="proccesSuccessPayment"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>proccesSuccessPayment</b></span>
+                        <a href="#proccesSuccessPayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>proccesSuccessPayment(subscription, payment, subscriptionId, paymentData, subscriptionData, new_extra_enddate, amount)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/modules/subscription/webhooks.service.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subscription</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>payment</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscriptionId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>paymentData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscriptionData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>new_extra_enddate</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>amount</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, HttpException, HttpStatus } from &quot;@nestjs/common&quot;;
+import { StripeHelper } from &#x27;../../helpers/stripe.helpers&#x27;;
+import { Response } from &#x27;../../helpers/response&#x27;;
+import { getConnection, Repository } from &#x27;typeorm&#x27;;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import { InjectRepository } from &quot;@nestjs/typeorm&quot;;
+import { UserSubscriptionEntity } from &quot;./entities/user-subscription.entity&quot;;
+import { UserPaymentEntity } from &quot;./entities/user-payment.entity&quot;;
+import {
+    payment_status,
+    subscription_status,
+    member_type,
+    email_subject,
+    order_id_prefix,
+    freeTrialValue
+} from &#x27;../../helpers/util&#x27;;
+import * as moment from &#x27;moment-timezone&#x27;
+import * as ejs from &#x27;ejs&#x27;
+import * as path from &#x27;path&#x27;;
+import { SubscriptionService } from &quot;./subscription.service&quot;;
+import { UsersService } from &quot;../users/users.service&quot;;
+import { EmailSender } from &quot;../../helpers/email.sender&quot;;
+
+// const now &#x3D; moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+
+@Injectable()
+export class WebhooksService {
+    constructor (
+        private readonly response : Response,
+        private readonly stripe : StripeHelper,
+        private readonly userService: UsersService,
+        private readonly subscriptionService: SubscriptionService,
+        private readonly emailSender: EmailSender,
+
+        @InjectRepository(UserPaymentEntity)
+        private userPaymentRepository : Repository&lt;UserPaymentEntity&gt;,
+
+        @InjectRepository(UserSubscriptionEntity)
+        private userSubscriptionRepository : Repository&lt;UserSubscriptionEntity&gt;,
+    ) {}
+
+    async handleWebhooks(request_body){
+        const payloadString &#x3D; JSON.stringify(request_body, null, 2);
+        const secret &#x3D; await this.stripe.getWebhooksKey();
+        const header &#x3D; await this.stripe.generateHeaderString(payloadString, secret);
+        let event;
+        try {
+            event &#x3D; await this.stripe.constructWebhooks(payloadString, header, secret);
+        }  catch (err) {
+            Logger.error(&#x60;Webhook Error: ${err.message}&#x60;);
+        }
+
+        switch (event.type) {
+
+            case &#x27;invoice.payment_action_required&#x27;: {
+                const productTitle &#x3D; await this.subscriptionService.getSubscription(null, event.data.object.lines.data[0].plan.product);
+                const emailData &#x3D; {
+                    id_paymentintent : event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;payment_intent&#x27;],
+                    customer_email : event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;customer_email&#x27;],
+                    invoice_url : event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;hosted_invoice_url&#x27;],
+                    product_title : productTitle[&#x27;title&#x27;],
+                    amount : event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;lines&#x27;][&#x27;data&#x27;][0][&#x27;amount&#x27;] / 100,
+                }
+                await this.invoicePaymentConfirmationAction(emailData);
+                Logger.info(emailData)
+                break;
+            }
+
+            case &#x27;invoice.payment_succeeded&#x27;: {
+              const subscriptionId &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;subscription&#x27;]
+              const paymentIntentId &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;payment_intent&#x27;]
+              const periodStart &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;lines&#x27;][&#x27;data&#x27;][&#x27;period&#x27;] ? event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;lines&#x27;][&#x27;data&#x27;][&#x27;period&#x27;][&#x27;start&#x27;] : event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;lines&#x27;][&#x27;data&#x27;][0][&#x27;period&#x27;][&#x27;start&#x27;] ;
+              const periodEnd &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;lines&#x27;][&#x27;data&#x27;][&#x27;period&#x27;] ? event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;lines&#x27;][&#x27;data&#x27;][&#x27;period&#x27;][&#x27;end&#x27;] : event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;lines&#x27;][&#x27;data&#x27;][0][&#x27;period&#x27;][&#x27;end&#x27;];
+              const amount &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;amount_paid&#x27;];
+              await this.invoicePaymentSucceededEventAction(subscriptionId, paymentIntentId, parseInt(periodStart), parseInt(periodEnd), amount);
+              Logger.info(&#x60;Payment with id ${subscriptionId} was paid&#x60;);
+              break;
+            }
+
+            case &#x27;customer.subscription.updated&#x27;: {
+                const subscriptionId &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;id&#x27;]
+                const subscriptionStatus &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;status&#x27;]
+                const subscriptionTrialEnd &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;trial_end&#x27;]
+                const pendingSetupIntent &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;pending_setup_intent&#x27;]
+                await this.customerSubscriptionUpdatedEventAction(subscriptionId, subscriptionStatus, subscriptionTrialEnd, pendingSetupIntent);
+                Logger.info(&#x60;Subscription with order ${subscriptionId} was canceled&#x60;);
+                break;
+            }
+
+            case &#x27;setup_intent.setup_failed&#x27;:
+            case &#x27;payment_intent.payment_failed&#x27;: {
+                const stripeCustomerId &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;customer&#x27;];
+                await this.downgradeUserSubscription(stripeCustomerId);
+                Logger.info(&#x60;Customer ${stripeCustomerId} card verification failed&#x60;);
+                break;
+            }
+
+            case &#x27;payment_intent.succeeded&#x27;: {
+                const stripeCustomerId &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;customer&#x27;];
+                Logger.info(&#x60;Customer ${stripeCustomerId} card verification succeeded&#x60;);
+                break;
+            }
+
+            case &#x27;customer.created&#x27;: {
+                const stripeCustomerId &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;];
+                console.log({stripeCustomerId});
+                break;
+            } 
+
+            case &#x27;customer.subscription.deleted&#x27;: {
+                const stripeCustomerId &#x3D; event[&#x27;data&#x27;][&#x27;object&#x27;];
+                console.log({stripeCustomerId});
+                break;
+            }
+
+            default:
+              // Unexpected event type
+              Logger.error(&#x60;${event.type} event haven&#x27;t been handled&#x60;);
+        }
+    }
+
+
+    async invoicePaymentConfirmationAction(emailData : any) {
+
+        const template &#x3D; await ejs.renderFile(path.join(__dirname, &#x27;/templates/payment-action.ejs&#x27;), { emailData })
+        const email &#x3D; {
+            receiver : emailData[&#x27;customer_email&#x27;],
+            subject: email_subject.stripe_payment_confirmation,
+            text: null,
+            template
+        }
+        try {
+            await this.emailSender.send(email)
+            Logger.info(&#x60;Success send email to ${emailData[&#x27;customer_email&#x27;]}&#x60;)
+        } catch (error) {
+            Logger.error(&#x60;Failed send email&#x60;);
+            Logger.error(error);
+        }
+
+    }
+
+    async invoicePaymentSucceededEventAction(subscriptionId : string, paymentIntentId : string, periodStart : number, periodEnd : number, amount : number) {
+        const now &#x3D; moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+
+        const subscription &#x3D; await this.subscriptionService.getUserSubscription(null, subscriptionId, null)
+
+        const payment &#x3D; await this.subscriptionService.getUserPayment(null, null, subscriptionId)
+
+        const paymentData &#x3D; {
+            status : payment_status.PAID,
+            transaction_id : paymentIntentId,
+            _updated_at : moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;)
+        }
+
+        const startdate &#x3D; new Date(moment.unix(periodStart).format(&quot;YYYY-MM-DD HH:mm:ss&quot;));
+        const enddate &#x3D; new Date(moment.unix(periodEnd).format(&quot;YYYY-MM-DD HH:mm:ss&quot;));
+        const current_extra_enddate &#x3D; moment(subscription[&#x27;extra_enddate&#x27;]).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+
+        const new_extra_enddate &#x3D; subscription[&#x27;extra_enddate&#x27;] &amp;&amp; current_extra_enddate &gt; now ?  moment(current_extra_enddate).clone().add(1, &#x27;month&#x27;) : moment(enddate).clone().add(1, &#x27;month&#x27;) ;
+        // const new_extra_enddate &#x3D; moment(enddate).clone().add(30, &#x27;days&#x27;) ;
+
+        const subscriptionData &#x3D; {
+            status : subscription_status.ACTIVE,
+            payment_id : paymentIntentId,
+            startdate : startdate,
+            enddate : enddate,
+            _updated_at : moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;),
+            extra_enddate : subscription.referral_code &amp;&amp; subscription.is_referral_bonus_claimed &#x3D;&#x3D; false  &amp;&amp; amount &gt; 0 ? new_extra_enddate : subscription.extra_enddate,
+            is_referral_bonus_claimed : subscription.referral_code &amp;&amp; amount &gt; 0 ? true : false,
+        }
+
+        // await this.proccesSuccessPayment(subscription, payment, subscriptionId, paymentData, subscriptionData, new_extra_enddate)
+        this.proccesSuccessPayment(subscription, payment, subscriptionId, paymentData, subscriptionData, new_extra_enddate, amount)
+
+        return this.response.response(&#x60;Invoice payment succeeded&#x60;, [], null);
+    }
+
+    async proccesSuccessPayment(subscription, payment, subscriptionId, paymentData,subscriptionData, new_extra_enddate, amount) {
+
+        const queryRunner &#x3D; getConnection().createQueryRunner();
+        await queryRunner.connect();
+        await queryRunner.startTransaction();
+
+        try {
+            if(payment) {
+                queryRunner.manager.update(UserPaymentEntity, {original_transaction_id: subscriptionId}, paymentData);
+                Logger.info(&#x60;Success update user payment data with origin transaction id ${subscriptionId}&#x60;);
+            }
+            if(subscription) {
+                queryRunner.manager.update(UserSubscriptionEntity, {order_id: subscriptionId}, subscriptionData);
+                Logger.info(&#x60;Success update user subscription data with order id ${subscriptionId}&#x60;);
+
+                this.userService.updateMemberType(subscription[&#x27;owner_id&#x27;], member_type.PAID);
+                Logger.info(&#x60;Success update user member_type with id ${subscription[&#x27;owner_id&#x27;]}&#x60;);
+
+                // Add Bonus if subscription with referral code
+                if(subscription.referral_code &amp;&amp; amount &gt; 0) {
+
+                    await this.userService.updateReferralCodeStatus(subscription.owner_id, true)
+                    Logger.info(&#x60;Successfully update referral code status for${subscription.owner_id}&#x60;);
+
+                    const trialEnd &#x3D; moment(subscription[&#x27;startdate&#x27;]).tz(&#x27;Hongkong&#x27;).add(1, &#x27;month&#x27;).format(&quot;YYYY-MM-DD HH:mm:ss&quot;);
+                    await this.subscriptionService.addFreeTrial(subscriptionId, trialEnd);
+                    Logger.info(&#x60;${subscription.owner_id} success claim referral code ${subscription.referral_code}}&#x60;);
+
+                    // Action for claimed referral code owner
+                    if(subscription.is_referral_bonus_claimed &#x3D;&#x3D; false) {
+                        await this.insertBonusToOwnerReferral(subscription.referral_code, subscriptionId)
+                    }
+                }
+            }
+            Logger.info(&#x60;proccesSuccessPayment done&#x60;);
+            await queryRunner.commitTransaction();
+        } catch(err) {
+            await queryRunner.rollbackTransaction();
+            Logger.error({ &quot;InvoicePaymentSucceeded Webhooks&quot;: err });
+        } finally {
+            await queryRunner.release();
+        }
+    }
+
+    async insertBonusToOwnerReferral(referral_code, subscriptionId)
+    {
+        const owner &#x3D; await this.userService.getUserByReferralCode(referral_code);
+        const now &#x3D; moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+        if(owner) {
+            this.userService.updateMemberType(owner[&#x27;id&#x27;], member_type.PAID);
+            if(owner[&#x27;user_subscriptions&#x27;].length) {
+
+                    const owner_enddate &#x3D; moment(owner[&#x27;user_subscriptions&#x27;][0][&#x27;enddate&#x27;]).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+                    const owner_current_extra_enddate &#x3D; moment(owner[&#x27;user_subscriptions&#x27;][0][&#x27;extra_enddate&#x27;]).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+
+                    const new_extra_enddate &#x3D; owner[&#x27;user_subscriptions&#x27;][0][&#x27;extra_enddate&#x27;] &amp;&amp; owner_current_extra_enddate &gt; now ?  moment(owner_current_extra_enddate).clone().add(1, &#x27;month&#x27;) : moment(owner_enddate).clone().add(1, &#x27;month&#x27;) ;
+
+                    await this.addExtraEndDate(owner[&#x27;user_subscriptions&#x27;][0][&#x27;order_id&#x27;]);
+
+                    // Check if user subscribe with stripe
+                    if(owner[&#x27;user_subscriptions&#x27;][0][&#x27;order_id&#x27;].substring(0,3) &#x3D;&#x3D; order_id_prefix.STRIPE) {
+                        const ownerSubscriptionId &#x3D; owner[&#x27;user_subscriptions&#x27;][0][&#x27;order_id&#x27;];
+                        const subscription &#x3D; await this.stripe.getSubscription(ownerSubscriptionId);
+                        const trialAnchor &#x3D; subscription[&#x27;trial_end&#x27;] ? moment.unix(subscription[&#x27;trial_end&#x27;]).tz(&#x27;Hongkong&#x27;) : moment(new Date()).tz(&#x27;Hongkong&#x27;)
+                        const trialEnd &#x3D; trialAnchor.add(1, &#x27;month&#x27;).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+                        await this.subscriptionService.addFreeTrial(ownerSubscriptionId, trialEnd);
+                    }
+
+            } else {
+                await this.insertFreeReferralCodeSubscription(owner[&#x27;id&#x27;], referral_code, owner[&#x27;user_label&#x27;], subscriptionId);
+            }
+            Logger.info(&#x60;Success insert bonus to owner referral code ${referral_code}&#x60;);
+        }
+    }
+
+    async customerSubscriptionUpdatedEventAction(subscriptionId : string, subscriptionStatus : string, subscriptionTrialEnd : number, pendingSetupIntent?: string) {
+        const trialEnd &#x3D;  moment.unix(subscriptionTrialEnd).format(&quot;YYYY-MM-DD HH:mm:ss&quot;)
+
+        if((subscriptionStatus &#x3D;&#x3D; &quot;past_due&quot;) || (subscriptionTrialEnd !&#x3D; null &amp;&amp; trialEnd &lt;&#x3D; moment().add(60, &#x27;minutes&#x27;).format(&quot;YYYY-MM-DD HH:mm:ss&quot;)) || pendingSetupIntent) {
+            const subscription &#x3D; await this.subscriptionService.getUserSubscription(null, subscriptionId, null)
+
+            const subscriptionData &#x3D; {
+                status : subscription_status.INACTIVE,
+                _updated_at : moment().add(60, &#x27;minutes&#x27;).format(&quot;YYYY-MM-DD HH:mm:ss&quot;)
+            }
+
+            const queryRunner &#x3D; getConnection().createQueryRunner();
+            await queryRunner.connect();
+            await queryRunner.startTransaction();
+
+            try {
+                if(subscription) {
+                    await queryRunner.manager.update(UserSubscriptionEntity, {order_id : subscriptionId}, subscriptionData);
+                    Logger.info(&#x60;Success update user subscription data with order id ${subscriptionId}&#x60;);
+
+                    await this.userService.updateMemberType(subscription[&#x27;owner_id&#x27;], member_type.FREE);
+                    Logger.info(&#x60;Success update user member_type with id ${subscription[&#x27;owner_id&#x27;]}&#x60;);
+                }
+                await queryRunner.commitTransaction();
+            } catch(err) {
+                await queryRunner.rollbackTransaction();
+                Logger.info(&quot;UpdatedSubscription Webhooks&quot;, { error: err});
+            } finally {
+                await queryRunner.release();
+            }
+        }
+
+        return this.response.response(&#x60;Customer subscription updated&#x60;, [], null);
+    }
+
+    async addExtraEndDate(subscription_id:string) {
+
+        const data &#x3D; await this.subscriptionService.getUserSubscription(null,subscription_id, null);
+        const extra_endate &#x3D; await this.getexpiredSubscription(data);
+
+        await this.userSubscriptionRepository.update({ order_id: subscription_id }, { extra_enddate :extra_endate});
+
+        Logger.info(&#x60;Successfully update extra_enddate with order_id ${subscription_id}&#x60;);
+    }
+
+    async insertFreeReferralCodeSubscription(user_id:string, referral_code:string, user_label:string, subscriptionId) {
+            const refCode &#x3D; &quot;referral_&quot; + referral_code
+
+            const subscriptionData &#x3D; {
+                _database_id : &quot;&quot;,
+                _owner_id : user_id,
+                _created_by : user_id,
+                _updated_by : user_id,
+                _created_at : moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;),
+                _updated_at : moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;),
+                user_label : user_label,
+                startdate : new Date(moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;)),
+                enddate : new Date(moment().add(1, &#x27;month&#x27;).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;)),
+                subscription_ref_code : refCode,
+                original_fee : 0,
+                currency : &#x27;HKD&#x27;,
+                order_id : refCode,
+                purchase_token : &quot;&quot;,
+                is_referral_bonus_claimed : true,
+                status : subscription_status.ACTIVE,
+            }
+
+            try{
+                await getConnection().createQueryBuilder()
+                .insert()
+                .into(UserSubscriptionEntity)
+                .values(subscriptionData)
+                .onConflict(
+                    &#x60;(user_label, order_id) 
+                    DO UPDATE SET &quot;_updated_at&quot; &#x3D; :updated_at&#x60;)
+                .setParameters({
+                    &quot;updated_at&quot;: moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;),
+                })
+                .execute();
+
+            }catch(err){
+                Logger.error(&#x60;failed add bonus to referral code owner, error: ${err}&#x60;)
+            }
+    }
+
+    async getexpiredSubscription(subscription){
+        const now &#x3D; moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+        const enddate &#x3D; moment(subscription[&#x27;enddate&#x27;]).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+        const extra_enddate &#x3D; moment(subscription[&#x27;extra_enddate&#x27;]).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+
+        if(!subscription[&#x27;extra_enddate&#x27;]){
+            return enddate &gt;&#x3D; now ? moment(enddate).clone().add(1, &#x27;month&#x27;) : moment(now).clone().add(1, &#x27;month&#x27;)
+        }
+        return extra_enddate &gt;&#x3D; now ? moment(extra_enddate).clone().add(1, &#x27;month&#x27;) : moment(now).clone().add(1, &#x27;month&#x27;)
+    }
+
+    async downgradeUserSubscription(stripeCustomerId) {
+
+        const queryRunner &#x3D; getConnection().createQueryRunner();
+        await queryRunner.connect();
+        await queryRunner.startTransaction();
+
+        try {
+            const stripeCustomer &#x3D; this.stripe.retrieveCustomer(stripeCustomerId);
+            const user &#x3D; await this.userService.getUser(null, stripeCustomer[&#x27;email&#x27;]).getRawOne();
+            const subscription &#x3D; await this.subscriptionService.getUserSub(user);
+            if(subscription) {
+                const subscriptionId &#x3D; subscription[&#x27;order_id&#x27;];
+                const enddate &#x3D; moment(subscription[&#x27;enddate&#x27;]);
+                const startdate &#x3D; moment(subscription[&#x27;startdate&#x27;]);
+
+                if (Math.abs(enddate.diff(startdate, &#x27;hour&#x27;, false)) &#x3D;&#x3D;&#x3D; freeTrialValue) {
+                    await this.userService.updateFreeTrial(user._id, false);
+                    Logger.info(&#x60;Revert user free trial value&#x60;);
+                }
+
+                const subscriptionData &#x3D; {
+                    status : subscription_status.INACTIVE,
+                    _updated_at : moment().format(&quot;YYYY-MM-DD HH:mm:ss&quot;)
+                };
+                queryRunner.manager.update(UserSubscriptionEntity, {order_id: subscriptionId}, subscriptionData);
+                Logger.info(&#x60;subscription ${subscriptionId} downgraded, payment not complete&#x60;);
+
+                this.userService.updateMemberType(subscription[&#x27;owner_id&#x27;], member_type.FREE);
+                Logger.info(&#x60;Success update user member_type with id ${subscription[&#x27;owner_id&#x27;]}&#x60;);
+            }
+            Logger.info(&#x60;proccesSuccessPayment done&#x60;);
+            await queryRunner.commitTransaction();
+        } catch(err) {
+            await queryRunner.rollbackTransaction();
+            Logger.error({ &quot;InvoicePaymentSucceeded Webhooks&quot;: err });
+        } finally {
+            await queryRunner.release();
+        }
+    }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'WebhooksService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

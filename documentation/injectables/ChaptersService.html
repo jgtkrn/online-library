@@ -1,0 +1,2250 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >ChaptersService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/chapters/chapters.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#getChapter" >getChapter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addAudio" >addAudio</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addAudioByLabel" >addAudioByLabel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#audio" >audio</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#chapterNumber" >chapterNumber</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createChapter" >createChapter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteAudio" >deleteAudio</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteChapter" >deleteChapter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#fillAudioPolly" >fillAudioPolly</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findAll" >findAll</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findOne" >findOne</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#formatAudioText" >formatAudioText</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getBook" >getBook</a>
+                            </li>
+                            <li>
+                                <a href="#getChapter" >getChapter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#lastChapterNumber" >lastChapterNumber</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#loopChapterAudio" >loopChapterAudio</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateChapter" >updateChapter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(response: <a href="../injectables/Response.html" target="_self">Response</a>, usersService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>, i18n: I18nService, aws: <a href="../classes/AwsModule.html" target="_self">AwsModule</a>, chaptersRepository: <a href="../interfaces/Chapter.html" target="_self">Repository&lt;ChaptersEntity&gt;</a>, audioRepository: <a href="../entitys/AudioEntity.html" target="_self">Repository&lt;AudioEntity&gt;</a>, assetsRepository: <a href="../entitys/AssetsEntity.html" target="_self">Repository&lt;AssetsEntity&gt;</a>, bookRepository: <a href="../interfaces/Book.html" target="_self">Repository&lt;BookEntity&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/modules/chapters/chapters.service.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>response</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Response.html" target="_self" >Response</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>usersService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18nService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>aws</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/AwsModule.html" target="_self" >AwsModule</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>chaptersRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Chapter.html" target="_self" >Repository&lt;ChaptersEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>audioRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/AudioEntity.html" target="_self" >Repository&lt;AudioEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>assetsRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/AssetsEntity.html" target="_self" >Repository&lt;AssetsEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>bookRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Book.html" target="_self" >Repository&lt;BookEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addAudio"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addAudio</b></span>
+                        <a href="#addAudio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addAudio(audioData, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="528"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:528</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>audioData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addAudioByLabel"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addAudioByLabel</b></span>
+                        <a href="#addAudioByLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addAudioByLabel(audioData, label, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="499"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:499</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>audioData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="audio"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>audio</b></span>
+                        <a href="#audio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>audio(chapterLabel, language)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="240"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:240</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chapterLabel</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>language</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chapterNumber"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>chapterNumber</b></span>
+                        <a href="#chapterNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>chapterNumber(chapterData, user, id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chapterData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createChapter"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createChapter</b></span>
+                        <a href="#createChapter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createChapter(chapterData, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="192"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:192</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chapterData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAudio"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteAudio</b></span>
+                        <a href="#deleteAudio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteAudio(id, audioBody, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="568"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:568</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>audioBody</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteChapter"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteChapter</b></span>
+                        <a href="#deleteChapter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteChapter(id, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="604"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:604</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fillAudioPolly"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>fillAudioPolly</b></span>
+                        <a href="#fillAudioPolly"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fillAudioPolly(label, content, user: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank">object</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="371"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:371</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{sub:&#x27;&#x27;}</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAll"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findAll(label, query, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ChaptersList | &gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findOne"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findOne</b></span>
+                        <a href="#findOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findOne(id, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Chapter.html" target="_self" >Promise&lt;Chapter | &gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatAudioText"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>formatAudioText</b></span>
+                        <a href="#formatAudioText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>formatAudioText(content_shape)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="317"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:317</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content_shape</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getBook</b></span>
+                        <a href="#getBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBook(label)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getChapter"></a>
+                    <span class="name">
+                        <span ><b>getChapter</b></span>
+                        <a href="#getChapter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getChapter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lastChapterNumber"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>lastChapterNumber</b></span>
+                        <a href="#lastChapterNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>lastChapterNumber(label)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loopChapterAudio"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>loopChapterAudio</b></span>
+                        <a href="#loopChapterAudio"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loopChapterAudio()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="332"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:332</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateChapter"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateChapter</b></span>
+                        <a href="#updateChapter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateChapter(id, chapterData, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="250"
+                            class="link-to-prism">src/modules/chapters/chapters.service.ts:250</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>chapterData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getChapter"></a>
+                    <span class="name">
+                            <span class="modifier">Static</span>
+                        <span ><b>getChapter</b></span>
+                        <a href="#getChapter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/modules/chapters/chapters.service.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, HttpException, HttpStatus } from &#x27;@nestjs/common&#x27;;
+import { InjectRepository} from &#x27;@nestjs/typeorm&#x27;;
+import { Repository, getConnection } from &#x27;typeorm&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+import { AwsModule } from &#x27;../../helpers/aws.helpers&#x27;;
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { Chapter, ChaptersList  } from &#x27;./chapters.interface&#x27;;
+import { AudioEntity, ChaptersEntity , ChaptersTranslateEntity} from &#x27;./entities&#x27;;
+import { BookEntity, BookTranslateEntity } from &#x27;../books/entities&#x27;;
+import { Response } from &#x27;../../helpers/response&#x27;;
+import { new_language_code } from &#x27;../../helpers/util&#x27;;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import { UsersService  } from &#x27;../users/users.service&#x27;;
+import { AssetsEntity } from &#x27;../assets/entities&#x27;;
+
+@Injectable()
+export class ChaptersService {
+    static getChapter: any;
+        constructor (
+            private readonly response: Response,
+            private readonly usersService: UsersService,
+            private readonly i18n: I18nService,
+            private readonly aws: AwsModule,
+
+            @InjectRepository(ChaptersEntity)
+            private chaptersRepository: Repository&lt;ChaptersEntity&gt;,
+
+            @InjectRepository(AudioEntity)
+            private audioRepository: Repository&lt;AudioEntity&gt;,
+
+            @InjectRepository(AssetsEntity)
+            private assetsRepository: Repository&lt;AssetsEntity&gt;,
+
+            @InjectRepository(BookEntity)
+            private bookRepository: Repository&lt;BookEntity&gt;,
+        ) {}
+
+        getChapter() {
+            return this.chaptersRepository
+            .createQueryBuilder(&#x27;chapters&#x27;)
+            .leftJoin(AudioEntity, &#x27;audio&#x27;, &#x27;audio.chapter_label &#x3D; chapters.chapter_label&#x27;)
+            .leftJoin( ChaptersTranslateEntity, &#x27;chapterTranslate&#x27;, &#x27;chapterTranslate.chapter_label &#x3D; chapters.chapter_label&#x27;)
+            .select([ 
+                &#x27;chapters._id as id&#x27;, &#x27;chapters.chapter_label as label&#x27;, 
+                &#x27;chapterTranslate.title as title&#x27;, &#x27;chapterTranslate.content as content&#x27;, 
+                &#x27;chapters.number as number&#x27;, &#x60;json_agg(json_build_object(&#x27;audio_path&#x27;, audio.audio_path, &#x27;language&#x27;, audio.language)) AS audio&#x60;,
+            ])
+            .groupBy(&#x27;chapters._id, chapterTranslate.title, chapters.number, chapters.chapter_label, chapterTranslate.content, chapters._created_at&#x27;)
+            .orderBy(&#x27;chapters.number&#x27;, &quot;ASC&quot;);
+        };
+
+        async getBook(label) {
+            return await this.bookRepository
+            .createQueryBuilder(&#x27;books&#x27;)
+            .innerJoin( BookTranslateEntity, &#x27;bookTranslate&#x27;, &#x27;bookTranslate.book_label &#x3D; books.book_label&#x27;)
+            .select([
+                &#x27;books._id as id&#x27;, &#x27;title&#x27;, &#x27;subtitle&#x27;, &#x27;books.cover_image&#x27;, 
+                &#x27;author&#x27;, &#x27;books.deleted_by as deleted_by&#x27;, 
+                &#x27;books.book_label as label&#x27;
+            ])
+            .where(&#x27;books.book_label &#x3D; :label&#x27;, { label })
+            .getRawOne();
+        };
+
+        async lastChapterNumber(label) {
+            return await this.chaptersRepository
+            .createQueryBuilder(&#x27;chapters&#x27;)
+            .where(&#x27;chapters.book_label &#x3D; :label&#x27;, { label})
+            .select([&#x60;MAX(chapters.number) as max&#x60;])
+            .getRawOne();
+        }
+
+        // find all chapters
+        async findAll(label, query, user):  Promise&lt;ChaptersList | []&gt; {
+            const userData &#x3D; await this.usersService.findOne(user.sub, null);
+            const skippedItems &#x3D; (query.page - 1) * query.size;
+            let chapter &#x3D; this.getChapter()
+                .where(&#x27;chapters.book_label &#x3D; :label&#x27;, { label })
+
+            if(query.page &amp;&amp; query.size) {
+                chapter &#x3D; chapter
+                .offset(skippedItems)
+                .limit(query.size)
+            }
+            const chapters &#x3D; await chapter.getRawMany()
+            
+            chapters.map(async(chapter)&#x3D;&gt;{
+                chapter.audio_mandarin &#x3D; null
+                chapter.audio_cantonese &#x3D; null
+                chapter.audio_display &#x3D; null
+                await Promise.all(chapter.audio.map((el)&#x3D;&gt;{
+                    const audio &#x3D; el.audio_path ? &#x60;${process.env.ASSEST_BASE_URL}${el.audio_path}&#x60; : null
+                    if (el.language &#x3D;&#x3D;&#x3D; new_language_code.MANDARIN) chapter.audio_mandarin &#x3D; audio
+                    if (el.language &#x3D;&#x3D;&#x3D; new_language_code.CANTONESE) chapter.audio_cantonese &#x3D; audio 
+
+                    let audioDisplay &#x3D; null;
+                    if( userData[&#x27;language&#x27;] &#x3D;&#x3D;&#x3D; new_language_code.CANTONESE ) {
+                        audioDisplay &#x3D; chapter.audio_cantonese
+                    } else if( userData[&#x27;language&#x27;] &#x3D;&#x3D;&#x3D; new_language_code.MANDARIN ) {
+                        audioDisplay &#x3D; chapter.audio_mandarin
+                    }
+                    chapter.audio_display &#x3D; audioDisplay;
+
+                })
+                )
+    
+                delete chapter.audio
+            })
+            const bookInfo &#x3D; await this.getBook(label);
+
+            if(!bookInfo){
+                return []
+            }
+
+            const lastChapter &#x3D; await this.lastChapterNumber(label)
+
+            const total &#x3D; await chapter.getCount()
+            
+            return {
+                page: query.page || 1,
+                size: query.size || total,
+                total,
+                id: bookInfo.id,
+                title: bookInfo.title,
+                chapters: chapters,
+                last_chapter: lastChapter ? lastChapter.max : 0
+              };
+    
+            // return json fake data for temporary. will be placed with query
+            // return chapterData.chapters
+        };
+        async findOne(id, user): Promise&lt;Chapter | []&gt; {
+            const userData &#x3D; await this.usersService.findOne(user.sub, null);
+            const chapter &#x3D; await this.getChapter() 
+            .where(&#x27;chapters._id &#x3D; :id&#x27;, { id })
+            .getRawMany();
+    
+            if (chapter.length &gt; 0) {
+            
+                chapter[0].audio_mandarin &#x3D; null
+                chapter[0].audio_cantonese &#x3D; null
+
+                await Promise.all(chapter[0].audio.map((el)&#x3D;&gt;{
+                    const audio &#x3D; el.audio_path ? &#x60;${process.env.ASSEST_BASE_URL}${el.audio_path}&#x60; : null
+                    if (el.language &#x3D;&#x3D;&#x3D; new_language_code.MANDARIN) chapter[0].audio_mandarin &#x3D; audio
+                    if (el.language &#x3D;&#x3D;&#x3D; new_language_code.CANTONESE) chapter[0].audio_cantonese &#x3D; audio 
+                }));
+
+                let audioDisplay &#x3D; null;
+                if( userData[&#x27;language&#x27;] &#x3D;&#x3D;&#x3D; new_language_code.CANTONESE ) {
+                    audioDisplay &#x3D; chapter[0].audio_cantonese
+                } else if( userData[&#x27;language&#x27;] &#x3D;&#x3D;&#x3D; new_language_code.MANDARIN ) {
+                    audioDisplay &#x3D; chapter[0].audio_mandarin
+                }
+
+                chapter[0].audio_display &#x3D; audioDisplay;
+
+                delete chapter[0].audio
+                return chapter[0]
+            } else {
+                return []
+            }
+        };
+
+        async chapterNumber(chapterData, user, id) {
+
+            let where &#x3D; &#x27;&#x27;
+            if (id) where &#x3D; &#x27;chapters._id !&#x3D; :id&#x27;;
+            
+            const lastChapters &#x3D; await this.lastChapterNumber(chapterData.book_label);
+   
+            const lastChapter &#x3D; lastChapters &amp;&amp; lastChapters.max ? lastChapters.max : 0;
+            const chapterNumber &#x3D; chapterData.number ? chapterData.number : lastChapter + 1;
+
+            const getChapter &#x3D; await this.getChapter() 
+            .where(where, {id})
+            .andWhere(&#x27;chapters.book_label &#x3D; :label&#x27;, { label: chapterData.book_label })
+            .andWhere(&#x27;chapters.number &#x3D; :number&#x27;, { number: chapterNumber })
+            .getRawOne();
+
+            if( getChapter ) {
+                const error &#x3D; [{ &quot;chapter&quot; : &#x60;Chapter number already exists&#x60; }];
+                Logger.error(&#x60;failed to update chapter ,userId: ${user.sub}, error:${error}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.CHAPTERS.CHAPTER_EXIST&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }     
+            return chapterNumber;  
+        }
+        
+        async createChapter(chapterData, user){
+
+            const queryRunner &#x3D; getConnection().createQueryRunner();
+            // establish real database connection using our new query runner
+            await queryRunner.connect();
+    
+            // open new transaction
+            await queryRunner.startTransaction();
+
+            const chapterNumber &#x3D; await this.chapterNumber(chapterData, user, null)
+            
+            try {
+                const chapter &#x3D; new ChaptersEntity()
+                chapter.book_label &#x3D; chapterData.book_label
+                chapter.number &#x3D; chapterNumber
+                chapter._database_id &#x3D; &#x27;&#x27;
+                chapter._owner_id &#x3D; user.sub
+                chapter._created_by &#x3D; user.sub
+
+                const { chapter_label } &#x3D; await queryRunner.manager.save(chapter);
+
+                const chapterTranslate &#x3D; new ChaptersTranslateEntity()
+                chapterTranslate.title &#x3D; chapterData.title
+                chapterTranslate.content &#x3D; chapterData.content
+                chapterTranslate.language &#x3D; new_language_code.CANTONESE
+                chapterTranslate.chapter_label &#x3D; chapter_label
+                chapterTranslate._database_id &#x3D; &#x27;&#x27;
+                chapterTranslate._owner_id &#x3D; user.sub
+                chapterTranslate._created_by &#x3D; user.sub
+
+                await queryRunner.manager.save(chapterTranslate);
+
+                await queryRunner.commitTransaction();
+
+            } catch (err) {
+                await queryRunner.rollbackTransaction();
+                Logger.error(&#x60;failed to create chapter ,userId: ${user.sub}, error:${err}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+            finally {
+                // release query runner
+                await queryRunner.release();
+            }
+        }
+
+        async audio(chapterLabel, language) {
+  
+            return await this.audioRepository
+            .createQueryBuilder(&#x27;audio&#x27;)
+            .select([&#x27;audio._id as id&#x27;])
+            .where(&#x27;audio.chapter_label &#x3D; :chapterLabel&#x27;, { chapterLabel })
+            .andWhere(&#x27;audio.language &#x3D; :language&#x27;, { language })
+            .getRawOne()
+        }
+
+       async updateChapter( id, chapterData, user){
+       
+            const chapter &#x3D; await this.chaptersRepository
+            .createQueryBuilder(&#x27;chapters&#x27;)
+            .leftJoin( ChaptersTranslateEntity, &#x27;chapterTranslate&#x27;, &#x27;chapterTranslate.chapter_label &#x3D; chapters.chapter_label&#x27;)
+            .select([
+                &#x27;chapters.book_label as book_label&#x27;, 
+                &#x27;chapters.chapter_label as label&#x27;, 
+                &#x27;chapterTranslate.language as language&#x27;])
+            .where(&#x27;chapters._id &#x3D; :id&#x27;, {id})
+            .getRawOne();
+
+            if ((chapter as any).length &#x3D;&#x3D;&#x3D; 0 ) {
+                Logger.error(&#x60;failed to update chapter ,userId: ${user.sub}, error: chapter not found with id ${id}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+       
+            chapterData.book_label &#x3D; (chapter as any).book_label;
+         
+            const chapterNumber &#x3D; await this.chapterNumber(chapterData, user, id)
+
+            const chapterBody &#x3D; {
+                number: chapterNumber,
+                _updated_by: user.sub
+            }
+
+            const chapterTranslate &#x3D; {
+                title : chapterData.title,
+                content: chapterData.content,
+                _updated_by: user.sub
+            }
+
+            let dataPolly &#x3D; {
+                book_label: (chapter as any).book_label,
+                number: chapterNumber,
+                title: chapterData.title,
+                content: chapterData.content
+            }
+            let full_content &#x3D; await this.formatAudioText(dataPolly);
+            
+            const queryRunner &#x3D; getConnection().createQueryRunner();
+            // establish real database connection using our new query runner
+            await queryRunner.connect();
+
+            await queryRunner.startTransaction();
+
+            const label &#x3D; (chapter as any).label;
+            await this.fillAudioPolly(label, full_content);
+            try{
+                await queryRunner.manager.update(ChaptersEntity, { chapter_label: label }, chapterBody );
+                await queryRunner.manager.update(ChaptersTranslateEntity, { chapter_label: label }, chapterTranslate );
+                await queryRunner.commitTransaction();
+            } catch (err) {
+                await queryRunner.rollbackTransaction();
+                Logger.error(&#x60;failed to update chapter ,userId: ${user.sub}, error:${err}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            } finally {
+                await queryRunner.release();
+            }
+        }
+
+        async formatAudioText(content_shape) {
+            const related_book &#x3D; await this.getBook(content_shape.book_label);
+
+            let split_author &#x3D; related_book.author.replace(/\|/g, &#x27;, &#x27;);
+            let book_authors &#x3D; &#x60;${split_author}&#x60;;
+
+            let full_content &#x3D; &#x60;閱點 ${content_shape.number}. ${content_shape.title}. ${content_shape.content.replace(/\n/g, &#x27;&#x27;)}&#x60;;
+            
+            if(content_shape.number &#x3D;&#x3D; 1){
+                full_content &#x3D; &#x60;${related_book.title}, ${related_book.subtitle}. 作者: ${book_authors}. &#x60; + full_content;
+            }
+
+            return full_content;
+        }
+
+        async loopChapterAudio() {
+            try {
+                const non_exist_audio &#x3D; await this.chaptersRepository
+                    .createQueryBuilder(&#x27;chapter&#x27;)
+                    .leftJoin( ChaptersTranslateEntity, &#x27;chapterTranslate&#x27;, &#x27;chapterTranslate.chapter_label &#x3D; chapter.chapter_label&#x27;)
+                    .select([
+                        &#x27;chapter.book_label as book_label&#x27;,
+                        &#x27;chapter.chapter_label as label&#x27;,
+                        &#x27;chapter.number as number&#x27;,
+                        &#x27;chapterTranslate.title as title&#x27;,
+                        &#x27;chapterTranslate.content as content&#x27;,
+                        &#x27;chapterTranslate.language as language&#x27;
+                    ])
+                    .where(&#x60;NOT EXISTS (SELECT * FROM ${process.env.SCHEMA}.audio a WHERE a.chapter_label &#x3D; chapter.chapter_label AND a.language &#x3D; &#x27;zh-TW&#x27;)&#x60;)
+                    .orWhere(&#x60;NOT EXISTS (SELECT * FROM ${process.env.SCHEMA}.audio a WHERE a.chapter_label &#x3D; chapter.chapter_label AND a.language &#x3D; &#x27;zh-HK&#x27;)&#x60;)
+                    .orderBy(&#x27;RANDOM()&#x27;)
+                    .limit(1)
+                    .getRawMany();
+
+                const non_exist_audio_total &#x3D; await this.chaptersRepository
+                    .createQueryBuilder(&#x27;chapter&#x27;)
+                    .leftJoin( ChaptersTranslateEntity, &#x27;chapterTranslate&#x27;, &#x27;chapterTranslate.chapter_label &#x3D; chapter.chapter_label&#x27;)
+                    .select([
+                        &#x27;chapter.chapter_label as label&#x27;,
+                    ])
+                    .where(&#x60;NOT EXISTS (SELECT * FROM ${process.env.SCHEMA}.audio a WHERE a.chapter_label &#x3D; chapter.chapter_label AND a.language &#x3D; &#x27;zh-TW&#x27;)&#x60;)
+                    .orWhere(&#x60;NOT EXISTS (SELECT * FROM ${process.env.SCHEMA}.audio a WHERE a.chapter_label &#x3D; chapter.chapter_label AND a.language &#x3D; &#x27;zh-HK&#x27;)&#x60;)
+                    .getRawMany();
+
+                let content_shape &#x3D; non_exist_audio[0];
+                let full_content &#x3D; await this.formatAudioText(content_shape);
+
+                await this.fillAudioPolly(content_shape.label, full_content);
+                console.log(&#x27;Success upload.&#x27;);
+            } catch(error) {
+                console.log(&#x27;Error upload.&#x27;);
+            }
+        }
+
+        async fillAudioPolly(label, content, user &#x3D; {sub:&#x27;&#x27;}) {
+            let assets_cantonese: any;
+            let assets_mandarin: any;
+            const tts_folder &#x3D; /ttsfolder/;
+            const new_date &#x3D; &#x60;${Math.random().toString(36)}&#x60;;
+            Object.freeze(new_date);
+            const new_audio_name_cantonese &#x3D; &#x60;ttsfolder/${label}_${new_date}_CAN.mp3&#x60;;
+            const new_audio_name_mandarin &#x3D; &#x60;ttsfolder/${label}_${new_date}_MAN.mp3&#x60;;
+
+            let audio_cantonese &#x3D; { audio: &#x27;&#x27;, language: new_language_code.CANTONESE };
+            let audio_mandarin &#x3D; { audio: &#x27;&#x27;, language: new_language_code.MANDARIN };
+
+            // current cantonese
+            const current_cantonese &#x3D; await this.audioRepository
+                .createQueryBuilder(&#x27;audio&#x27;)
+                .select([
+                    &#x27;audio.audio_path as path&#x27;
+                ])
+                .where(&#x27;audio.chapter_label &#x3D; :label AND audio.language &#x3D; :language&#x27;, 
+                    {
+                        label,
+                        language : new_language_code.CANTONESE
+                    })
+                .getRawOne();
+
+            // current mandarin
+            const current_mandarin &#x3D; await this.audioRepository
+                .createQueryBuilder(&#x27;audio&#x27;)
+                .select([
+                    &#x27;audio.audio_path as path&#x27;
+                ])
+                .where(&#x27;audio.chapter_label &#x3D; :label AND audio.language &#x3D; :language&#x27;, 
+                    {
+                        label,
+                        language : new_language_code.MANDARIN
+                    })
+                .getRawOne();
+
+            // if not exist create new 
+            if (!current_cantonese &amp;&amp; !current_mandarin){
+                await this.aws.convertTextToSpeech(new_audio_name_mandarin, content, new_language_code.MANDARIN);
+                await this.aws.convertTextToSpeech(new_audio_name_cantonese, content, new_language_code.CANTONESE);
+                // add 2 handling
+                // create assests;
+                assets_mandarin &#x3D; new AssetsEntity();
+                    assets_mandarin.id &#x3D; new_audio_name_mandarin;
+                    assets_mandarin.content_type &#x3D; &#x27;audio/mp3&#x27;;
+                    assets_mandarin.size &#x3D; 10;
+                await assets_mandarin.save();
+
+                assets_cantonese &#x3D; new AssetsEntity();
+                    assets_cantonese.id &#x3D; new_audio_name_cantonese;
+                    assets_cantonese.content_type &#x3D; &#x27;audio/mp3&#x27;;
+                    assets_cantonese.size &#x3D; 10;
+                await assets_cantonese.save();
+
+                // create audio
+                audio_cantonese.audio &#x3D; assets_cantonese.id;
+                audio_mandarin.audio &#x3D; assets_mandarin.id;
+                await this.addAudioByLabel(audio_cantonese, label, user);
+                await this.addAudioByLabel(audio_mandarin, label, user);
+            }
+
+            if(!current_cantonese &amp;&amp; current_mandarin){
+                if(tts_folder.test(current_mandarin.path)){
+                    await this.aws.removeAudio(current_mandarin.path);
+                    await this.aws.convertTextToSpeech(current_mandarin.path, content, new_language_code.MANDARIN);
+                    await this.aws.convertTextToSpeech(new_audio_name_cantonese, content, new_language_code.CANTONESE);
+                    // create assests;
+                    assets_cantonese &#x3D; new AssetsEntity();
+                        assets_cantonese.id &#x3D; new_audio_name_cantonese;
+                        assets_cantonese.content_type &#x3D; &#x27;audio/mp3&#x27;;
+                        assets_cantonese.size &#x3D; 10;
+                    await assets_cantonese.save();
+                    audio_cantonese.audio &#x3D; assets_cantonese.id;
+                    await this.addAudioByLabel(audio_cantonese, label, user);
+                } else {                
+                    await this.aws.convertTextToSpeech(new_audio_name_cantonese, content, new_language_code.CANTONESE);
+                    // create assests;
+                    assets_cantonese &#x3D; new AssetsEntity();
+                        assets_cantonese.id &#x3D; new_audio_name_cantonese;
+                        assets_cantonese.content_type &#x3D; &#x27;audio/mp3&#x27;;
+                        assets_cantonese.size &#x3D; 10;
+                    await assets_cantonese.save();
+                    audio_cantonese.audio &#x3D; assets_cantonese.id;
+                    await this.addAudioByLabel(audio_cantonese, label, user);
+                }
+            }
+
+            if(!current_mandarin &amp;&amp; current_cantonese) {
+                if(tts_folder.test(current_cantonese.path)){
+                    await this.aws.removeAudio(current_cantonese.path);
+                    await this.aws.convertTextToSpeech(current_cantonese.path, content, new_language_code.CANTONESE);
+                    await this.aws.convertTextToSpeech(new_audio_name_mandarin, content, new_language_code.MANDARIN);
+                    // create assests;
+                    assets_mandarin &#x3D; new AssetsEntity();
+                        assets_mandarin.id &#x3D; new_audio_name_mandarin;
+                        assets_mandarin.content_type &#x3D; &#x27;audio/mp3&#x27;;
+                        assets_mandarin.size &#x3D; 10;
+                    await assets_mandarin.save();
+                    audio_mandarin.audio &#x3D; assets_mandarin.id;
+                    await this.addAudioByLabel(audio_mandarin, label, user);
+                } else {                
+                    await this.aws.convertTextToSpeech(new_audio_name_mandarin, content, new_language_code.MANDARIN);
+                    // create assests;
+                    assets_mandarin &#x3D; new AssetsEntity();
+                        assets_mandarin.id &#x3D; new_audio_name_mandarin;
+                        assets_mandarin.content_type &#x3D; &#x27;audio/mp3&#x27;;
+                        assets_mandarin.size &#x3D; 10;
+                    await assets_mandarin.save();
+                    audio_mandarin.audio &#x3D; assets_mandarin.id;
+                    await this.addAudioByLabel(audio_mandarin, label, user);
+                }
+            }
+
+            if(current_mandarin &amp;&amp; current_cantonese){
+                if (tts_folder.test(current_mandarin.path)) {
+                    await this.aws.removeAudio(current_mandarin.path);
+                    await this.aws.convertTextToSpeech(current_mandarin.path, content, new_language_code.MANDARIN);
+                }
+
+                if (tts_folder.test(current_cantonese.path)) {
+                    await this.aws.removeAudio(current_cantonese.path);
+                    await this.aws.convertTextToSpeech(current_cantonese.path, content, new_language_code.CANTONESE);
+                }
+            }
+        }
+
+        async addAudioByLabel(audioData, label, user) {
+
+            const audio &#x3D; new AudioEntity
+            audio.audio_path &#x3D; audioData.audio
+            audio._updated_by &#x3D; user.sub
+            audio.language &#x3D; audioData.language
+            audio._database_id &#x3D; &#x27;&#x27;
+            audio._owner_id &#x3D; user.sub
+            audio.chapter_label &#x3D; label
+
+            try{
+                const audioExist &#x3D; await this.audio(label, audioData.language);
+                if (audioExist){
+                    await this.audioRepository.update(
+                        { chapter_label: label, language: audioData.language } ,
+                        audio
+                      );
+                } else {
+                    await audio.save();
+                }
+            } catch (err) {
+                Logger.error(&#x60;failed to update/add chapter audio ,userId: ${user.sub}, error:${err}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+        }
+
+        async addAudio(audioData, user){
+        
+            const chapter &#x3D; await this.findOne(audioData.id, user)
+
+            if ((chapter as any).length &#x3D;&#x3D;&#x3D; 0 ) {
+                Logger.error(&#x60;failed to update chapter ,userId: ${user.sub}, error: chapter not found&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+            const label &#x3D; (chapter as any).label
+
+            const audio &#x3D; new AudioEntity
+            audio.audio_path &#x3D; audioData.audio
+            audio._updated_by &#x3D; user.sub
+            audio.language &#x3D; audioData.language
+            audio._database_id &#x3D; &#x27;&#x27;
+            audio._owner_id &#x3D; user.sub
+            audio.chapter_label &#x3D; label
+
+            try{
+                const audioExist &#x3D; await this.audio(label, audioData.language);
+                if (audioExist){
+                    await this.audioRepository.update(
+                        { chapter_label: label, language: audioData.language } ,
+                        audio
+                      );
+                } else {
+                    await audio.save();
+                }
+            } catch (err) {
+                Logger.error(&#x60;failed to update/add chapter audio ,userId: ${user.sub}, error:${err}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+        }
+
+        async deleteAudio ( id, audioBody, user ) {
+
+            const chapter &#x3D; await this.findOne(id, user)
+    
+            const label &#x3D; (chapter as any).label
+
+            if ((chapter as any).length &#x3D;&#x3D;&#x3D; 0 ) {
+                Logger.error(&#x60;failed to get chapter ,userId: ${user.sub}, error: chapter not found&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+
+            const audioExist &#x3D; await this.audio(label, audioBody.language);
+
+            try{
+                if (audioExist){
+                    await getConnection()
+                    .createQueryBuilder()
+                    .delete()
+                    .from(AudioEntity)
+                    .where(&#x27;chapter_label &#x3D; :label&#x27;, { label })
+                    .andWhere(&#x27;language &#x3D; :language&#x27;, { language: audioBody.language  })
+                    .execute();
+                } else {
+                    throw new Error(&#x27;audio is not exist&#x27;)
+                }
+            } catch (err) {
+                Logger.error(&#x60;failed to delete audio ,userId: ${user.sub}, error:${err}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_DELETE&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+        } 
+        async deleteChapter (id, user) {
+
+            const chapter &#x3D; await this.findOne(id, user);
+
+            if ((chapter as any).length &#x3D;&#x3D;&#x3D; 0 ) {
+                Logger.error(&#x60;failed to get chapter ,userId: ${user.sub}, error: chapter not found&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            }
+            const label &#x3D; (chapter as any).label
+
+            const queryRunner &#x3D; getConnection().createQueryRunner();
+            await queryRunner.connect();
+            await queryRunner.startTransaction();
+
+            try{
+                await queryRunner.manager.createQueryBuilder().delete().from(ChaptersEntity)
+                .where(&#x27;chapter_label &#x3D; :label&#x27;, { label }).execute();
+                await queryRunner.manager.createQueryBuilder().delete().from(ChaptersTranslateEntity)
+                .where(&#x27;chapter_label &#x3D; :label&#x27;, { label }).execute();
+                await queryRunner.manager.createQueryBuilder().delete().from(AudioEntity)
+                .where(&#x27;chapter_label &#x3D; :label&#x27;, { label }).execute();
+
+                await queryRunner.commitTransaction();
+            }
+            catch (err) {
+                await queryRunner.rollbackTransaction();
+                Logger.error(&#x60;failed to delete chapter ,userId: ${user.sub}, error:${err}&#x60;);
+                throw new HttpException(await this.response.response(  
+                    await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_DELETE&#x27;, { lang: await userLang(user) }), 
+                    null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                )
+            } finally {
+                await queryRunner.release();
+            }
+            
+        }  
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ChaptersService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

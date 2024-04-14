@@ -1,0 +1,74 @@
+{
+    "chapters": {
+        "page":1,
+        "size" : 2,
+        "total": 1,
+        "id": "0",
+        "title": "string",
+        "chapters": [
+            {
+                "id": "1",
+                "number": 10,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3ing"
+            },
+            {
+                "id": "1",
+                "number": 12,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            {
+                "id": "3",
+                "number": 13,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            {
+                "id": "4",
+                "number": 14,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            {
+                "id": "5",
+                "number": 16,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            {
+                "id": "6",
+                "number": 17,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            {
+                "id": "7",
+                "number": 18,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            },
+            {
+                "id": "8",
+                "number": 19,
+                "label": "BKLBL1",
+                "audio_cantonese": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+                "audio_mandarin": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            }
+        ]
+    },
+    "chapter": {
+        "id": "0",
+        "number": 0,
+        "label": "string",
+        "audio_cantonese": "string",
+        "audio_mandarin": "string"
+      }
+}

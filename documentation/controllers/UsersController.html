@@ -1,0 +1,1200 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content controller">
+                   <div class="content-data">
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Controllers</li>
+  <li >UsersController</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/users/users.controller.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Prefix</h3>
+            </p>
+            <p class="comment">
+                <code>users</code>
+            </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addFeedback" >addFeedback</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkEmailExist" >checkEmailExist</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#confirmPassword" >confirmPassword</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createUser" >createUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#exportUser" >exportUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#forgetPassword" >forgetPassword</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#language" >language</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetPassword" >resetPassword</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateUser" >updateUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#userDetail" >userDetail</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addFeedback"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addFeedback</b></span>
+                        <a href="#addFeedback"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addFeedback(user, feedback: <a href="../classes/addFeedback.html" target="_self">addFeedback</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Add Feedback&#x27;})<br />@ApiBody({type: addFeedback})<br />@Post(&#x27;add-feedback&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="185"
+                            class="link-to-prism">src/modules/users/users.controller.ts:185</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>feedback</td>
+                                    <td>
+                                                <code><a href="../classes/addFeedback.html" target="_self" >addFeedback</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkEmailExist"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkEmailExist</b></span>
+                        <a href="#checkEmailExist"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkEmailExist(email)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;check is user already registered&#x27;})<br />@ApiParam(undefined)<br />@Get(&#x27;/registered/:email&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/modules/users/users.controller.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmPassword"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>confirmPassword</b></span>
+                        <a href="#confirmPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>confirmPassword(userData: <a href="../classes/passworConfirm.html" target="_self">passworConfirm</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;confirm password&#x27;})<br />@ApiBody({type: passworConfirm})<br />@Put(&#x27;confirm-password&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/modules/users/users.controller.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                                <code><a href="../classes/passworConfirm.html" target="_self" >passworConfirm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createUser</b></span>
+                        <a href="#createUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createUser(userData: <a href="../interfaces/User.html" target="_self">createUser</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;create new user&#x27;})<br />@ApiBody({type: createUser})<br />@Post(&#x27;register&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/modules/users/users.controller.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                                <code><a href="../interfaces/User.html" target="_self" >createUser</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exportUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>exportUser</b></span>
+                        <a href="#exportUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>exportUser(res)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Download data user&#x27;})<br />@Get(&#x27;download-csv&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/modules/users/users.controller.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>res</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="forgetPassword"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>forgetPassword</b></span>
+                        <a href="#forgetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>forgetPassword(userData: <a href="../classes/forgetPassword.html" target="_self">forgetPassword</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;forget password&#x27;})<br />@ApiBody({type: forgetPassword})<br />@Post(&#x27;forget-password&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/modules/users/users.controller.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                                <code><a href="../classes/forgetPassword.html" target="_self" >forgetPassword</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="language"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>language</b></span>
+                        <a href="#language"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>language()</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Get data language&#x27;})<br />@Get(&#x27;language&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/modules/users/users.controller.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetPassword"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>resetPassword</b></span>
+                        <a href="#resetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetPassword(user, userData: <a href="../classes/resetPassword.html" target="_self">resetPassword</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;reset password&#x27;})<br />@ApiBody({type: resetPassword})<br />@Post(&#x27;reset-password&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/modules/users/users.controller.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                                <code><a href="../classes/resetPassword.html" target="_self" >resetPassword</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateUser</b></span>
+                        <a href="#updateUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateUser(user, userData: <a href="../interfaces/User.html" target="_self">updateUser</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Update user profile&#x27;})<br />@ApiBody({type: updateUser})<br />@Put(&#x27;/&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/modules/users/users.controller.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                                <code><a href="../interfaces/User.html" target="_self" >updateUser</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userDetail"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>userDetail</b></span>
+                        <a href="#userDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>userDetail(user)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;get detail user&#x27;})<br />@Get(&#x27;/detail&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/modules/users/users.controller.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+    Get, Post ,Body, Put, 
+    Param, Controller,
+    ValidationPipe, HttpException, 
+    HttpStatus,
+    Res
+    } from &#x27;@nestjs/common&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { User } from &#x27;../auth/auth.decorator&#x27;
+import { AuthService } from &#x27;../auth/auth.service&#x27;
+import { Response } from &#x27;../../helpers/response&#x27;
+import { ExportFile } from &#x27;../../helpers/export-file&#x27;;
+import { createUser, forgetPassword, resetPassword, updateUser, passworConfirm, addFeedback } from &#x27;./dto&#x27;
+import {  UsersService } from &#x27;./users.service&#x27;
+import { Logger } from &#x27;../../helpers/logger&#x27;
+import {
+    ApiBody, ApiOperation, ApiTags,
+    ApiBearerAuth, ApiParam
+  } from &#x27;@nestjs/swagger&#x27;;
+import { SubscriptionService } from &#x27;../subscription/subscription.service&#x27;;
+import { language_detail } from &#x27;../../helpers/util&#x27;;
+
+  @ApiTags(&#x27;users&#x27;)
+  @Controller(&#x27;users&#x27;)
+export class UsersController {
+
+        constructor(
+            private readonly authService: AuthService,
+            private readonly userService: UsersService,
+            private readonly subscriptionService : SubscriptionService,
+            private readonly response: Response,
+            private readonly i18n: I18nService,
+            private readonly exportFile : ExportFile,
+        ) {}
+
+       @ApiOperation({ summary: &#x27;create new user&#x27; })
+       @ApiBody({ type: createUser })
+       @Post(&#x27;register&#x27;)
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async createUser( @Body(new ValidationPipe()) userData: createUser ) : Promise&lt;Object&gt; {
+           await this.userService.createNewUser(userData);
+           Logger.info(&#x60;success create User with email: ${userData.email}&#x60;, {data: userData});
+           const data &#x3D;  await this.authService.generateToken(userData, { isAdmin: false });
+           Logger.info(&#x60;success login , email: ${userData.email}&#x60;);
+
+        //    const referral &#x3D;  await this.subscriptionService.registReferralCode(userData.email);
+        //    Logger.info(&#x60;Success register referral code with id ${referral[&#x27;id&#x27;]}&#x60;);
+    
+           return this.response.response(&#x27;success&#x27;, data, null);
+       } 
+
+       @ApiOperation({ summary: &#x27;forget password&#x27; })
+       @ApiBody({ type: forgetPassword })
+       @Post(&#x27;forget-password&#x27;)
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async forgetPassword( @Body() userData: forgetPassword ) : Promise&lt;Object&gt; {
+           await this.userService.forgetPassword(userData);
+           Logger.info(&#x60;Success Processing Password Reset ,email: ${userData.email}, data: ${userData}&#x60;);
+           return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+                { lang: await userLang(null) }), 
+                [], null
+           );
+       } 
+
+       @ApiOperation({ summary: &#x27;reset password&#x27; })
+       @ApiBody({ type: resetPassword })
+       @Post(&#x27;reset-password&#x27;)
+       @ApiBearerAuth(&#x27;access-token&#x27;)
+
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async resetPassword( @User() user, @Body() userData: resetPassword ) : Promise&lt;Object&gt; {
+  
+            if (userData.new_password !&#x3D;&#x3D; userData.repeat_password) {
+                Logger.error(&#x60;new password missmatch}&#x60;);
+                const message &#x3D;  await this.i18n.translate(&#x27;message.USER.PASSWORD_SHOULD_BE_MATCH&#x27;, { lang: await userLang(user) });
+                const error &#x3D; [{ &quot;reset-password&quot; : message }];
+                throw new HttpException(await this.response.response(message, null, error), HttpStatus.BAD_REQUEST);
+            }
+
+            await this.userService.resetPassword(userData, user)
+            Logger.info(&#x60;Success Processing Reset Password&#x60;);
+            return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+                { lang: await userLang(user) }), 
+                [], null
+            );
+       } 
+
+       @ApiOperation({ summary: &#x27;confirm password&#x27; })
+       @ApiBody({ type: passworConfirm })
+       @Put(&#x27;confirm-password&#x27;)
+       @ApiBearerAuth(&#x27;access-token&#x27;)
+
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async confirmPassword( @Body() userData: passworConfirm ) : Promise&lt;Object&gt; {
+           if (userData.new_password !&#x3D;&#x3D; userData.repeat_password) {
+                Logger.info(&#x60;error Processing Reset Password, password and confirm password doesnt match&#x60;, {userData});
+                const message &#x3D;  await this.i18n.translate(&#x27;message.USER.PASSWORD_SHOULD_BE_MATCH&#x27;, { lang: await userLang(null) });
+                const error &#x3D; [{ &quot;reset-password&quot; : message }];
+                throw new HttpException(await this.response.response(message, null, error), HttpStatus.BAD_REQUEST);
+           }
+
+           await this.userService.confirmPassword(userData)
+           Logger.info(&#x60;Success Processing Reset Password&#x60;);
+            return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+                { lang: await userLang(null) }), 
+                [], null
+            );
+       } 
+
+       @ApiOperation({ summary: &#x27;get detail user&#x27; })
+       @Get(&#x27;/detail&#x27;)
+       @ApiBearerAuth(&#x27;access-token&#x27;)
+
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async userDetail(@User() user ) : Promise&lt;Object&gt; {
+           const data &#x3D; await this.userService.getUserWithSubscription(user.sub, [&#x27;user.birthday as birthday&#x27;]);
+           
+           Logger.info(&#x60;Success Get User Detail&#x60;, user);
+           return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+                { lang: await userLang(user) }), 
+                data, null
+            );
+       }   
+
+       @ApiOperation({ summary: &#x27;Update user profile&#x27; })
+       @ApiBody({ type: updateUser })
+       @Put(&#x27;/&#x27;)
+       @ApiBearerAuth(&#x27;access-token&#x27;)
+        // eslint-disable-next-line @typescript-eslint/ban-types
+       async updateUser(@User() user, @Body() userData: updateUser ) : Promise&lt;Object&gt; {
+        await this.userService.updateUser(userData, user);
+        
+        Logger.info(&#x60;Success Update User&#x60;,user);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_UPDATE&#x27;, 
+            { lang: await userLang(user) }), 
+            [], null
+        );
+       }
+       
+       @ApiOperation({ summary: &#x27;check is user already registered&#x27; })
+       @ApiParam(({ name: &#x27;email&#x27;,  allowEmptyValue: false,  required: true}))
+       @Get(&#x27;/registered/:email&#x27;)
+
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async checkEmailExist(@Param(&#x27;email&#x27;) email ) : Promise&lt;Object&gt; {
+           const user &#x3D; await this.userService.getUser(null, email).getRawOne()
+           const data &#x3D; user ? { exist: true } : { exist: false }
+           Logger.info(&#x60;Success check User ${email}&#x60;, data);
+           return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+                { lang: await userLang(user) }), 
+                data, null
+            );
+       } 
+
+       @ApiOperation({ summary: &#x27;Download data user&#x27; })
+       @Get(&#x27;download-csv&#x27;)
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async exportUser(@Res() res){
+          try { 
+            Logger.info(&#x60;Export processed&#x60;);
+            return this.userService.exportCsv(res);     
+          } catch (err) {
+            Logger.error(&#x60;Failed to export user data&#x60;, {error : err});
+            const message &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.SERVER_ERROR&#x27;, { lang: await userLang(null) })
+            const error &#x3D; [{ &quot;ExportCsvUserData&quot; : message }];
+            throw new HttpException(await this.response.response(  
+                message,
+                null, error), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+          }
+       } 
+       
+       @ApiOperation({ summary: &#x27;Add Feedback&#x27; })
+       @ApiBody({ type: addFeedback })
+       @Post(&#x27;add-feedback&#x27;)
+       // eslint-disable-next-line @typescript-eslint/ban-types
+       async addFeedback(@User() user, @Body() feedback: addFeedback ) : Promise&lt;Object&gt; {
+           await this.userService.addFeedback(user.sub, feedback[&#x27;description&#x27;]);
+           Logger.info(&#x60;Success add feedback from user with id ${user.sub}, data: ${feedback[&#x27;description&#x27;]}&#x60;);
+           return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_CREATE&#x27;, 
+                { lang: await userLang(user) }), 
+                [], null
+            );
+       } 
+
+       @ApiOperation({ summary: &#x27;Get data language&#x27; })
+       @Get(&#x27;language&#x27;)
+       async language() {
+           return this.response.response(&#x27;success&#x27;, language_detail, null);
+       }
+
+    //    @ApiOperation({ summary: &#x27;Update referral code to new format&#x27; })
+    //    @Get(&#x27;update-referral&#x27;)
+    //    async updateReferralCode() {
+    //        return this.userService.updateFormatReferralCode();
+    //     //    return this.response.response(&#x27;success&#x27;, language_detail, null);
+    //    }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'UsersController.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

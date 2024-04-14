@@ -1,0 +1,2741 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >BooksService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/books/books.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addFav" >addFav</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#categoryById" >categoryById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkIfAudioExist" >checkIfAudioExist</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createBook" >createBook</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findAll" >findAll</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findOne" >findOne</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#freebieBook" >freebieBook</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAuthorByLabel" >getAuthorByLabel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAuthors" >getAuthors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAuthorsName" >getAuthorsName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getCategories" >getCategories</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDailyBook" >getDailyBook</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMyDesk" >getMyDesk</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeFav" >removeFav</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#surpriseMe" >surpriseMe</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateBook" >updateBook</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateBookChapterProgress" >updateBookChapterProgress</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateBookStatus" >updateBookStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#userChapter" >userChapter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(response: <a href="../injectables/Response.html" target="_self">Response</a>, usersService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>, i18n: I18nService, bookRepository: <a href="../interfaces/Book.html" target="_self">Repository&lt;BookEntity&gt;</a>, authorBookRepository: Repository<AuthorBookEntity>, categoryRepository: <a href="../interfaces/Categories.html" target="_self">Repository&lt;CategoriesEntity&gt;</a>, authorRepository: <a href="../interfaces/Author.html" target="_self">Repository&lt;AuthorEntity&gt;</a>, userFavBooksRepository: <a href="../entitys/UserFavBooksEntity.html" target="_self">Repository&lt;UserFavBooksEntity&gt;</a>, userFreebieBooksEntityRepository: <a href="../entitys/UserFreebieBooksEntity.html" target="_self">Repository&lt;UserFreebieBooksEntity&gt;</a>, chaptersEntityRepository: <a href="../interfaces/Chapter.html" target="_self">Repository&lt;ChaptersEntity&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/modules/books/books.service.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>response</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Response.html" target="_self" >Response</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>usersService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18nService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>bookRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Book.html" target="_self" >Repository&lt;BookEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authorBookRepository</td>
+                                                  
+                                                        <td>
+                                                                    <code>Repository&lt;AuthorBookEntity&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>categoryRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Categories.html" target="_self" >Repository&lt;CategoriesEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authorRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Author.html" target="_self" >Repository&lt;AuthorEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userFavBooksRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/UserFavBooksEntity.html" target="_self" >Repository&lt;UserFavBooksEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userFreebieBooksEntityRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/UserFreebieBooksEntity.html" target="_self" >Repository&lt;UserFreebieBooksEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>chaptersEntityRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Chapter.html" target="_self" >Repository&lt;ChaptersEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addFav"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addFav</b></span>
+                        <a href="#addFav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addFav(bookData, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="837"
+                            class="link-to-prism">src/modules/books/books.service.ts:837</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bookData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categoryById"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>categoryById</b></span>
+                        <a href="#categoryById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>categoryById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="265"
+                            class="link-to-prism">src/modules/books/books.service.ts:265</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIfAudioExist"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkIfAudioExist</b></span>
+                        <a href="#checkIfAudioExist"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkIfAudioExist(label)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="633"
+                            class="link-to-prism">src/modules/books/books.service.ts:633</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createBook</b></span>
+                        <a href="#createBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createBook(bookData: <a href="../interfaces/Book.html" target="_self">CreateBookDto</a>, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="413"
+                            class="link-to-prism">src/modules/books/books.service.ts:413</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bookData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Book.html" target="_self" >CreateBookDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAll"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findAll(query: <a href="../classes/queryDto.html" target="_self">queryDto</a>, user: null)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/modules/books/books.service.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/queryDto.html" target="_self" >queryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                            <code>null</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;BooksList&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findOne"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findOne</b></span>
+                        <a href="#findOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findOne(id, query, user: null)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="328"
+                            class="link-to-prism">src/modules/books/books.service.ts:328</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                            <code>null</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;BookDetail | &gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="freebieBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>freebieBook</b></span>
+                        <a href="#freebieBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>freebieBook(user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="303"
+                            class="link-to-prism">src/modules/books/books.service.ts:303</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAuthorByLabel"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getAuthorByLabel</b></span>
+                        <a href="#getAuthorByLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAuthorByLabel(authorLabel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="282"
+                            class="link-to-prism">src/modules/books/books.service.ts:282</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>authorLabel</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAuthors"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getAuthors</b></span>
+                        <a href="#getAuthors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAuthors(bookLabel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="273"
+                            class="link-to-prism">src/modules/books/books.service.ts:273</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bookLabel</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAuthorsName"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getAuthorsName</b></span>
+                        <a href="#getAuthorsName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAuthorsName(authorData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="399"
+                            class="link-to-prism">src/modules/books/books.service.ts:399</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>authorData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCategories"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getCategories</b></span>
+                        <a href="#getCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCategories(query: <a href="../classes/queryDto.html" target="_self">queryDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="596"
+                            class="link-to-prism">src/modules/books/books.service.ts:596</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/queryDto.html" target="_self" >queryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDailyBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getDailyBook</b></span>
+                        <a href="#getDailyBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDailyBook(user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="659"
+                            class="link-to-prism">src/modules/books/books.service.ts:659</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMyDesk"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getMyDesk</b></span>
+                        <a href="#getMyDesk"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMyDesk(query: <a href="../classes/myDeskQueryDto.html" target="_self">myDeskQueryDto</a>, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="678"
+                            class="link-to-prism">src/modules/books/books.service.ts:678</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/myDeskQueryDto.html" target="_self" >myDeskQueryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeFav"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>removeFav</b></span>
+                        <a href="#removeFav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeFav(bookLabel, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="845"
+                            class="link-to-prism">src/modules/books/books.service.ts:845</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bookLabel</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="surpriseMe"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>surpriseMe</b></span>
+                        <a href="#surpriseMe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>surpriseMe(user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">src/modules/books/books.service.ts:183</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateBook</b></span>
+                        <a href="#updateBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateBook(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, bookData: <a href="../interfaces/Book.html" target="_self">CreateBookDto</a>, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="489"
+                            class="link-to-prism">src/modules/books/books.service.ts:489</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bookData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Book.html" target="_self" >CreateBookDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBookChapterProgress"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateBookChapterProgress</b></span>
+                        <a href="#updateBookChapterProgress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateBookChapterProgress(chapterData, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="793"
+                            class="link-to-prism">src/modules/books/books.service.ts:793</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chapterData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBookStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateBookStatus</b></span>
+                        <a href="#updateBookStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateBookStatus(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, status, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="617"
+                            class="link-to-prism">src/modules/books/books.service.ts:617</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userChapter"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>userChapter</b></span>
+                        <a href="#userChapter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>userChapter(bookLabel, userLabel)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/modules/books/books.service.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bookLabel</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userLabel</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable , HttpException, HttpStatus } from &#x27;@nestjs/common&#x27;;
+import { InjectRepository} from &#x27;@nestjs/typeorm&#x27;;
+import { Repository, getConnection, Brackets } from &#x27;typeorm&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { BooksList, BookDetail, Books } from &#x27;./books.interface&#x27;;
+import { CreateBookDto , queryDto, myDeskQueryDto} from &#x27;./dto&#x27;;
+import {
+            BookEntity, BookTranslateEntity,
+            BooksCategoriesEntity, CategoriesEntity,
+            UserFavBooksEntity, UserFreebieBooksEntity
+        } from &#x27;./entities&#x27;;
+import { AuthorBookEntity, AuthorTranslateEntity, AuthorEntity} from &#x27;../authors/entities&#x27;
+import { ChaptersEntity , AudioEntity} from &#x27;../chapters/entities&#x27;
+import { Response } from &#x27;../../helpers/response&#x27;;
+import { UsersService  } from &#x27;../users/users.service&#x27;;
+import { duration_unit, default_daily_book, member_type } from &#x27;../../helpers/util&#x27;;
+import { sort_by, desk_status_options } from &#x27;../../helpers/util&#x27;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import { UserEntity } from &#x27;../users/entities&#x27;;
+
+@Injectable()
+export class BooksService {
+
+    constructor(
+        private readonly response: Response,
+        private readonly usersService: UsersService,
+
+        private readonly i18n: I18nService,
+
+        @InjectRepository(BookEntity)
+        private bookRepository: Repository&lt;BookEntity&gt;,
+
+        @InjectRepository(AuthorBookEntity)
+        private authorBookRepository: Repository&lt;AuthorBookEntity&gt;,
+
+        @InjectRepository(CategoriesEntity)
+        private categoryRepository: Repository&lt;CategoriesEntity&gt;,
+
+        @InjectRepository(AuthorEntity)
+        private authorRepository: Repository&lt;AuthorEntity&gt;,
+
+        @InjectRepository(UserFavBooksEntity)
+        private userFavBooksRepository: Repository&lt;UserFavBooksEntity&gt;,
+
+        @InjectRepository(UserFreebieBooksEntity)
+        private userFreebieBooksEntityRepository: Repository&lt;UserFreebieBooksEntity&gt;,
+
+        @InjectRepository(ChaptersEntity)
+        private chaptersEntityRepository: Repository&lt;ChaptersEntity&gt;,
+
+      ) {}
+
+
+    // find all books
+    async findAll(query: queryDto, user &#x3D; null):  Promise&lt;BooksList&gt; {
+
+        const skippedItems:number &#x3D; (query.page - 1) * query.size;
+
+        let book &#x3D; this.bookRepository
+        .createQueryBuilder(&#x27;books&#x27;)
+        .innerJoin( BookTranslateEntity, &#x27;bookTranslate&#x27;, &#x27;bookTranslate.book_label &#x3D; books.book_label&#x27;)
+        .leftJoin( AuthorBookEntity, &#x27;authorBook&#x27;, &#x27;authorBook.book_label &#x3D; books.book_label&#x27; )
+        .leftJoin( AuthorTranslateEntity, &#x27;author&#x27;, &#x27;authorBook.author_label &#x3D; author.author_label&#x27;)
+        .leftJoin( ChaptersEntity, &#x27;chapters&#x27;, &#x27;books.book_label &#x3D; chapters.book_label&#x27;)
+        .leftJoin( AudioEntity, &#x27;audio&#x27;, &#x27;audio.chapter_label &#x3D; chapters.chapter_label&#x27; )
+        .leftJoin( BooksCategoriesEntity, &#x27;bookCategories&#x27;, &#x27;books.book_label &#x3D; bookCategories.book_label&#x27;)
+        .select([
+                &#x27;books._created_at as created_at&#x27;,
+                &#x27;books.note as note&#x27;,
+                &#x27;books._id as id&#x27;, &#x27;title&#x27;,
+                &#x27;json_agg(audio.language) AS languages&#x27;,
+                &#x27;json_agg(audio.audio_path) AS audio_paths&#x27;,
+                &#x27;books.cover_image as cover_image&#x27;,
+                &#x27;books.deleted_by as deleted_by&#x27;,
+                &#x27;books.book_label as label, books.status as status&#x27;,
+                &#x60;json_agg(DISTINCT jsonb_build_object(&#x27;label&#x27;, author.author_label, &#x27;name&#x27;, author.author_name, &#x27;about&#x27;, author.author_intro)) AS authors &#x60;,
+                &#x27;bookTranslate.subtitle as subtitle&#x27;, &#x27;bookTranslate.duration as duration&#x27;,
+            ])
+
+        if(query.title) {
+            book &#x3D; book.where(&quot;lower(bookTranslate.title) like &#x27;%&#x27; || :title || &#x27;%&#x27;&quot;, { title: query.title.toLowerCase() })
+        }
+        if(query.category) {
+            book &#x3D; book.andWhere(&#x27;bookCategories.category_label IN (:...label)&#x27;, { label: query.category.split(&#x27;,&#x27;) })
+        }
+        if(query.status){
+            book &#x3D; book.andWhere(&#x27;books.status &#x3D; :status&#x27;, { status: query.status })
+        }
+
+        if(query.search) {
+            book &#x3D; book
+            .andWhere(new Brackets(qb &#x3D;&gt; {
+                qb.where(&quot;lower(bookTranslate.title) like &#x27;%&#x27; || :searchTitle || &#x27;%&#x27;&quot;, { searchTitle: query.search.toLowerCase() })
+                qb.orWhere(&quot;lower(bookTranslate.subtitle) like &#x27;%&#x27; || :searchSubtitle || &#x27;%&#x27;&quot;, { searchSubtitle: query.search.toLowerCase() })
+                qb.orWhere(&quot;lower(author.author_name) like &#x27;%&#x27; || :searchAuthor || &#x27;%&#x27;&quot;, { searchAuthor: query.search.toLowerCase() })
+                qb.orWhere(&quot;lower(author.author_intro) like &#x27;%&#x27; || :searchAuthorIntro || &#x27;%&#x27;&quot;, { searchAuthorIntro: query.search.toLowerCase() })
+                qb.orWhere(&quot;lower(bookTranslate.intro) like &#x27;%&#x27; || :searchAuthorIntroOnBook || &#x27;%&#x27;&quot;, { searchAuthorIntroOnBook: query.search.toLowerCase() })
+                qb.orWhere(&quot;lower(bookTranslate.author) like &#x27;%&#x27; || :searchAuthorOnBook || &#x27;%&#x27;&quot;, { searchAuthorOnBook: query.search.toLowerCase() })
+            }))
+        }
+
+        book &#x3D; book.orderBy(&#x27;books._created_at&#x27;, query.sort &#x3D;&#x3D;&#x3D; sort_by.ASC ? sort_by.ASC : sort_by.DESC)
+                    .groupBy(
+                            &#x60;books._id, bookTranslate.title, 
+                            books.cover_image, books.deleted_by, 
+                            books.book_label, books.status, 
+                            books._created_at, books.note, 
+                            bookTranslate.subtitle, bookTranslate.duration
+                            &#x60;)
+                    .offset(skippedItems)
+
+        let books &#x3D; []
+
+        try {
+            if (query.size) {
+                books &#x3D; await book.limit(query.size).getRawMany()
+            } else {
+                books &#x3D; await book.getRawMany()
+            }
+
+        } catch(err) {
+            Logger.error(&#x60;failed to get books, error: ${err}&#x60;)
+            throw new HttpException(await this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.INVALID_GET_DATA&#x27;, { lang: await userLang(user) }),
+                null, null), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        }
+
+        let freebie &#x3D; default_daily_book;
+        let isLocked &#x3D; true;
+        const tts_folder &#x3D; /ttsfolder/;
+
+        if(user){
+            const userData &#x3D; await this.usersService.findOne(user.sub, null);
+            isLocked &#x3D; userData[&#x27;member_type&#x27;] &#x3D;&#x3D;&#x3D; member_type.PAID ? false : true;
+            // get user freebie book
+            const freebieBook &#x3D; await this.freebieBook(user);
+            freebie &#x3D; freebieBook ? freebieBook[&#x27;label&#x27;] : default_daily_book;
+        }
+
+        const data &#x3D; books.map(async(el) &#x3D;&gt; {
+
+            el.is_locked &#x3D; isLocked
+
+            // islocked false if freebiebook
+            if (el.label &#x3D;&#x3D;&#x3D; freebie) el.is_locked &#x3D; false
+
+            const status &#x3D; (el as any).status &#x3D;&#x3D;&#x3D; &#x27;INACTIVE&#x27; ? false : true;
+            // el.is_contain_mandarin_audio &#x3D; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-TW&#x27;);
+            // el.is_contain_cantonese_audio &#x3D; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-HK&#x27;);
+            el.is_contain_mandarin_audio &#x3D; el.audio_paths.some(audio &#x3D;&gt; !tts_folder.test(audio) &amp;&amp; audio !&#x3D;&#x3D; null) &amp;&amp; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-TW&#x27;);
+            el.is_contain_cantonese_audio &#x3D; el.audio_paths.some(audio &#x3D;&gt; !tts_folder.test(audio) &amp;&amp; audio !&#x3D;&#x3D; null) &amp;&amp; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-HK&#x27;);
+            delete el.languages
+            delete el.audio_paths
+
+            const authors &#x3D; []
+            await Promise.all(el.authors.map((author)&#x3D;&gt;{
+                if( author.label !&#x3D;&#x3D; null || author.name !&#x3D;&#x3D; null ) {
+                   authors.push(author)
+                }
+            })
+            )
+            el.authors &#x3D; authors;
+            el.active &#x3D; status;
+            el.cover_image &#x3D; el.cover_image ?&#x60;${process.env.ASSEST_BASE_URL}${el.cover_image}&#x60; : el.cover_image;
+
+            delete el.deleted_by;
+
+            return el
+        })
+
+        return {
+            page: query.page,
+            size: query.size,
+            total: await book.getCount(),
+            books: await Promise.all(data),
+        }
+    };
+
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async surpriseMe(user : any): Promise&lt;Object&gt; {
+
+        const book &#x3D; this.bookRepository
+        .createQueryBuilder(&#x27;books&#x27;)
+        .innerJoin( BookTranslateEntity, &#x27;bookTranslate&#x27;, &#x27;bookTranslate.book_label &#x3D; books.book_label&#x27;)
+        .leftJoin( AuthorBookEntity, &#x27;authorBook&#x27;, &#x27;authorBook.book_label &#x3D; books.book_label&#x27; )
+        .leftJoin( AuthorTranslateEntity, &#x27;author&#x27;, &#x27;authorBook.author_label &#x3D; author.author_label&#x27;)
+        .leftJoin( ChaptersEntity, &#x27;chapters&#x27;, &#x27;books.book_label &#x3D; chapters.book_label&#x27;)
+        .leftJoin( AudioEntity, &#x27;audio&#x27;, &#x27;audio.chapter_label &#x3D; chapters.chapter_label&#x27; )
+        .leftJoin( BooksCategoriesEntity, &#x27;bookCategories&#x27;, &#x27;books.book_label &#x3D; bookCategories.book_label&#x27;)
+        .select([
+                &#x27;books._created_at as created_at&#x27;,
+                &#x27;books.note as note&#x27;,
+                &#x27;books._id as id&#x27;, &#x27;title&#x27;,
+                &#x27;json_agg(audio.language) AS languages&#x27;,
+                &#x27;books.cover_image as cover_image&#x27;,
+                &#x27;books.deleted_by as deleted_by&#x27;,
+                &#x27;books.book_label as label, books.status as status&#x27;,
+                &#x60;json_agg(DISTINCT jsonb_build_object(&#x27;label&#x27;, author.author_label, &#x27;name&#x27;, author.author_name, &#x27;about&#x27;, author.author_intro)) AS authors &#x60;,
+                &#x27;bookTranslate.subtitle as subtitle&#x27;, &#x27;bookTranslate.duration as duration&#x27;,
+         ])
+        .orderBy(&quot;RANDOM()&quot;)
+        .groupBy(
+            &#x60;books._id, bookTranslate.title, 
+            books.cover_image, books.deleted_by, 
+            books.book_label, books.status, 
+            books._created_at, books.note, 
+            bookTranslate.subtitle, bookTranslate.duration
+            &#x60;)
+        .limit(6)
+
+        let books &#x3D; []
+
+        books &#x3D; await book.getRawMany()
+
+
+        let isLocked &#x3D; true;
+        let freebie &#x3D; null;
+
+        if(user){
+
+            const userData &#x3D; user ? await this.usersService.findOne(user.sub, null) : null;
+            isLocked &#x3D; userData[&#x27;member_type&#x27;] &#x3D;&#x3D;&#x3D; member_type.PAID ? false : true;
+
+            // get user freebie book
+            const freebieBook &#x3D; await this.freebieBook(user);
+            freebie &#x3D; freebieBook ? freebieBook[&#x27;label&#x27;] : default_daily_book;
+
+        }
+
+
+        const data &#x3D; books.map(async(el) &#x3D;&gt; {
+            el.is_locked &#x3D; isLocked
+
+            // islocked false if freebiebook
+            if (el.label &#x3D;&#x3D;&#x3D; freebie) el.is_locked &#x3D; false
+
+            const status &#x3D; (el as any).status &#x3D;&#x3D;&#x3D; &#x27;INACTIVE&#x27; ? false : true;
+            el.is_contain_mandarin_audio &#x3D; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-TW&#x27;);
+            el.is_contain_cantonese_audio &#x3D; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-HK&#x27;);
+            delete el.languages
+
+            const authors &#x3D; []
+            await Promise.all(el.authors.map((author)&#x3D;&gt;{
+                if( author.label !&#x3D;&#x3D; null || author.name !&#x3D;&#x3D; null ) {
+                   authors.push(author)
+                }
+            })
+            )
+            el.authors &#x3D; authors;
+            el.active &#x3D; status;
+            el.cover_image &#x3D; el.cover_image ?&#x60;${process.env.ASSEST_BASE_URL}${el.cover_image}&#x60; : el.cover_image;
+
+            delete el.deleted_by;
+
+            return el
+        })
+
+        return Promise.all(data);
+    }
+
+
+    async categoryById(id: string) {
+        return await this.categoryRepository
+                        .createQueryBuilder(&#x27;category&#x27;)
+                        .select(&#x27;category_label&#x27;)
+                        .where(&#x27;category._id &#x3D; :id&#x27;, { id })
+                        .getRawOne();
+    };
+
+    async getAuthors(bookLabel: string) {
+        return await this.authorBookRepository
+                    .createQueryBuilder(&#x27;bookAuthor&#x27;)
+                    .select([&#x27;authorTranlsate.author_name as name&#x27;, &#x27;bookAuthor.author_label as label&#x27;, &#x27;authorTranlsate.author_intro as about&#x27; ])
+                    .innerJoin( AuthorTranslateEntity, &#x27;authorTranlsate&#x27;, &#x27;authorTranlsate.author_label &#x3D; bookAuthor.author_label&#x27;)
+                    .where(&#x27;bookAuthor.book_label &#x3D; :bookLabel&#x27;, { bookLabel })
+                    .getRawMany()
+    };
+
+    async getAuthorByLabel(authorLabel: string) {
+        return await this.authorRepository
+                    .createQueryBuilder(&#x27;author&#x27;)
+                    .select([&#x27;authorTranlsate.author_name as name&#x27;])
+                    .innerJoin( AuthorTranslateEntity, &#x27;authorTranlsate&#x27;, &#x27;authorTranlsate.author_label &#x3D; author.author_label&#x27;)
+                    .where(&#x27;author.author_label &#x3D; :authorLabel&#x27;, { authorLabel })
+                    .getRawOne()
+    };
+    async userChapter(bookLabel, userLabel) {
+        const userFav &#x3D; await this.userFavBooksRepository
+                .createQueryBuilder(&#x27;userfav&#x27;)
+                .select([
+                    &#x27;userfav.progress_chapter as progress_chapter&#x27;,
+                    &#x27;userfav.total_chapters as total_chapters&#x27;,
+                    &#x27;userfav.is_completed as is_completed&#x27;
+                ])
+                .where(&#x27;userfav.book_label &#x3D; :bookLabel&#x27;, { bookLabel })
+                .andWhere(&#x27;userfav.user_label &#x3D; :userLabel&#x27;, { userLabel })
+                .getRawOne();
+        return userFav
+    };
+    async freebieBook(user) {
+        const userData &#x3D; await this.usersService.findOne(user.sub, null)
+        const freebie &#x3D; await this.userFreebieBooksEntityRepository
+            .createQueryBuilder(&#x27;freebiebook&#x27;)
+            .select(
+                [&#x27;f._id as id&#x27;,
+                 &#x27;f.book_label as label&#x27;,
+                ])
+            .from(
+                subQuery &#x3D;&gt; {
+                    return subQuery
+                    .select(&quot;freebie.*&quot;)
+                    .addSelect(&#x60;CASE WHEN LEAD(free_assign_date) OVER(ORDER BY free_assign_date)
+                    IS NULL THEN now()::date + interval &#x27;1d&#x27; ELSE
+                    LEAD(free_assign_date) OVER(ORDER BY free_assign_date) END as NextValue&#x60;)
+                    .from(UserFreebieBooksEntity, &quot;freebie&quot;)
+                    .where(&#x27;freebie.user_label &#x3D; :userLabel&#x27;, { userLabel: userData[&#x27;label&#x27;] })
+                    }, &quot;f&quot;
+            )
+            .where(&#x60;now() BETWEEN freebiebook.free_assign_date AND NextValue&#x60;)
+            .limit(1)
+            .getRawOne();
+
+        return freebie
+    };
+    async findOne(id, query, user &#x3D; null): Promise&lt;BookDetail | []&gt; {
+
+        const label &#x3D; query &amp;&amp; query.label ? query.label : undefined
+        const where &#x3D; &#x27;books.book_label &#x3D; :label&#x27;
+
+        const book &#x3D; await this.bookRepository
+            .createQueryBuilder(&#x27;books&#x27;)
+            .select([&#x27;books._id as id&#x27;,
+                &#x27;books.note as note&#x27;,
+                &#x27;books.isbn as ISBN&#x27;, &#x27;books.ref_link as ref_link&#x27;,
+                &#x27;books.book_label as label&#x27;, &#x27;books.status as status&#x27;,
+                &#x27;books.cover_image as cover_image&#x27;, &#x27;bookTranslate.title as title&#x27;,
+                &#x27;bookTranslate.subtitle as subtitle&#x27;,
+                &#x27;bookTranslate.intro as introduction&#x27;, &#x27;bookTranslate.who_is_it_for as suitable_audience&#x27;,
+                &#x27;bookTranslate.duration as duration&#x27;,
+                &#x60;json_agg(json_build_object(&#x27;id&#x27;, categories._id, &#x27;label&#x27;, categories.category_label)) AS categories&#x60;
+             ])
+            .leftJoin( BookTranslateEntity, &#x27;bookTranslate&#x27;, &#x27;bookTranslate.book_label &#x3D; books.book_label&#x27;)
+            .leftJoin( BooksCategoriesEntity, &#x27;bookCategories&#x27;, &#x27;bookTranslate.book_label &#x3D; bookCategories.book_label&#x27;, {isremoved: false})
+            .leftJoin( CategoriesEntity, &#x27;categories&#x27;, &#x27;categories.category_label &#x3D; bookCategories.category_label&#x27;)
+            .where(&#x27;books._id &#x3D; :id&#x27;, { id })
+            .orWhere( where, { label })
+            .groupBy(&#x27;books._id, books.isbn, books.book_label, books.status, books.ref_link, cover_image, bookTranslate.title, bookTranslate.intro, bookTranslate.duration, bookTranslate.subtitle, bookTranslate.who_is_it_for, books.note&#x27;)
+            .getRawOne();
+
+
+        if (!book || book.length &#x3D;&#x3D;&#x3D; 0 ) {
+            Logger.error(&#x60;book not found for id: ${id} and label ${label}&#x60;, {book_id : id, book_label : label, user : user});
+            return [];
+        };
+
+        const bookLabel &#x3D; (book as any).label;
+        book.active &#x3D; book.status &#x3D;&#x3D;&#x3D; &#x27;ACTIVE&#x27; ? true : false;
+        const authors &#x3D; await this.getAuthors(bookLabel);
+        book.image &#x3D; book.cover_image ?&#x60;${process.env.ASSEST_BASE_URL}${book.cover_image}&#x60; : book.cover_image;
+
+        const totalChapters &#x3D; await this.chaptersEntityRepository
+            .createQueryBuilder(&#x27;chapter&#x27;)
+            .where(&#x27;chapter.book_label &#x3D; :bookLabel&#x27;, { bookLabel })
+            .getCount();
+
+        let user_chapters &#x3D; {
+            progress_chapter: 0,
+            total_chapters : totalChapters,
+            is_completed : false
+        }
+
+        book[&#x27;is_favorite&#x27;] &#x3D; false;
+        const checkAudio &#x3D; await this.checkIfAudioExist(bookLabel);
+
+        if ( user ) {
+            const userData &#x3D; await this.usersService.findOne(user.sub, null)
+            const userLabel &#x3D; (userData as any).label;
+
+            const chapters &#x3D; await this.userChapter(bookLabel, userLabel);
+
+            book[&#x27;is_favorite&#x27;] &#x3D; chapters ? true : false;
+
+            const isFreebie &#x3D; await this.freebieBook(user)
+
+            const freebie_book &#x3D; isFreebie &amp;&amp; ( isFreebie.label &#x3D;&#x3D;&#x3D; book.label )
+
+            if(chapters) {
+                user_chapters &#x3D; chapters
+            }
+            return Object.assign(book, { authors, user_chapters, freebie_book }, checkAudio );
+        } else {
+            return Object.assign(book, { authors, user_chapters }, checkAudio );
+        }
+    }
+
+    async getAuthorsName(authorData) {
+        const authors &#x3D; []
+        await Promise.all(authorData.map(async(el) &#x3D;&gt; {
+            const author &#x3D; await this.getAuthorByLabel(el);
+            if( !author ) {
+                const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(null) })
+                const error &#x3D; [{ &quot;author&quot; : errorMessage}]
+                throw new HttpException(await this.response.response(errorMessage,null, error), HttpStatus.NOT_FOUND)
+            }
+            authors.push(author.name);
+        }))
+        return authors;
+    };
+
+    async createBook(bookData: CreateBookDto, user): Promise&lt;void&gt; {
+
+        const queryRunner &#x3D; getConnection().createQueryRunner();
+
+        await queryRunner.connect();
+
+        await queryRunner.startTransaction();
+
+        const authors &#x3D; await this.getAuthorsName(bookData.authors);
+
+        try {
+            const status &#x3D; bookData.active ? &#x27;ACTIVE&#x27; : &#x27;INACTIVE&#x27;;
+
+            const book &#x3D; new BookEntity()
+            book._database_id &#x3D; &#x27;&#x27;
+            book._created_by &#x3D; user.sub
+            book._owner_id &#x3D; user.sub
+            book.cover_image &#x3D; bookData.cover_image
+            book.isbn &#x3D; bookData.isbn
+            book.ref_link &#x3D; bookData.ref_link
+            book.status &#x3D; status
+            book.note &#x3D; bookData.note
+
+            const { book_label } &#x3D; await queryRunner.manager.save(book);
+
+            const bookTranslate &#x3D; new BookTranslateEntity()
+            bookTranslate.book_label &#x3D; book_label
+            bookTranslate._database_id &#x3D; &#x27;&#x27;
+            bookTranslate._created_by &#x3D; user.sub
+            bookTranslate._owner_id &#x3D; user.sub
+            bookTranslate.title &#x3D; bookData.title
+            bookTranslate.subtitle &#x3D; bookData.subtitle
+            bookTranslate.author &#x3D; authors.join(&#x27;|&#x27;)
+            bookTranslate.duration &#x3D; &#x60;${bookData.duration}${duration_unit.MINUTES}&#x60;
+            bookTranslate.intro &#x3D; bookData.introduction
+            bookTranslate.who_is_it_for &#x3D; bookData.suitable_audience
+
+
+            const saveCat &#x3D; bookData.categories.map(async (categoryLabel)&#x3D;&gt;{
+
+                const bookCategories &#x3D; new BooksCategoriesEntity()
+                bookCategories.book_label &#x3D; book_label
+                bookCategories._database_id &#x3D; &#x27;&#x27;
+                bookCategories._owner_id &#x3D; user.sub
+                bookCategories._created_by &#x3D; user.sub
+                bookCategories.category_label &#x3D; categoryLabel
+
+                await queryRunner.manager.save(bookCategories);
+            });
+
+            await queryRunner.manager.save(bookTranslate);
+
+            await Promise.all(saveCat);
+
+            if(bookData.authors &amp;&amp; bookData.authors.length &gt; 0) {
+                const saveAuthor &#x3D; bookData.authors.map(async (authorLabel) &#x3D;&gt;{
+                    const bookAuthor &#x3D; new AuthorBookEntity(authorLabel, book_label, &#x27;&#x27;, user.sub, user.sub)
+                    await queryRunner.manager.save(bookAuthor);
+                })
+                await Promise.all(saveAuthor);
+            }
+            // commit transaction
+            await queryRunner.commitTransaction();
+
+        } catch (err) {
+            // rollback on err
+            await queryRunner.rollbackTransaction();
+            Logger.error(&#x60;failed to create book ,userId: ${user.sub}, error:${err}&#x60;);
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(null) })
+            const error &#x3D; [{ &quot;book&quot; : errorMessage}]
+            throw new HttpException(await this.response.response(errorMessage, null, error), HttpStatus.INTERNAL_SERVER_ERROR);
+        } finally {
+            // release query runner
+            await queryRunner.release();
+        }
+    }
+    async updateBook( id: string, bookData: CreateBookDto, user ): Promise&lt;void&gt; {
+
+        const book &#x3D; await this.findOne(id, null)
+
+        const bookLabel &#x3D; (book as any).label;
+
+
+        const queryRunner &#x3D; getConnection().createQueryRunner();
+        const queryBuilder &#x3D; getConnection().createQueryBuilder(queryRunner);
+        await queryRunner.connect();
+
+        // open new transaction
+        await queryRunner.startTransaction();
+
+        const authors &#x3D; await this.getAuthorsName(bookData.authors);
+        const status &#x3D; bookData.active ? &#x27;ACTIVE&#x27; : &#x27;INACTIVE&#x27;;
+
+        const bookUpdatedData &#x3D; {
+            _updated_by: user.sub,
+            cover_image: bookData.cover_image,
+            isbn: bookData.isbn,
+            ref_link: bookData.ref_link,
+            status,
+            note: bookData.note
+        }
+
+        const bookTranslate &#x3D; {
+            title : bookData.title,
+            subtitle : bookData.subtitle,
+            duration: &#x60;${bookData.duration}${duration_unit.MINUTES}&#x60;,
+            intro: bookData.introduction,
+            who_is_it_for: bookData.suitable_audience,
+            author: authors.join(&#x27;|&#x27;)
+        }
+        try {
+
+        await queryRunner.manager.update(BookEntity, { _id: id }, bookUpdatedData );
+        await queryRunner.manager.update(BookTranslateEntity, { book_label: bookLabel }, bookTranslate );
+
+        const catLabel &#x3D; []
+        const updateCatData &#x3D; bookData.categories.map(async (categoryLabel)&#x3D;&gt; {
+
+            const category &#x3D;  {
+                book_label: bookLabel,
+                _database_id: &#x27;&#x27;,
+                _owner_id: user.sub,
+                _created_by : user.sub,
+                _updated_by: user.sub,
+                category_label: categoryLabel
+            }
+
+            catLabel.push(categoryLabel)
+
+            await queryBuilder.insert().into(BooksCategoriesEntity)
+            .values(category).onConflict(&#x60;DO NOTHING&#x60;).execute();
+        })
+
+        await Promise.all(updateCatData)
+
+        await queryRunner.manager.createQueryBuilder().delete().from(BooksCategoriesEntity)
+        .where(&#x27;book_label &#x3D; :bookLabel&#x27;, { bookLabel })
+        .andWhere(new Brackets(qb &#x3D;&gt; {
+            qb.where(&quot;category_label NOT IN (:...categories)&quot;, { categories: catLabel })
+        })).execute()
+
+        if( bookData.authors.length &#x3D;&#x3D;&#x3D; 0 ){
+            await queryRunner.manager.createQueryBuilder().delete().from(AuthorBookEntity)
+            .where(&#x27;book_label &#x3D; :bookLabel&#x27;, { bookLabel }).execute()
+        }else {
+            const authorsLabel &#x3D; []
+            const updateAuthor &#x3D; bookData.authors.map(async (authorLabel)&#x3D;&gt; {
+                const author &#x3D;  {
+                    book_label: bookLabel,
+                    _database_id: &#x27;&#x27;,
+                    _owner_id: user.sub,
+                    _created_by : user.sub,
+                    _updated_by: user.sub,
+                    author_label: authorLabel
+                }
+                authorsLabel.push(authorLabel)
+
+                await queryBuilder.insert().into(AuthorBookEntity)
+                .values(author).onConflict(&#x60;DO NOTHING&#x60;).execute();
+            })
+
+            await Promise.all(updateAuthor)
+
+            await queryRunner.manager.createQueryBuilder().delete().from(AuthorBookEntity)
+            .where(&#x27;book_label &#x3D; :bookLabel&#x27;, { bookLabel })
+            .andWhere(new Brackets(qb &#x3D;&gt; {
+                qb.where(&quot;author_label NOT IN (:...authors)&quot;, { authors: authorsLabel })
+            })).execute()
+        }
+
+        await queryRunner.commitTransaction();
+
+        } catch (err) {
+            await queryRunner.rollbackTransaction()
+            Logger.error(&#x60;failed to update book ,userId: ${user.sub}, error:${err}&#x60;);
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(user) })
+            const error &#x3D; [{ &quot;book&quot; : errorMessage}]
+            throw new HttpException(await this.response.response(errorMessage, null, error), HttpStatus.INTERNAL_SERVER_ERROR);
+        } finally {
+            await queryRunner.release();
+        };
+    };
+
+    async getCategories(query: queryDto): Promise&lt;Object&gt; {
+        // get offset
+        const skippedItems &#x3D; (query.page - 1) * query.size;
+        const total &#x3D; await this.categoryRepository.count();
+
+        const category &#x3D; await this.categoryRepository
+        .createQueryBuilder(&#x27;categories&#x27;)
+        .select([&#x27;categories._id as id&#x27;, &#x27;categories.category_label as label&#x27;])
+        .orderBy(&#x27;categories._created_at&#x27;, query.sort &#x3D;&#x3D;&#x3D; sort_by.ASC ? sort_by.ASC : sort_by.DESC)
+        .offset(skippedItems)
+        .limit(query.size)
+        .getRawMany();
+
+        return {
+            page: query.page,
+            size: query.size,
+            total,
+            categories: category
+        };
+    };
+
+    async updateBookStatus( id: string, status, user ): Promise&lt;void&gt; {
+
+        const bookStatus &#x3D;  status.active ?  &#x27;ACTIVE&#x27; : &#x27;INACTIVE&#x27;;
+        try {
+            await this.bookRepository.update(
+                    { _id: id },  { status : bookStatus }
+                )
+        } catch (err) {
+            Logger.error(&#x60;Failed To Update Book&#x27;s Status,userId: ${user.sub}, error:${err}&#x60;);
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(user) })
+            const error &#x3D; [{ &quot;book&quot; : errorMessage}]
+            throw new HttpException(await this.response.response(errorMessage, null, error), HttpStatus.INTERNAL_SERVER_ERROR);
+
+        };
+    };
+
+    async checkIfAudioExist(label): Promise&lt;Object&gt;{
+
+        const audios &#x3D; await this.chaptersEntityRepository
+            .createQueryBuilder(&#x27;chapter&#x27;)
+            .select([
+                &#x27;json_agg(audio.language) AS languages&#x27;,
+                &#x27;json_agg(audio.audio_path) AS audio_paths&#x27;,
+            ])
+            .leftJoin( AudioEntity, &#x27;audio&#x27;, &#x27;audio.chapter_label &#x3D; chapter.chapter_label&#x27; )
+            .where(&#x27;chapter.book_label &#x3D; :label&#x27;, {label})
+            .getRawOne();
+
+        const tts_folder &#x3D; /ttsfolder/;
+        let is_contain_mandarin_audio &#x3D; false;
+        let is_contain_cantonese_audio &#x3D; false;
+        if(audios.audio_paths !&#x3D; null) { 
+            is_contain_mandarin_audio &#x3D; audios.audio_paths.some(audio &#x3D;&gt; !tts_folder.test(audio) &amp;&amp; audio !&#x3D;&#x3D; null) &amp;&amp; audios.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-TW&#x27;);
+            is_contain_cantonese_audio &#x3D; audios.audio_paths.some(audio &#x3D;&gt; !tts_folder.test(audio) &amp;&amp; audio !&#x3D;&#x3D; null) &amp;&amp; audios.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-HK&#x27;);
+        }
+        return {
+            is_contain_mandarin_audio,
+            is_contain_cantonese_audio
+        };
+
+    }
+
+    async getDailyBook(user): Promise&lt;Object&gt; {
+        let book &#x3D; {}
+        let freebie &#x3D; {
+            label : default_daily_book
+        }
+        if(user) {
+            const freebieBook &#x3D; await this.freebieBook(user);
+            if (freebieBook) freebie &#x3D; freebieBook;
+            book &#x3D; await this.findOne(freebie[&#x27;id&#x27;], { label: freebie[&#x27;label&#x27;], user })
+            if(Object.keys(book).length &#x3D;&#x3D;&#x3D; 0) {
+                book &#x3D; await this.findOne(&#x27;find&#x27;, { label: default_daily_book })
+            }
+        } else {
+            book &#x3D; await this.findOne(&#x27;find&#x27;, { label: freebie[&#x27;label&#x27;] })
+        }
+        return book;
+    }
+
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getMyDesk(query : myDeskQueryDto, user) : Promise&lt;Object&gt;{
+
+            const skippedItems:number &#x3D; (query.page - 1) * query.size;
+            const member &#x3D; await this.usersService.findOne(user.sub, null);
+            const userLabel &#x3D;  member[&#x27;label&#x27;];
+
+            let userFav &#x3D; await this.userFavBooksRepository
+                    .createQueryBuilder(&#x27;userfav&#x27;)
+                    .innerJoin( BookTranslateEntity, &#x27;bookTranslate&#x27;, &#x27;bookTranslate.book_label &#x3D; userfav.book_label&#x27;)
+                    .leftJoin( UserEntity, &#x27;user&#x27;, &#x27;user.user_label &#x3D; userfav.user_label&#x27;)
+                    .leftJoin( BookEntity, &#x27;books&#x27;, &#x27;books.book_label &#x3D; userfav.book_label&#x27;)
+                    .leftJoin( AuthorBookEntity, &#x27;authorBook&#x27;, &#x27;authorBook.book_label &#x3D; userfav.book_label&#x27; )
+                    .leftJoin( AuthorTranslateEntity, &#x27;author&#x27;, &#x27;authorBook.author_label &#x3D; author.author_label&#x27;)
+                    .leftJoin( ChaptersEntity, &#x27;chapters&#x27;, &#x27;books.book_label &#x3D; chapters.book_label&#x27;)
+                    .leftJoin( AudioEntity, &#x27;audio&#x27;, &#x27;audio.chapter_label &#x3D; chapters.chapter_label&#x27; )
+                    .select([
+                        &#x27;books._id as id&#x27;,
+                        &#x27;bookTranslate.title as title&#x27;,
+                        &#x27;userfav.progress_chapter as progress_chapter&#x27;,
+                        &#x27;userfav.total_chapters as total_chapters&#x27;,
+                        &#x27;userfav.is_completed as is_completed&#x27;,
+                        &#x27;json_agg(audio.language) AS languages&#x27;,
+                        &#x27;bookTranslate.subtitle as subtitle&#x27;,
+                        &#x27;books.status as status&#x27;,
+                        &#x27;bookTranslate.duration as duration&#x27;,
+                        &#x27;books.note as note&#x27;,
+                        &#x27;books._created_at as created_at&#x27;,
+                        &#x27;books.cover_image as cover_image&#x27;,
+                        &#x27;userfav.book_label as book_label&#x27;,
+                        &#x27;userfav.user_label as user_label&#x27;,
+                        &#x60;json_agg(DISTINCT jsonb_build_object(&#x27;label&#x27;, author.author_label, &#x27;name&#x27;, author.author_name, &#x27;about&#x27;, author.author_intro)) AS authors &#x60;,
+                    ])
+                    .where(&#x27;userfav.user_label &#x3D; :userLabel&#x27;, { userLabel })
+
+            if(query.is_completed){
+                userFav &#x3D; userFav.andWhere(&#x27;userfav.is_completed &#x3D; :is_completed&#x27;, { is_completed: query.is_completed })
+            }
+
+ 
+            let query_status: any;
+            
+            if(query.status){
+                query_status &#x3D; query.status.toUpperCase();
+                userFav &#x3D; userFav.andWhere(&#x27;books.status &#x3D; :status&#x27;, { 
+                        status : ( query_status &#x3D;&#x3D;&#x3D; desk_status_options.ACTIVE ) ? desk_status_options.ACTIVE : desk_status_options.INACTIVE 
+                    }
+                );
+            }
+
+            userFav &#x3D; userFav.orderBy(&#x27;books._created_at&#x27;, query.sort &#x3D;&#x3D;&#x3D; sort_by.ASC ? sort_by.ASC : sort_by.DESC)
+                             .groupBy(
+                                    &#x60;books._id, bookTranslate.title, userfav.progress_chapter, 
+                                    userfav.total_chapters, userfav.is_completed, books.status, 
+                                    books._created_at, books.cover_image, books.note, 
+                                    bookTranslate.subtitle, userfav.book_label, books.status, 
+                                    bookTranslate.subtitle, userfav.is_completed, userfav.user_label,
+                                    bookTranslate.duration
+                                    &#x60;)
+                             .offset(skippedItems)
+            let data &#x3D; []
+            try {
+                if (query.size) {
+                    data &#x3D; await userFav.limit(query.size).getRawMany()
+                } else {
+                    data &#x3D; await userFav.getRawMany()
+                }
+            } catch(err) {
+                Logger.error(&#x60;failed to get books, error: ${err}&#x60;)
+                const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.INVALID_GET_DATA&#x27;, { lang: await userLang(user) })
+                const error &#x3D; [{ &quot;book&quot; : errorMessage}]
+                throw new HttpException(await this.response.response(errorMessage, null, null), HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+
+            let freebie &#x3D; default_daily_book;
+            let isFreeMember &#x3D; true;
+
+            if(user) {
+                const userData &#x3D; await this.usersService.findOne(user.sub, null);
+                isFreeMember &#x3D; userData[&#x27;member_type&#x27;] &#x3D;&#x3D;&#x3D; member_type.FREE ? true : false;
+                // get user freebie book
+                const freebieBook &#x3D; await this.freebieBook(user);
+                freebie &#x3D; freebieBook ? freebieBook[&#x27;label&#x27;] : default_daily_book;
+            }
+
+            const books &#x3D; data.map(async(el) &#x3D;&gt; {
+                const authors &#x3D; []
+                let checkAudio &#x3D; await this.checkIfAudioExist(el.book_label);
+                el.is_locked &#x3D; isFreeMember
+                el.is_freebie_book &#x3D; el.book_label &#x3D;&#x3D; freebie ? true : false;
+                // el.is_contain_mandarin_audio &#x3D; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-TW&#x27;);
+                // el.is_contain_cantonese_audio &#x3D; el.languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-HK&#x27;);
+                el.is_contain_mandarin_audio &#x3D; (checkAudio as any).is_contain_mandarin_audio;
+                el.is_contain_cantonese_audio &#x3D; (checkAudio as any).is_contain_cantonese_audio;
+                delete el.languages
+                if (el.book_label &#x3D;&#x3D;&#x3D; freebie) el.is_locked &#x3D; false
+                await Promise.all(el.authors.map((author)&#x3D;&gt;{
+                        if( author.label !&#x3D;&#x3D; null || author.name !&#x3D;&#x3D; null ) {
+                        authors.push(author)
+                        }
+                    })
+                )
+                el.authors &#x3D; authors;
+                el.cover_image &#x3D; el.cover_image ?&#x60;${process.env.ASSEST_BASE_URL}${el.cover_image}&#x60; : el.cover_image;
+
+                return el
+            })
+
+            return {
+                page: query.page,
+                size: query.size,
+                total: await userFav.getCount(),
+                books: await Promise.all(books),
+            }
+    }
+
+    async updateBookChapterProgress(chapterData, user):Promise&lt;void&gt;  {
+
+        const queryBuilder &#x3D; getConnection().createQueryBuilder();
+        const userData &#x3D; await this.usersService.findOne(user.sub, null);
+        const totalChapters &#x3D; await this.chaptersEntityRepository
+            .createQueryBuilder(&#x27;chapter&#x27;)
+            .where(&#x27;chapter.book_label &#x3D; :bookLabel&#x27;, { bookLabel: chapterData[&#x27;book_label&#x27;] })
+            .getCount();
+
+        if( chapterData[&#x27;current_progress&#x27;] &gt; totalChapters ) {
+            Logger.error(&#x60;Chapter Progress Should Not Greater Than Total Chapter&#x60;, chapterData)
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.BOOK.MY_DESK.PROGRESS_GREATER_THAN_TOTAL&#x27;, { lang: await userLang(user) })
+            throw new HttpException(await this.response.response(errorMessage, null, null), HttpStatus.BAD_REQUEST);
+        }
+        try{
+            const isComplete &#x3D; ( chapterData[&#x27;current_progress&#x27;] + 1 ) &#x3D;&#x3D;&#x3D; totalChapters || chapterData[&#x27;is_complete&#x27;] || false
+            const dataChapter &#x3D; {
+                _updated_by: user.sub,
+                _created_by: user.sub,
+                _owner_id: user.sub,
+                _database_id : &#x27;&#x27;,
+                user_label: userData[&#x27;label&#x27;],
+                book_label: chapterData[&#x27;book_label&#x27;],
+                total_chapters: totalChapters,
+                progress_chapter: chapterData[&#x27;current_progress&#x27;],
+                is_completed: isComplete
+            }
+            await queryBuilder.insert().into(UserFavBooksEntity)
+            .values(dataChapter)
+            .onConflict(
+                &#x60;(book_label, user_label) 
+                DO UPDATE SET &quot;progress_chapter&quot; &#x3D; :progress, 
+                &quot;total_chapters&quot; &#x3D; :totalChapters,
+                &quot;is_completed&quot; &#x3D; :isComplete&#x60;)
+            .setParameters({&quot;progress&quot;: chapterData[&#x27;current_progress&#x27;], totalChapters, isComplete})
+            .execute();
+
+        }catch(err){
+            Logger.error(&#x60;failed to add book progress, error: ${err}&#x60;, chapterData)
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(user) })
+            throw new HttpException(await this.response.response(errorMessage, null, null), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    async addFav(bookData ,user):Promise&lt;void&gt; {
+        const chapterData: Object &#x3D; {
+            book_label: bookData[&#x27;book_label&#x27;],
+            current_progress: 0
+        }
+        await this.updateBookChapterProgress(chapterData, user)
+    }
+
+    async removeFav(bookLabel, user):Promise&lt;void&gt; {
+        try{
+            await getConnection()
+                .createQueryBuilder()
+                .delete()
+                .from(UserFavBooksEntity)
+                .where(&#x27;user_label &#x3D;  :userLabel&#x27;, { userLabel: user.label })
+                .andWhere(&#x27;book_label &#x3D; :bookLabel&#x27;, { bookLabel })
+                .execute();
+        }catch(err){
+            Logger.error(&#x60;failed to delete user fav, error: ${err}&#x60;, bookLabel)
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(user) })
+            throw new HttpException(await this.response.response(errorMessage, null, null), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+};
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'BooksService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

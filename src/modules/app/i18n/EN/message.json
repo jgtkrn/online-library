@@ -1,0 +1,51 @@
+{
+    "GENERAL": {
+        "ERROR":{
+            "SERVER_ERROR": "An Error Occurred. Please try again later!",
+            "UNPROCESSED_CREATE": "Unprocessed create data",
+            "UNPROCESSED_UPDATE": "Unprocessed update data",
+            "UNPROCESSED_DELETE": "Unprocessed delete data",
+            "INVALID_GET_DATA": "Something went wrong when trying to retrieve data",
+            "NOT_FOUND": "Data not found"
+        },
+        "SUCCESS": {
+            "SUCCESS_CREATE": "New data has been added successfully",
+            "SUCCESS_UPDATE": "Data has been updated successfully",
+            "SUCCESS_GET": "Data retrieved successfully",
+            "SUCCESS_DELETE": "Data has been deleted successfully",
+            "PROCESSED": "Request has ben processed successfully"
+        }   
+    },
+    "USER": {
+        "USER_REGISTERED": "The email adress you`ve entered already exist", 
+        "USERNAME_REGISTERED": "The email adress you`ve entered already exist", 
+        "USER_REGISTERED_ON_SSO": "User already registered using SSO, Please login using SSO!",
+        "USER_NOT_FOUND": "The email adress you`ve entered doesnt match any account",
+        "INCORRECT_PASSWORD": "Password you`ve entered doesn`t match",
+        "NOT_ADMIN_USER": "You're not an admin",
+        "USER_REGISTERED_BY_EMAIL": "User already registered using email and password, please login by email and password",
+        "UNAUTHORIZED" : "You're not authorized",
+        "PASSWORD_SHOULD_BE_MATCH":"Password and confirm password Should be macth",
+        "USER_DELETED":"This user has been deleted"
+    },
+    "BOOK": {
+        "MY_DESK": {
+            "PROGRESS_GREATER_THAN_TOTAL": "Chapter Progress Should Not Greater Than Total Chapter"
+        }
+    },
+    "CHAPTERS": {
+        "CHAPTER_EXIST": "Chapter number already exists",
+        "SHOULD_BE_WHOLE": "Chapter number should be a whole number",
+        "SHOULD_BE_POSITIVE": "Chapter number should be a positive number"
+    },
+    "SUBSCRIPTION": {
+        "USER_HAS_ACTIVE_SUBSCRIPTION":"User already has an active subscription",
+        "FREE_TRIAL_ALREADY_CLAIMED":"Free trial has been claimed for this user",
+        "FREE_TRIAL_ONLY_FOR_MONTHLY":"Free trial only allowed for monthly plan",
+        "REFERRAL_ALREADY_CLAIMED":"Referral code has been claimed for this user",
+        "REFERRAL_INVALID":"Referral code invalid",
+        "REFERRAL_ONLY_FOR_NEW_USER":"Referral code offer is only applicable to new users",
+        "VERIFY_GOOGLE_FAILED":"Failed verify google purchase Google",
+        "VERIFY_APPLE_FAILED":"Failed verify apple purchase Appl"
+    }
+}

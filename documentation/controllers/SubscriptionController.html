@@ -1,0 +1,2414 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content controller">
+                   <div class="content-data">
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Controllers</li>
+  <li >SubscriptionController</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/subscription/subscription.controller.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Prefix</h3>
+            </p>
+            <p class="comment">
+                <code>subscription</code>
+            </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#cancelSubscription" >cancelSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkReferralCode" >checkReferralCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createCustomer" >createCustomer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createPaymentMethod" >createPaymentMethod</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createSubscription" >createSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#exportUser" >exportUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getSetupIntent" >getSetupIntent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getSubscription" >getSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getSubscriptionPlan" >getSubscriptionPlan</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getSubscriptionStatus" >getSubscriptionStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserSub" >getUserSub</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#listSubscription" >listSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#multiPlatfromVerify" >multiPlatfromVerify</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#previewInvoice" >previewInvoice</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ReActiveSubscribe" >ReActiveSubscribe</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#subscribe" >subscribe</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#trigerCronjobx" >trigerCronjobx</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#unsubscribe" >unsubscribe</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateSubscription" >updateSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#verifyBillingGoogle" >verifyBillingGoogle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#verifyPurchaseApple" >verifyPurchaseApple</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#webhooks" >webhooks</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>cancelSubscription</b></span>
+                        <a href="#cancelSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cancelSubscription(user, cancelSubscriptionData: <a href="../interfaces/Subscription.html" target="_self">CancelSubscriptionDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/cancel-subscription&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: CancelSubscriptionDto})<br />@ApiOperation({summary: &#x27;Cancel Subscription (New Subscription Flow)&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="279"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:279</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>cancelSubscriptionData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Subscription.html" target="_self" >CancelSubscriptionDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkReferralCode"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkReferralCode</b></span>
+                        <a href="#checkReferralCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkReferralCode(user, referral_code)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Check is refferral code valid&#x27;})<br />@ApiParam(undefined)<br />@Get(&#x27;/check-referral-code/:referral_code&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>referral_code</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCustomer"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createCustomer</b></span>
+                        <a href="#createCustomer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCustomer(user, createCustomerData: <a href="../classes/CreateCustomerDto.html" target="_self">CreateCustomerDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/create-customer&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: CreateCustomerDto})<br />@ApiOperation({summary: &#x27;Create stripe customer (New Subscription Flow)&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>createCustomerData</td>
+                                    <td>
+                                                <code><a href="../classes/CreateCustomerDto.html" target="_self" >CreateCustomerDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createPaymentMethod"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createPaymentMethod</b></span>
+                        <a href="#createPaymentMethod"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createPaymentMethod(user, createPaymentData: <a href="../interfaces/PaymentMethod.html" target="_self">CreatePaymentMethodDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/create-payment-method&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: CreatePaymentMethodDto})<br />@ApiOperation({summary: &#x27;Create stripe payment mtehod (New Subscription Flow)&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:231</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>createPaymentData</td>
+                                    <td>
+                                                <code><a href="../interfaces/PaymentMethod.html" target="_self" >CreatePaymentMethodDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createSubscription</b></span>
+                        <a href="#createSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createSubscription(user, createSubscriptionData: <a href="../interfaces/Subscription.html" target="_self">CreateSubscriptionDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/create-subscription&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: CreateSubscriptionDto})<br />@ApiOperation({summary: &#x27;Create Subscription (New Subscription Flow)&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="248"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:248</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>createSubscriptionData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Subscription.html" target="_self" >CreateSubscriptionDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exportUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>exportUser</b></span>
+                        <a href="#exportUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>exportUser(res)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Download data user subscription&#x27;})<br />@Get(&#x27;download-csv&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="367"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:367</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>res</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSetupIntent"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getSetupIntent</b></span>
+                        <a href="#getSetupIntent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSetupIntent(query)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;/setup-intent&#x27;)<br />@ApiOperation({summary: &#x27;Retrieve setup Intent (New Subscription Flow)&#x27;})<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="322"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:322</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getSubscription</b></span>
+                        <a href="#getSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSubscription(id)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;/detail/:id&#x27;)<br />@ApiParam(undefined)<br />@ApiOperation({summary: &#x27;Detail Subscription Plan&#x27;})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubscriptionPlan"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getSubscriptionPlan</b></span>
+                        <a href="#getSubscriptionPlan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSubscriptionPlan(query)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;/plan&#x27;)<br />@ApiOperation({summary: &#x27;get subscribtion plan&#x27;})<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubscriptionStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getSubscriptionStatus</b></span>
+                        <a href="#getSubscriptionStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSubscriptionStatus(query)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;/status-subscription&#x27;)<br />@ApiOperation({summary: &#x27;Get stripe subscription status&#x27;})<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="338"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:338</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserSub"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserSub</b></span>
+                        <a href="#getUserSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserSub(user)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;/user&#x27;)<br />@ApiOperation({summary: &#x27;Get User Subscribtion&#x27;})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>listSubscription</b></span>
+                        <a href="#listSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>listSubscription(query)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;/list-subscription&#x27;)<br />@ApiOperation({summary: &#x27;Get list user subscription (New Subscription Flow)&#x27;})<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="308"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:308</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="multiPlatfromVerify"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>multiPlatfromVerify</b></span>
+                        <a href="#multiPlatfromVerify"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>multiPlatfromVerify(user)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;verify subscription&#x27;})<br />@Post(&#x27;/verify&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="196"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:196</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="previewInvoice"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>previewInvoice</b></span>
+                        <a href="#previewInvoice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>previewInvoice(query)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;/preview-invoice&#x27;)<br />@ApiOperation({summary: &#x27;Preview Invoice (New Subscription Flow)&#x27;})<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ReActiveSubscribe"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ReActiveSubscribe</b></span>
+                        <a href="#ReActiveSubscribe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ReActiveSubscribe(user, subscribeDto: <a href="../classes/UpdateCancelEndPeriodSubscribeDto.html" target="_self">UpdateCancelEndPeriodSubscribeDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/reactive-subscription&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: UpdateCancelEndPeriodSubscribeDto})<br />@ApiOperation({summary: &#x27;Re-Active subscription&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscribeDto</td>
+                                    <td>
+                                                <code><a href="../classes/UpdateCancelEndPeriodSubscribeDto.html" target="_self" >UpdateCancelEndPeriodSubscribeDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscribe"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>subscribe</b></span>
+                        <a href="#subscribe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>subscribe(user, subscribeDto: <a href="../classes/SubscribeDto.html" target="_self">SubscribeDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/subscribe&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: SubscribeDto})<br />@ApiOperation({summary: &#x27;Register user, create payment method, attach payment method, set default payment method, and proccess subscription in one api endpoint&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscribeDto</td>
+                                    <td>
+                                                <code><a href="../classes/SubscribeDto.html" target="_self" >SubscribeDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trigerCronjobx"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>trigerCronjobx</b></span>
+                        <a href="#trigerCronjobx"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>trigerCronjobx()</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/trigger-cronjob-subscription&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="353"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:353</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>unsubscribe</b></span>
+                        <a href="#unsubscribe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>unsubscribe(user, subscribeDto: <a href="../classes/UpdateCancelEndPeriodSubscribeDto.html" target="_self">UpdateCancelEndPeriodSubscribeDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/unsubscribe&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: UpdateCancelEndPeriodSubscribeDto})<br />@ApiOperation({summary: &#x27;Cancel subscription&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subscribeDto</td>
+                                    <td>
+                                                <code><a href="../classes/UpdateCancelEndPeriodSubscribeDto.html" target="_self" >UpdateCancelEndPeriodSubscribeDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateSubscription</b></span>
+                        <a href="#updateSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateSubscription(user, updateSubscriptionData: <a href="../interfaces/Subscription.html" target="_self">UpdateSubscriptionDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/update-subscription&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: UpdateSubscriptionDto})<br />@ApiOperation({summary: &#x27;Update Subscription (New Subscription Flow)&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="294"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:294</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>updateSubscriptionData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Subscription.html" target="_self" >UpdateSubscriptionDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verifyBillingGoogle"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>verifyBillingGoogle</b></span>
+                        <a href="#verifyBillingGoogle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>verifyBillingGoogle(user, purchaseData: <a href="../classes/VerifyPurchaseDto.html" target="_self">VerifyPurchaseDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;verify google purcchase&#x27;})<br />@Post(&#x27;/verify/purchase/google&#x27;)<br />@ApiBody({type: VerifyPurchaseDto})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="163"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:163</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>purchaseData</td>
+                                    <td>
+                                                <code><a href="../classes/VerifyPurchaseDto.html" target="_self" >VerifyPurchaseDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verifyPurchaseApple"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>verifyPurchaseApple</b></span>
+                        <a href="#verifyPurchaseApple"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>verifyPurchaseApple(user, purchaseData: <a href="../classes/VerifyPurchaseDto.html" target="_self">VerifyPurchaseDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;verify apple purchase&#x27;})<br />@Post(&#x27;/verify/purchase/apple&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiBody({type: VerifyPurchaseDto})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>purchaseData</td>
+                                    <td>
+                                                <code><a href="../classes/VerifyPurchaseDto.html" target="_self" >VerifyPurchaseDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="webhooks"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>webhooks</b></span>
+                        <a href="#webhooks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>webhooks(req)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post(&#x27;/webhooks&#x27;)<br />@ApiOperation({summary: &#x27;Stripe Webhooks&#x27;})<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/modules/subscription/subscription.controller.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>req</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Get, Post, Param, Controller, Body, Query, Req, Res, HttpException, HttpStatus} from &#x27;@nestjs/common&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { SubscriptionService } from &#x27;./subscription.service&#x27;;
+import { WebhooksService } from &#x27;./webhooks.service&#x27;;
+import { Response } from &#x27;../../helpers/response&#x27;;
+import { User } from &#x27;../auth/auth.decorator&#x27;;
+import { UsersService } from &#x27;../users/users.service&#x27;
+import { ApiBearerAuth, ApiBody, ApiTags, ApiParam, ApiOperation, ApiQuery} from &#x27;@nestjs/swagger&#x27;;
+import { CancelSubscriptionDto, CreatePaymentMethodDto, CreateCustomerDto, CreateSubscriptionDto, SubscribeDto, UpdateCancelEndPeriodSubscribeDto, UpdateSubscriptionDto, VerifyPurchaseDto } from &#x27;./dto&#x27;;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import * as moment from &#x27;moment&#x27;
+import { payment_platforms } from &#x27;../../helpers/util&#x27;;
+import { CronSubscriptionService } from &#x27;./cron.service&#x27;;
+
+const now &#x3D; moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+@ApiTags(&#x27;subscription&#x27;)
+@Controller(&#x27;subscription&#x27;)
+export class SubscriptionController {
+    constructor( 
+        private readonly i18n: I18nService,
+        private readonly response: Response,
+        private readonly userService: UsersService,
+        private readonly subscriptionService: SubscriptionService,
+        private readonly webhooksService: WebhooksService,
+        private readonly cronSubscriptionService : CronSubscriptionService
+    ) {};
+
+    @Get(&#x27;/plan&#x27;)
+    @ApiOperation({ summary: &#x27;get subscribtion plan&#x27; })
+    @ApiQuery(({ name: &#x27;page&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;size&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;sort_sequence&#x27;, allowEmptyValue: true, required: false }))
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getSubscriptionPlan(@Query() query): Promise&lt;Object&gt; {
+        query.page &#x3D; Number(query.page) || 1
+        query.size &#x3D; Number(query.size) 
+
+        const data &#x3D; await this.subscriptionService.getSubscriptionPlan(query)
+        Logger.info(&#x60;success get subscription&#x60;, data);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+    }
+
+    @Get(&#x27;/user&#x27;)
+    @ApiOperation({ summary: &#x27;Get User Subscribtion&#x27; })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getUserSub(@User() user): Promise&lt;Object&gt; {
+        const data &#x3D; await this.subscriptionService.getUserSub(user);
+    
+        Logger.info(&#x60;Success get user subscription with&#x60;, { data, user });
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data ?? [], null
+        );  
+    }
+
+    @Get(&#x27;/detail/:id&#x27;)
+    @ApiParam(({ name: &#x27;id&#x27;,  allowEmptyValue: false,  required: true}))
+    @ApiOperation({ summary: &#x27;Detail Subscription Plan&#x27; })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getSubscription(@Param(&#x27;id&#x27;) id): Promise&lt;Object&gt; {
+        const data &#x3D; await this.subscriptionService.getSubscription(id, null);
+    
+        Logger.info(&#x60;Success get subscription with id: ${data[&#x27;id&#x27;]} from stripe data&#x60;, data);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+    }
+    
+    @Post(&#x27;/subscribe&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({type : SubscribeDto})
+    @ApiOperation({ summary: &#x27;Register user, create payment method, attach payment method, set default payment method, and proccess subscription in one api endpoint&#x27; })
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async subscribe(@User() user, @Body() subscribeDto : SubscribeDto) : Promise&lt;Object&gt; {
+        const dataUser &#x3D; await this.userService.findOne(user.sub, null)
+
+        const data &#x3D; await this.subscriptionService.subscribe(subscribeDto, dataUser, user)
+
+        Logger.info(&#x60;Success proccess subscription&#x60;, data);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            data, null
+        );
+    }
+
+    @Post(&#x27;/unsubscribe&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({type : UpdateCancelEndPeriodSubscribeDto})
+    @ApiOperation({ summary: &#x27;Cancel subscription&#x27; })
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async unsubscribe(@User() user, @Body() subscribeDto : UpdateCancelEndPeriodSubscribeDto) : Promise&lt;Object&gt; {
+        const unsubscribe &#x3D; await this.subscriptionService.updateSubscribe(subscribeDto, true, user.sub)
+
+        Logger.info(&#x60;Success cancel subscription&#x60;, {user});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            unsubscribe, null
+        );
+    }
+
+    @Post(&#x27;/reactive-subscription&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({type : UpdateCancelEndPeriodSubscribeDto})
+    @ApiOperation({ summary: &#x27;Re-Active subscription&#x27; })
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async ReActiveSubscribe(@User() user, @Body() subscribeDto : UpdateCancelEndPeriodSubscribeDto) : Promise&lt;Object&gt; {
+
+        const subs &#x3D; await this.subscriptionService.updateSubscribe(subscribeDto, false, user.sub)
+
+        Logger.info(&#x60;Success activate subscription&#x60;, {subs, user});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            subs, null
+        );
+    }
+
+    @Post(&#x27;/webhooks&#x27;)
+    @ApiOperation({ summary: &#x27;Stripe Webhooks&#x27; })
+    async webhooks(@Req() req){
+
+        Logger.info(&#x60;Webhooks ${req.body[&#x27;type&#x27;]} with id ${req.body[&#x27;id&#x27;]} fired&#x60;);
+        const subscription &#x3D; await this.subscriptionService.getUserSubscription(null, req.body[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;subscription&#x27;], null)
+        this.subscriptionService.saveSubscriptionLogs(subscription.user_label, payment_platforms.STRIPE, req.body[&#x27;type&#x27;], req.body[&#x27;data&#x27;][&#x27;object&#x27;][&#x27;subscription&#x27;], req.protocol+&quot;://&quot;+req.headers.host+req.url, req.body, null)
+
+        await this.webhooksService.handleWebhooks(req.body)
+    }
+
+
+    @ApiOperation({ summary: &#x27;Check is refferral code valid&#x27; })
+    @ApiParam(({ name: &#x27;referral_code&#x27;,  allowEmptyValue: false,  required: true}))
+    @Get(&#x27;/check-referral-code/:referral_code&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async checkReferralCode(@User() user, @Param(&#x27;referral_code&#x27;) referral_code ) : Promise&lt;Object&gt; {
+        const data &#x3D; await this.userService.checkUserByReferralCode(referral_code, user.sub);
+
+        Logger.info(&#x60;Success Check referral code ${referral_code}&#x60;, data);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+    } 
+
+    @ApiOperation({ summary: &#x27;verify google purcchase&#x27; })
+    @Post(&#x27;/verify/purchase/google&#x27;)
+    @ApiBody({ type: VerifyPurchaseDto })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async verifyBillingGoogle(@User() user, @Body() purchaseData: VerifyPurchaseDto) : Promise&lt;Object&gt; {
+ 
+        const verify &#x3D; await this.subscriptionService.verifyGooglePurchase(user, purchaseData);
+
+        Logger.info(&#x60;Success verify google purchase, ${user.email}&#x60;);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(null) }), 
+            verify, null
+        );
+    } 
+
+    @ApiOperation({ summary: &#x27;verify apple purchase&#x27; })
+    @Post(&#x27;/verify/purchase/apple&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({ type: VerifyPurchaseDto })
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async verifyPurchaseApple(@User() user, @Body() purchaseData: VerifyPurchaseDto ) : Promise&lt;Object&gt; {
+
+        const verify &#x3D; await this.subscriptionService.verifyApplePurchase(user, purchaseData);
+        Logger.info(&#x60;Success verify apple purchase, ${user.email}&#x60;);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(null) }), 
+            verify, null
+        );
+    } 
+
+    @ApiOperation({ summary: &#x27;verify subscription&#x27; })
+    @Post(&#x27;/verify&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    // @ApiBody({ type: VerifyPurchaseDto })
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async multiPlatfromVerify(@User() user ) : Promise&lt;object&gt; {
+       const verify &#x3D; await this.subscriptionService.verifySub(user);
+    
+        Logger.info(&#x60;Success verify apple purchase, ${user.email}&#x60;);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(null) }), 
+            verify, null
+        );
+    } 
+
+    // New Subscription Flow
+    @Post(&#x27;/create-customer&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({ type : CreateCustomerDto})
+    @ApiOperation({summary : &quot;Create stripe customer (New Subscription Flow)&quot;})
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async createCustomer(@User() user, @Body() createCustomerData : CreateCustomerDto) : Promise&lt;Object&gt;{
+        const dataUser &#x3D; await this.userService.findOne(user.sub, null)
+        const customer &#x3D; await this.subscriptionService.createCustomer(dataUser, createCustomerData, user);
+
+        Logger.info(&#x60;Success register customer with email ${user.email} to stripe&#x60;);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            customer, null
+        );
+
+    }
+    // New Subscription Flow
+    @Post(&#x27;/create-payment-method&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({ type : CreatePaymentMethodDto})
+    @ApiOperation({summary : &quot;Create stripe payment mtehod (New Subscription Flow)&quot;})
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async createPaymentMethod(@User() user, @Body() createPaymentData : CreatePaymentMethodDto) : Promise&lt;Object&gt;{
+        const dataUser &#x3D; await this.userService.findOne(user.sub, null)
+        const customer &#x3D; await this.subscriptionService.createPaymentMethod(dataUser, createPaymentData, user);
+
+        Logger.info(&#x60;Success create payment method stripe&#x60;);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            customer, null
+        );
+    }
+
+    @Post(&#x27;/create-subscription&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({type: CreateSubscriptionDto})
+    @ApiOperation({summary : &quot;Create Subscription (New Subscription Flow)&quot;})
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async createSubscription(@User() user, @Body() createSubscriptionData : CreateSubscriptionDto) : Promise&lt;Object&gt;{
+        const subscription &#x3D; await this.subscriptionService.createSubscription(user, createSubscriptionData);
+        Logger.info(&#x60;Success create subscription&#x60;, createSubscriptionData);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            subscription, null
+        );
+    }
+
+    @Get(&#x27;/preview-invoice&#x27;)
+    @ApiOperation({ summary: &#x27;Preview Invoice (New Subscription Flow)&#x27; })
+    @ApiQuery(({ name: &#x27;subscription_id&#x27;, allowEmptyValue: false, required: true }))
+    @ApiQuery(({ name: &#x27;customer_id&#x27;, allowEmptyValue: false, required: true }))
+    @ApiQuery(({ name: &#x27;price_id&#x27;, allowEmptyValue: false, required: true }))
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async previewInvoice(@Query() query): Promise&lt;Object&gt; {
+        const data &#x3D; await this.subscriptionService.previewInvoice(query.subscription_id, query.customer_id, query.price_id)
+        Logger.info(&#x60;Succes get invoice&#x60;, {data, query});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+    }
+
+    @Post(&#x27;/cancel-subscription&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({type: CancelSubscriptionDto})
+    @ApiOperation({summary : &quot;Cancel Subscription (New Subscription Flow)&quot;})
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async cancelSubscription(@User() user, @Body() cancelSubscriptionData : CancelSubscriptionDto) : Promise&lt;Object&gt;{
+        const subscription &#x3D; await this.subscriptionService.deleteSubscription(cancelSubscriptionData.subscription_id, user);
+        Logger.info(&#x60;Success cancel subscription&#x60;, {data:cancelSubscriptionData});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            subscription, null
+        );
+    }
+
+    @Post(&#x27;/update-subscription&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @ApiBody({type : UpdateSubscriptionDto})
+    @ApiOperation({summary : &quot;Update Subscription (New Subscription Flow)&quot;})
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async updateSubscription(@User() user, @Body() updateSubscriptionData : UpdateSubscriptionDto) : Promise&lt;Object&gt;{
+        const subscription &#x3D; await this.subscriptionService.updateSubscription(user, updateSubscriptionData)
+        Logger.info(&#x60;Success update subscription&#x60;, {data:updateSubscriptionData});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(user) }), 
+            subscription, null
+        );
+    }
+
+    @Get(&#x27;/list-subscription&#x27;)
+    @ApiOperation({ summary: &#x27;Get list user subscription (New Subscription Flow)&#x27; })
+    @ApiQuery(({ name: &#x27;customer_id&#x27;, allowEmptyValue: false, required: true }))
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async listSubscription(@Query() query): Promise&lt;Object&gt; {
+        const data &#x3D; await this.subscriptionService.listSubscriptionByUser(query.customer_id)
+        Logger.info(&#x60;Succes get subscription&#x60;,{data, query});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+    }
+
+    @Get(&#x27;/setup-intent&#x27;)
+    @ApiOperation({ summary: &#x27;Retrieve setup Intent (New Subscription Flow)&#x27; })
+    @ApiQuery(({ name: &#x27;id&#x27;, allowEmptyValue: false, required: true }))
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getSetupIntent(@Query() query): Promise&lt;Object&gt; {
+
+        const data &#x3D; await this.subscriptionService.getSetupIntent(query.id)
+        Logger.info(&#x60;Succes get setup intent&#x60;, {data, query});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+
+    }
+
+    @Get(&#x27;/status-subscription&#x27;)
+    @ApiOperation({ summary: &#x27;Get stripe subscription status&#x27; })
+    @ApiQuery(({ name: &#x27;subscription_id&#x27;, allowEmptyValue: false, required: true }))
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getSubscriptionStatus(@Query() query): Promise&lt;Object&gt; {
+
+        const data &#x3D; await this.subscriptionService.getSubscriptionStatus(query.subscription_id)
+        Logger.info(&#x60;Succes get status subscription&#x60;, {data, query});
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+
+    }
+
+
+    @Post(&#x27;/trigger-cronjob-subscription&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async trigerCronjobx(): Promise&lt;Object&gt; {
+        await this.cronSubscriptionService.cronUpdateUserSubscriptionWhenExpired();
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.PROCESSED&#x27;, 
+            { lang: await userLang(null) }), 
+            [], null
+        );
+
+    }
+
+
+    @ApiOperation({ summary: &#x27;Download data user subscription&#x27;})
+    @Get(&#x27;download-csv&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async exportUser(@Res() res){
+    // async exportUser(){
+       try { 
+         Logger.info(&#x60;Export subscription processed&#x60;);
+         return this.subscriptionService.exportCsv(res);     
+       } catch (err) {
+         Logger.error(&#x60;Failed to export user subscription data&#x60;, {error : err});
+         const message &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.SERVER_ERROR&#x27;, { lang: await userLang(null) })
+         const error &#x3D; [{ &quot;ExportCsvUserData&quot; : message }];
+         throw new HttpException(await this.response.response(  
+             message,
+             null, error), HttpStatus.INTERNAL_SERVER_ERROR
+         )
+       }
+    } 
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'SubscriptionController.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

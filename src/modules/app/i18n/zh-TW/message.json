@@ -1,0 +1,51 @@
+{
+    "GENERAL": {
+        "ERROR":{
+            "SERVER_ERROR": "發生錯誤。請稍後再嘗試！",
+            "UNPROCESSED_CREATE": "未能新增資料",
+            "UNPROCESSED_UPDATE": "未能更新資料",
+            "UNPROCESSED_DELETE": "未能刪除資料",
+            "INVALID_GET_DATA": "擷取資料時發生錯誤",
+            "NOT_FOUND": "未找到資料"
+        },
+        "SUCCESS": {
+            "SUCCESS_CREATE": "已成功新增資料",
+            "SUCCESS_UPDATE": "已成功更新資料",
+            "SUCCESS_GET": "已成功擷取資料",
+            "SUCCESS_DELETE": "已成功刪除資料",
+            "PROCESSED": "已成功處理請求"
+        }   
+    },
+    "USER": {
+        "USER_REGISTERED": "你輸入的電郵地址已被使用", 
+        "USERNAME_REGISTERED": "您輸入的用戶名稱已存在", 
+        "USER_REGISTERED_ON_SSO": "用戶已用單一登入 SSO 註冊，請用 SSO 登入！",
+        "USER_NOT_FOUND": "此電郵地址未對應任何帳戶",
+        "INCORRECT_PASSWORD": "密碼不正確",
+        "NOT_ADMIN_USER": "此用戶不是管理員",
+        "USER_REGISTERED_BY_EMAIL": "用戶已用電郵及密碼註冊，請以電郵及密碼登入",
+        "UNAUTHORIZED" : "此用戶未被授權",
+        "PASSWORD_SHOULD_BE_MATCH":"密碼和確認密碼應該相同",
+        "USER_DELETED":"此用戶已被刪除"
+    },
+    "BOOK": {
+        "MY_DESK": {
+            "PROGRESS_GREATER_THAN_TOTAL": "章節進度不應大過章節總數"
+        }
+    },
+    "CHAPTERS": {
+        "CHAPTER_EXIST": "章節號碼已存在",
+        "SHOULD_BE_WHOLE": "章節號碼必須為整數",
+        "SHOULD_BE_POSITIVE": "章節號碼必須為正數"
+    },
+    "SUBSCRIPTION": {
+        "USER_HAS_ACTIVE_SUBSCRIPTION":"用户已拥有尊尚会籍",
+        "FREE_TRIAL_ALREADY_CLAIMED":"此用戶已使用優惠碼",
+        "FREE_TRIAL_ONLY_FOR_MONTHLY":"首7日免費試用只適用於月費計劃",
+        "REFERRAL_ALREADY_CLAIMED":"此用戶已獲得一個月的尊尚會籍",
+        "REFERRAL_INVALID":"優惠碼不正確",
+        "REFERRAL_ONLY_FOR_NEW_USER":"推薦碼優惠只適用於新訂閱客戶",
+        "VERIFY_GOOGLE_FAILED":"訂閱付款失敗",
+        "VERIFY_APPLE_FAILED":"訂閱付款失敗"
+    }
+}

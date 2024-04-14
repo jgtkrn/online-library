@@ -1,0 +1,1442 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >AuthService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/auth/auth.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addOrUpdateToken" >addOrUpdateToken</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#appleLogin" >appleLogin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkUserAndGenerateToken" >checkUserAndGenerateToken</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findUserAndComparePass" >findUserAndComparePass</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#generateJWT" >generateJWT</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#generateToken" >generateToken</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getStripeID" >getStripeID</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserToken" >getUserToken</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isTokenValid" >isTokenValid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#oauth" >oauth</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(i18n: I18nService, response: <a href="../injectables/Response.html" target="_self">Response</a>, userRepository: <a href="../interfaces/User.html" target="_self">Repository&lt;UserEntity&gt;</a>, authRepository: <a href="../entitys/AuthEntity.html" target="_self">Repository&lt;AuthEntity&gt;</a>, userTokenRepository: <a href="../entitys/UserTokenEntity.html" target="_self">Repository&lt;UserTokenEntity&gt;</a>, iosModule: <a href="../classes/IosAuthModule.html" target="_self">IosAuthModule</a>, usersService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/modules/auth/auth.service.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18nService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>response</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Response.html" target="_self" >Response</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/User.html" target="_self" >Repository&lt;UserEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/AuthEntity.html" target="_self" >Repository&lt;AuthEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userTokenRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/UserTokenEntity.html" target="_self" >Repository&lt;UserTokenEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>iosModule</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/IosAuthModule.html" target="_self" >IosAuthModule</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>usersService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addOrUpdateToken"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addOrUpdateToken</b></span>
+                        <a href="#addOrUpdateToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addOrUpdateToken(user, token)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>token</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appleLogin"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>appleLogin</b></span>
+                        <a href="#appleLogin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>appleLogin(userData, interest: null)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="238"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:238</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>interest</td>
+                                    <td>
+                                            <code>null</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkUserAndGenerateToken"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkUserAndGenerateToken</b></span>
+                        <a href="#checkUserAndGenerateToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkUserAndGenerateToken(userData, interest: null, platform: null)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:177</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>interest</td>
+                                    <td>
+                                            <code>null</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>platform</td>
+                                    <td>
+                                            <code>null</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findUserAndComparePass"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findUserAndComparePass</b></span>
+                        <a href="#findUserAndComparePass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findUserAndComparePass(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="../undefineds/login_type.html" target="_self">login_type</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#login_type" target="_self" >login_type</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateJWT"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>generateJWT</b></span>
+                        <a href="#generateJWT"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateJWT(user, email)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateToken"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>generateToken</b></span>
+                        <a href="#generateToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateToken(undefined: <a href="../interfaces/Token.html" target="_self">generateTokenDto</a>, query)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../interfaces/Token.html" target="_self" >generateTokenDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Token.html" target="_self" >Promise&lt;Token&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStripeID"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getStripeID</b></span>
+                        <a href="#getStripeID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getStripeID(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="262"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:262</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserToken"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserToken</b></span>
+                        <a href="#getUserToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserToken(user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isTokenValid"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isTokenValid</b></span>
+                        <a href="#isTokenValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isTokenValid(token)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>token</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="oauth"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>oauth</b></span>
+                        <a href="#oauth"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>oauth(userData, interest, platform: null)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="249"
+                            class="link-to-prism">src/modules/auth/auth.service.ts:249</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>interest</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>platform</td>
+                                    <td>
+                                            <code>null</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import * as jwt from &#x27;jsonwebtoken&#x27;;
+import * as bcrypt from &#x27;bcryptjs&#x27;;
+import { Injectable , HttpException, HttpStatus } from &#x27;@nestjs/common&#x27;;
+import { InjectRepository} from &#x27;@nestjs/typeorm&#x27;;
+import { Repository } from &#x27;typeorm&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { AuthEntity, UserEntity, AuthRoleEntity } from &#x27;./entities&#x27;;
+import { UserTokenEntity } from &#x27;../users/entities&#x27;;
+import { generateTokenDto } from &#x27;./dto&#x27;
+import { Token } from &#x27;./auth.interface&#x27;
+import { Response } from &#x27;../../helpers/response&#x27;
+import { IosAuthModule } from &#x27;../../helpers/ios.verify&#x27;
+import { UsersService  } from &#x27;../users/users.service&#x27;
+import { v4 } from &#x27;uuid&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import { token_type, token_status, unit_of_time, login_type } from &#x27;../../helpers/util&#x27;;
+import { validateSync } from &#x27;class-validator&#x27;;
+
+@Injectable()
+export class AuthService {
+    constructor(
+        private readonly i18n: I18nService,
+        private readonly response: Response,
+        @InjectRepository(UserEntity)
+        private userRepository: Repository&lt;UserEntity&gt;,
+        @InjectRepository(AuthEntity)
+        private authRepository: Repository&lt;AuthEntity&gt;,
+        @InjectRepository(UserTokenEntity)
+        private userTokenRepository: Repository&lt;UserTokenEntity&gt;,
+        private readonly iosModule: IosAuthModule,
+        private readonly usersService: UsersService,
+      ) {};
+
+
+    async getUserToken(user){
+        return await UserTokenEntity
+        .createQueryBuilder(&quot;token&quot;)
+        .select([&#x27;token.id as token_id&#x27;, &#x27;token as token&#x27;, &#x27;expired_at as expired_at&#x27;])
+        .where(&#x27;token.user_id &#x3D; :userId&#x27;, { userId: user.id })
+        .andWhere(&#x27;token.type &#x3D; :type&#x27;, { type: token_type.LOGIN })
+        .getRawOne()
+    }
+
+    async isTokenValid(token){
+        const data &#x3D; await UserTokenEntity
+        .createQueryBuilder(&quot;token&quot;)
+        .select([&#x27;token.id as token_id&#x27;, &#x27;token as token&#x27;, &#x27;user_id as user_id&#x27;])
+        .where(&#x27;token.token &#x3D; :token&#x27;, { token: token })
+        .andWhere(&#x27;token.type &#x3D; :type&#x27;, { type: token_type.LOGIN })
+        .getRawOne()
+
+        return data ? true : false;
+    }
+
+    async addOrUpdateToken(user, token) {
+
+        const tokenData &#x3D; await this.getUserToken(user);
+
+        if ( tokenData ){
+            await UserTokenEntity.update(
+                { id: tokenData[&#x27;token_id&#x27;] } ,
+                { status: token_status.VALID,
+                  token : token,
+                  expired_at : moment().add(unit_of_time.ninety, &#x27;days&#x27;).format()
+                }
+            );
+        } else {
+            const userToken &#x3D; new UserTokenEntity()
+            userToken.user_id &#x3D; user.id
+            userToken.expired_at &#x3D; moment().add(unit_of_time.ninety, &#x27;days&#x27;).format()
+            userToken.token &#x3D; token
+            userToken.type &#x3D; token_type.LOGIN
+            await userToken.save();
+        }
+    }
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async findUserAndComparePass (email: string, password:string, type:login_type): Promise&lt;object&gt;{
+        try{
+            const additionalSelect &#x3D; [ &#x27;auth.password&#x27;, &#x27;role_id&#x27; ]
+
+            const user &#x3D; await this.usersService.getUser(null, email, additionalSelect)
+            .innerJoin( AuthEntity, &#x27;auth&#x27;, &#x27;auth.id &#x3D; user._id&#x27;)
+            .leftJoin(AuthRoleEntity, &#x27;role&#x27;, &#x27;role.auth_id &#x3D; user._id&#x27;)
+            .getRawOne();
+
+            const allowedRole &#x3D; [&#x27;Admin&#x27;,&#x27;Editor&#x27;];
+
+
+            if(user &amp;&amp; user.deleted_at) {
+                throw new Error(
+                    await this.i18n.translate(&#x27;message.USER.USER_DELETED&#x27;,
+                    { lang: await userLang(user) })
+                )
+            }
+
+            if(user) {
+                if ( user.apple_id ) {
+                    throw new Error(
+                        await this.i18n.translate(&#x27;message.USER.USER_REGISTERED_ON_SSO&#x27;,
+                        { lang: await userLang(user) })
+                    )
+                }
+
+                if( type &#x3D;&#x3D; login_type.CMS &amp;&amp; !allowedRole.includes(user.role_id)) {
+                    throw new Error(
+                        await this.i18n.translate(&#x27;message.USER.NOT_ADMIN_USER&#x27;,
+                        { lang: await userLang(user) })
+                    )
+                };
+                // compare pass
+                const pass &#x3D; await bcrypt.compareSync(password, user.auth_password)
+
+                if(!pass) {
+                    throw new Error(
+                        await this.i18n.translate(&#x27;message.USER.INCORRECT_PASSWORD&#x27;,
+                        { lang: await userLang(user) })
+                    )
+                }
+                delete user.auth_password;
+                return user
+            } else {
+                throw new Error(
+                    await this.i18n.translate(&#x27;message.USER.USER_NOT_FOUND&#x27;,
+                    { lang: await userLang(user) })
+                )
+            }
+        }catch(err){
+            Logger.error(&#x60;${err} ${email}&#x60;);
+            // if (admin) {
+            //     throw new HttpException(await this.response.response( err.message, null, null), HttpStatus.UNAUTHORIZED);
+            //     //  throw new HttpException(await this.response.response(
+            //     //     await this.i18n.translate(&#x27;message.USER.UNAUTHORIZED&#x27;,
+            //     //     { lang: await userLang(null) }), null, null), HttpStatus.UNAUTHORIZED
+            //     // );
+            // }else {
+                 throw new HttpException(await this.response.response( err.message, null, null), HttpStatus.UNAUTHORIZED);
+            // }
+        }
+    };
+
+    public generateJWT(user, email) {
+
+        return jwt.sign({
+          email,
+          jti: v4(),
+          iss: process.env.JWT_ISS,
+          sub: user.id,
+          lang: user.language,
+          label: user.label,
+          member_type: user.member_type
+        }, process.env.JWT_PRIVATE_KEY,
+        { expiresIn: &#x60;${unit_of_time.ninety}d&#x60; });
+      };
+
+    async generateToken ({email, password}: generateTokenDto, query): Promise&lt;Token&gt; {
+        // check user and compare pass
+        const user &#x3D; await this.findUserAndComparePass(email, password, query.type);
+        // generate token
+        const token &#x3D; await this.generateJWT(user, email);
+
+        await this.addOrUpdateToken(user, token);
+
+        this.usersService.addLastLoginAt((user as any).id)
+
+        delete (user as any).id
+
+        let interest &#x3D; null;
+        if(query.interest &#x3D;&#x3D; &quot;true&quot;){
+          interest &#x3D; await this.usersService.getInterestByUserLabel(user[&#x27;label&#x27;]);
+        }
+        return Object.assign({ token }, { user }, {interest} );
+    };
+
+    async checkUserAndGenerateToken(userData, interest &#x3D; null, platform &#x3D; null): Promise&lt;object&gt; {
+        let user &#x3D; null
+
+        if(userData.apple_id) {
+            user &#x3D; await this.usersService.getUser(null, userData.email, null, userData.apple_id).getRawOne();
+            if (user &amp;&amp; user.apple_id &#x3D;&#x3D;&#x3D; null) {
+                Logger.error(&#x60;failed to create user, user already registered using email and password&#x60;, {email: user.email} );
+                const message &#x3D;  await this.i18n.translate(&#x27;message.USER.USER_REGISTERED_BY_EMAIL&#x27;, { lang: await userLang(null) })
+                throw new HttpException(await this.response.response(message, null, null), HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        }else{
+            user &#x3D; await this.usersService.getUser(null, userData.email).getRawOne();
+        }
+
+        try{
+            if (!user) {
+                userData.username &#x3D; userData.username ? userData.username : null;
+                userData.user_type &#x3D; &#x27;free&#x27;;
+                userData.claim_referralcode &#x3D; &#x27;free&#x27;;
+                const registrationPlatform &#x3D; platform || userData.registration_platform;
+                await this.usersService.addUser(userData, &#x27;apple&#x27;, registrationPlatform);
+                if(userData.apple_id) {
+                    user &#x3D; await this.usersService.getUser(null, userData.email, null, userData.apple_id).getRawOne();
+                }else{
+                    user &#x3D; await this.usersService.getUser(null, userData.email).getRawOne();
+                }
+            } else {
+                userData.firstname &#x3D; userData[&#x27;first_name&#x27;]
+                userData.lastname &#x3D; userData[&#x27;last_name&#x27;]
+                await this.usersService.updateUser( userData, { sub: user.id })
+                user &#x3D; await this.usersService.getUser(null, userData.email).getRawOne();
+            }
+            if(userData.apple_id) {
+                await this.usersService.updatePassWord(
+                    { new_password: userData.apple_id },
+                    { sub: (user as any).id })
+                if (user &amp;&amp; user.apple_id &#x3D;&#x3D;&#x3D; &#x27;&#x27; ) {
+                    await this.usersService.updateAppleId( userData.apple_id, (user as any).id  )
+                    user.apple_id &#x3D; userData.apple_id
+                }
+            }
+
+            const token &#x3D; await this.generateJWT(user, userData.email)
+
+            this.addOrUpdateToken(user, token);
+            this.usersService.addLastLoginAt((user as any).id)
+            let userInterest &#x3D; null;
+            if(interest &#x3D;&#x3D; &quot;true&quot;) {
+                userInterest &#x3D; await this.usersService.getInterestByUserLabel(user[&#x27;label&#x27;])
+            }
+            delete (user as any).id
+            return Object.assign({ token }, { user }, {interest : userInterest} );
+
+        } catch(error) {
+            Logger.error(&#x60;invalid login user:&#x60;, {data : userData, error : error});
+            const err &#x3D; [{ &quot;sign-in&quot; : &#x27;Something Went Wrong Please Try Again&#x27; }];
+            const message &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.SERVER_ERROR&#x27;, { lang: await userLang(null) })
+            throw new HttpException(await this.response.response(message, null, null), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    async appleLogin(userData, interest &#x3D; null): Promise&lt;object&gt; {
+            const tokenResult &#x3D; await this.iosModule.verifyIos(userData);
+            const email &#x3D; (tokenResult as any).email
+            userData.email &#x3D; email;
+            userData.password &#x3D; userData.apple_id ? userData.apple_id : tokenResult[&#x27;sub&#x27;]
+            userData.username &#x3D; userData.apple_id ? userData.apple_id : tokenResult[&#x27;sub&#x27;]
+            userData.apple_id &#x3D; userData.apple_id ? userData.apple_id : tokenResult[&#x27;sub&#x27;]
+
+           return await this.checkUserAndGenerateToken(userData, interest);
+    };
+
+    async oauth(userData, interest &#x3D; false, platform &#x3D; null): Promise&lt;object&gt; {
+
+        try {
+            return await this.checkUserAndGenerateToken(userData, interest, platform)
+        } catch (error) {
+            Logger.error(&#x60;invalid login user: ${userData}, ${error}&#x60;);
+            const message &#x3D;  await this.i18n.translate(&#x27;message.USER.UNAUTHORIZED&#x27;, { lang: await userLang(userData) });
+            const err &#x3D; [{ &quot;sign-in&quot; : &#x27;Something Went Wrong Please Try Again&#x27; }];
+            throw new HttpException(await this.response.response(message, null, err), HttpStatus.UNAUTHORIZED);
+        }
+    };
+
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getStripeID(id) : Promise&lt;Object&gt; {
+        const data &#x3D; await this.authRepository.createQueryBuilder(&#x27;_auth&#x27;)
+        .where(&#x27;_auth.id &#x3D; :id&#x27;, { id })
+        .select(&#x27;_auth.stripe_id as stripeId&#x27;)
+        .getRawOne();
+
+        if (!data) {
+            Logger.error(&#x60;Data with id ${id} not found&#x60;);
+            const message &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(null) });
+            const error &#x3D; [{ &quot;StripeId&quot; : message }];
+            throw new HttpException(await this.response.response(message, null, error), HttpStatus.NOT_FOUND);
+
+        }
+        return data;
+     }
+
+
+};
+
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AuthService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

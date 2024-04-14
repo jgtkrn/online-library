@@ -1,0 +1,1397 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >PromotionalCodesService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/promotional-codes/promotional-codes.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#claim" >claim</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#create" >create</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createNewSubscription" >createNewSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#detail" >detail</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findAll" >findAll</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#generatePromtionalCode" >generatePromtionalCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isPromotionalCodeValid" >isPromotionalCodeValid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setClaimPromotionalCode" >setClaimPromotionalCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateActiveSubscription" >updateActiveSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateAllPromoCodes" >updateAllPromoCodes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(response: <a href="../injectables/Response.html" target="_self">Response</a>, i18n: I18nService, subscriptionService: <a href="../injectables/SubscriptionService.html" target="_self">SubscriptionService</a>, userService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>, promotionalCodeRepository: <a href="../interfaces/PromotionalCode.html" target="_self">Repository&lt;PromotionalCodeEntity&gt;</a>, userSubscriptionRepository: <a href="../entitys/UserSubscriptionEntity.html" target="_self">Repository&lt;UserSubscriptionEntity&gt;</a>, userRepository: <a href="../interfaces/User.html" target="_self">Repository&lt;UserEntity&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>response</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Response.html" target="_self" >Response</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18nService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>subscriptionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SubscriptionService.html" target="_self" >SubscriptionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>promotionalCodeRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/PromotionalCode.html" target="_self" >Repository&lt;PromotionalCodeEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userSubscriptionRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/UserSubscriptionEntity.html" target="_self" >Repository&lt;UserSubscriptionEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/User.html" target="_self" >Repository&lt;UserEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="claim"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>claim</b></span>
+                        <a href="#claim"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>claim(code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>create</b></span>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>create(request: <a href="../interfaces/PromotionalCode.html" target="_self">CreatePromotionalCodeDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                                <code><a href="../interfaces/PromotionalCode.html" target="_self" >CreatePromotionalCodeDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createNewSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createNewSubscription</b></span>
+                        <a href="#createNewSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createNewSubscription(code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, promotionalCode: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>promotionalCode</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="detail"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>detail</b></span>
+                        <a href="#detail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>detail(code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAll"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findAll(query: <a href="../classes/queryDto.html" target="_self">queryDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/queryDto.html" target="_self" >queryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generatePromtionalCode"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>generatePromtionalCode</b></span>
+                        <a href="#generatePromtionalCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generatePromtionalCode()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isPromotionalCodeValid"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isPromotionalCodeValid</b></span>
+                        <a href="#isPromotionalCodeValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isPromotionalCodeValid(code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setClaimPromotionalCode"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setClaimPromotionalCode</b></span>
+                        <a href="#setClaimPromotionalCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setClaimPromotionalCode(code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateActiveSubscription"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateActiveSubscription</b></span>
+                        <a href="#updateActiveSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateActiveSubscription(lastSubscription: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, promotionalCode: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="227"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:227</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lastSubscription</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>promotionalCode</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAllPromoCodes"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateAllPromoCodes</b></span>
+                        <a href="#updateAllPromoCodes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateAllPromoCodes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="308"
+                            class="link-to-prism">src/modules/promotional-codes/promotional-codes.service.ts:308</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, HttpException, HttpStatus } from &#x27;@nestjs/common&#x27;;
+import { InjectRepository } from &#x27;@nestjs/typeorm&#x27;;
+import { Repository, Brackets, getConnection } from &#x27;typeorm&#x27;;
+import { Response } from &#x27;../../helpers/response&#x27;;
+import { queryDto, CreatePromotionalCodeDto } from &#x27;./dto&#x27;;
+import { member_type, payment_platforms, sort_by, subscription_status } from &#x27;../../helpers/util&#x27;;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { PromotionalCodeEntity } from &#x27;./entities/promotional-codes.entity&#x27;;
+import { SubscriptionService } from &quot;../subscription/subscription.service&quot;;
+import { UserSubscriptionEntity } from &quot;../subscription/entities/user-subscription.entity&quot;
+import * as moment from &#x27;moment&#x27;
+import { UsersService } from &#x27;../users/users.service&#x27;;
+import { UserEntity } from &#x27;../users/entities&#x27;;
+
+const now &#x3D; moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;);
+
+@Injectable()
+export class PromotionalCodesService {
+    constructor(
+        private readonly response: Response,
+        private readonly i18n: I18nService,
+        private readonly subscriptionService : SubscriptionService, 
+        private readonly userService : UsersService,
+
+        @InjectRepository(PromotionalCodeEntity)
+        private promotionalCodeRepository : Repository&lt;PromotionalCodeEntity&gt;,
+
+        @InjectRepository(UserSubscriptionEntity)
+        private userSubscriptionRepository : Repository&lt;UserSubscriptionEntity&gt;,
+
+        @InjectRepository(UserEntity)
+        private userRepository : Repository&lt;UserEntity&gt;
+
+    ){}
+
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async findAll(query : queryDto) : Promise&lt;Object&gt;{
+        await this.updateAllPromoCodes();
+        const skippedItems:number &#x3D; (query.page - 1) * query.size;
+
+        let code &#x3D; this.promotionalCodeRepository
+        .createQueryBuilder(&#x27;promotional_codes&#x27;)
+        .select([
+            &#x27;promotional_codes.id as id&#x27;,
+            &#x27;promotional_codes.code as code&#x27;,
+            &#x27;promotional_codes.month_value as month_value&#x27;,
+            &#x27;promotional_codes.user_label as user_label&#x27;,
+            &#x27;promotional_codes.claimed_at as claimed_at&#x27;,
+        ])
+
+        if(query.code){
+            code &#x3D; code.where(&#x27;promotional_codes.code &#x3D; :code&#x27;, { code: query.code })
+        }
+
+        if(query.search) {
+            code &#x3D; code
+            .andWhere(new Brackets(qb &#x3D;&gt; {
+                qb.where(&quot;lower(promotional_codes.code) like &#x27;%&#x27; || :searchCode || &#x27;%&#x27;&quot;, { searchCode: query.search.toLowerCase() })
+            }))
+        }
+
+        const total &#x3D; await code.getCount();
+
+        code &#x3D; code.orderBy(&#x27;promotional_codes.created_at&#x27;, query.sort &#x3D;&#x3D;&#x3D; sort_by.ASC ? sort_by.ASC : sort_by.DESC)
+        .offset(skippedItems)
+
+
+        let codes &#x3D; []
+
+        try {
+            if (query.size) {
+                codes &#x3D; await code.limit(query.size).getRawMany()
+            } else {
+                codes &#x3D; await code.getRawMany()
+            }
+
+        } catch(err) {
+            Logger.error(&#x60;failed to get promotional codes&#x60;, {error : err})
+            throw new HttpException(await this.response.response(  
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.INVALID_GET_DATA&#x27;, { lang: await userLang(null) }), 
+                null, null), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        }
+
+        const data &#x3D; codes.map( async(el) &#x3D;&gt;{
+            el.email &#x3D; null;
+            if(el.user_label !&#x3D;&#x3D; null) {           
+                let user_email_data &#x3D; await this.userRepository
+                    .createQueryBuilder(&#x27;users&#x27;)
+                    .select([
+                        &#x27;users.email as email&#x27;
+                    ])
+                    .where(&#x27;users.user_label &#x3D; :label&#x27;, {label: el.user_label})
+                    .getRawOne()
+                el.email &#x3D; user_email_data.email
+            }
+            return el;
+        })
+
+        return {
+            page: query.page,
+            size: query.size,
+            total: total,
+            codes: await Promise.all(data)
+        };
+
+    }
+
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async detail(code : string) : Promise&lt;Object&gt;{
+        const data &#x3D; await this.promotionalCodeRepository
+        .createQueryBuilder(&#x27;promotional_codes&#x27;)
+        .select([
+            &#x27;promotional_codes.id as id&#x27;,
+            &#x27;promotional_codes.code as code&#x27;,
+            &#x27;promotional_codes.month_value as month_value&#x27;,
+            &#x27;promotional_codes.user_label as user_label&#x27;,
+            &#x27;promotional_codes.claimed_at as claimed_at&#x27;,
+        ])
+        .where(&#x27;promotional_codes.code &#x3D; :code&#x27;, { code })
+        .getRawOne();
+
+
+        // data.email &#x3D; null;
+
+        // if(data.user_label !&#x3D;&#x3D; null) {
+        //     let user_email_data &#x3D; await this.userRepository
+        //             .createQueryBuilder(&#x27;users&#x27;)
+        //             .select([
+        //                 &#x27;users.email as email&#x27;
+        //             ])
+        //             .where(&#x27;users.user_label &#x3D; :label&#x27;, {label: data.user_label})
+        //             .getRawOne()
+        //     data.email &#x3D; user_email_data.email
+        // }
+        
+        return data
+    }
+
+     // eslint-disable-next-line @typescript-eslint/ban-types
+    async isPromotionalCodeValid(code : string) : Promise&lt;Object&gt;{
+        const data &#x3D; await this.detail(code);
+
+        const isValid &#x3D; data &amp;&amp; data[&#x27;claimed_at&#x27;] &#x3D;&#x3D; null ? true : false;
+
+       return {
+            valid : isValid,
+            code : code,
+            value : isValid ? data[&#x27;month_value&#x27;] : null,
+
+       }
+
+    }
+
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async create(request : CreatePromotionalCodeDto) : Promise&lt;Object&gt; {
+        try {
+            const code &#x3D; new PromotionalCodeEntity()
+            code.code &#x3D; await this.generatePromtionalCode();
+            code.month_value &#x3D; request.month_value ?? 12;
+            await code.save();
+            return code;
+        } catch(err) {
+            Logger.error(&#x60;Failed to save promotional code&#x60;, {error: err});
+            const message &#x3D; await this.i18n.translate(&#x27;message.GENERAL.ERROR.SERVER_ERROR&#x27;, { lang: await userLang(null)});
+            const error &#x3D; [{ &quot;PromotionalCode&quot; : message }];
+            throw new HttpException(await this.response.response( message, null, error), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    async generatePromtionalCode(): Promise&lt;string&gt;{
+        let result &#x3D; &#x27;&#x27;;
+        const characters       &#x3D; &#x27;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&#x27;;
+        const charactersLength &#x3D; characters.length;
+        for ( let i &#x3D; 0; i &lt; 12; i++ ) {
+           result +&#x3D; characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        Logger.info(&#x60;Generate promotional code ${result}&#x60;);
+
+        const isCodeUsed &#x3D; await this.detail(result) ? true : false;
+        
+        return isCodeUsed ? await this.generatePromtionalCode() : result;
+    }
+
+    async setClaimPromotionalCode(code : string) : Promise&lt;void&gt;{
+        try {
+            await this.promotionalCodeRepository.update({code : code}, {claimed_at : moment().local().format()});
+            Logger.info(&#x60;Successfully claim promotional code ${code}&#x60;);
+        } catch (error) {
+            Logger.error( &#x60;Failed to claim promotional code ${code}&#x60;, {error : error});
+            const message &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.SERVER_ERROR&#x27;, { lang: await userLang(null) })
+            const err &#x3D; [{ &quot;ClaimPromotionalCode&quot; : message }];
+            throw new HttpException(await this.response.response(  
+                message,
+                null, err), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        }
+    }
+
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async claim(code : string, user : any) : Promise&lt;Object&gt; {
+        const promotionalCode &#x3D; await this.detail(code);
+
+        if(promotionalCode &amp;&amp; promotionalCode[&#x27;claimed_at&#x27;] &#x3D;&#x3D; null) {
+            this.subscriptionService.saveSubscriptionLogs(user.label, payment_platforms.PROMOTIONAL_CODE, &#x27;claim_promotional_code&#x27;, code, null, null, null)
+            const subscription &#x3D; await this.userService.getUserWithSubscription(user.id);
+            const lastSubscription &#x3D; subscription[&#x27;user_subscriptions&#x27;][0];
+
+            if(lastSubscription[&#x27;status&#x27;] &#x3D;&#x3D;&#x3D; subscription_status.ACTIVE) {
+
+                return this.updateActiveSubscription(lastSubscription, promotionalCode, user)
+            }
+
+            return this.createNewSubscription(code, user, promotionalCode)
+
+
+        } else {
+            Logger.error(&#x60;Promotional code not valid ${code}&#x60;, {data : code});
+            const error &#x3D; [{ &quot;ClaimPromotionalCode&quot; : &#x60;Promotional code not valid ${code}&#x60; }];
+            const message &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.INVALID_GET_DATA&#x27;, { lang: await userLang(user) });
+            throw new HttpException(await this.response.response(message, null, error), HttpStatus.BAD_REQUEST); 
+        }
+    }
+
+    async updateActiveSubscription(lastSubscription : any, promotionalCode : any, user : any) {
+        Logger.info(&#x60;Update subscription by claim promotional code ${promotionalCode.code}&#x60;, {user : user});
+        const query &#x3D; getConnection().createQueryRunner();
+        await query.connect();
+        await query.startTransaction();
+
+        try{
+            if(new Date(lastSubscription[&#x27;enddate&#x27;]) &gt; new Date(lastSubscription[&#x27;extra_enddate&#x27;]) ){
+
+                query.manager.update(UserSubscriptionEntity, {order_id : lastSubscription[&#x27;order_id&#x27;]}, {status : subscription_status.ACTIVE, enddate : moment(lastSubscription[&#x27;enddate&#x27;]).clone().add(promotionalCode[&#x27;month_value&#x27;], &#x27;months&#x27;)})
+                
+            } else if (new Date(lastSubscription[&#x27;enddate&#x27;]) &lt; new Date(lastSubscription[&#x27;extra_enddate&#x27;])){
+
+                query.manager.update(UserSubscriptionEntity, {order_id : lastSubscription[&#x27;order_id&#x27;]}, {status : subscription_status.ACTIVE, extra_enddate : moment(lastSubscription[&#x27;extra_enddate&#x27;]).clone().add(promotionalCode[&#x27;month_value&#x27;], &#x27;months&#x27;)})
+            }
+
+            await this.setClaimPromotionalCode(promotionalCode[&#x27;code&#x27;]);
+            await this.userService.updateMemberType(user.id, member_type.PAID);
+
+            await query.commitTransaction();
+
+            return {
+                promotionalCode : promotionalCode,
+                subscription : lastSubscription
+            }
+        } catch(err) {
+            await query.rollbackTransaction();
+            Logger.error({ &quot;updateActiveSubscription error&quot;: err });
+        } finally {
+            await query.release();
+        }
+    }
+
+
+    async createNewSubscription(code : string, user : any, promotionalCode : any) : Promise&lt;Object&gt; {
+            Logger.info(&#x60;Create new subscription by claim promotional code ${code}&#x60;, {user : user});
+
+            const query &#x3D; getConnection().createQueryRunner();
+            await query.connect();
+
+            await query.startTransaction();
+
+            try {
+                const subscription &#x3D; new UserSubscriptionEntity();
+                subscription._database_id &#x3D; &quot;&quot;
+                subscription._owner_id &#x3D; user.id
+                subscription._access &#x3D; &#x27;[{&quot;level&quot;: &quot;read&quot;, &quot;public&quot;: true}]&#x27;
+                subscription._created_by &#x3D; user.id
+                subscription._updated_by &#x3D; user.id
+                subscription.startdate &#x3D;  new Date(moment().format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;))
+                subscription.enddate &#x3D; new Date(moment().add(promotionalCode[&#x27;month_value&#x27;], &quot;months&quot;).format(&#x27;YYYY-MM-DD HH:mm:ss&#x27;))
+                subscription.subscription_ref_code &#x3D; &#x27;promotional_&#x27;+code;
+                subscription.original_fee &#x3D; null
+                subscription.currency &#x3D; null
+                subscription.user_label &#x3D; user.label
+                subscription.order_id &#x3D; code
+                subscription.payment_id &#x3D; null
+                subscription.purchase_token &#x3D; &quot;&quot;
+                subscription.status &#x3D; subscription_status.ACTIVE
+                subscription.referral_code &#x3D; null
+                await query.manager.save(subscription);
+
+                await this.setClaimPromotionalCode(code);
+                await this.userService.updateMemberType(user.id, member_type.PAID);
+
+                await query.commitTransaction();
+
+                return {
+                    promotionalCode : await this.detail(code),
+                    subscription : subscription
+                }
+
+            } catch (err) {
+                await query.rollbackTransaction();
+                const message &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(user) });
+                const error &#x3D; [{ &quot;ClaimPromotionalCode&quot; : message }];
+                Logger.error(&#x60;Failed claim promotional code ${code}&#x60;, {error: err, user : user});
+                throw new HttpException(await this.response.response( message, null, error), HttpStatus.INTERNAL_SERVER_ERROR)
+            }
+    }
+
+    async updateAllPromoCodes(): Promise&lt;void&gt; {
+
+        let codes &#x3D; await this.promotionalCodeRepository
+            .createQueryBuilder(&#x27;promotional_codes&#x27;)
+            .select([
+                &#x27;promotional_codes.id as id&#x27;,
+                &#x27;promotional_codes.code as code&#x27;,
+                &#x27;promotional_codes.month_value as month_value&#x27;,
+                &#x27;promotional_codes.user_label as user_label&#x27;,
+                &#x27;promotional_codes.claimed_at as claimed_at&#x27;,
+            ])
+            .where(&#x27;promotional_codes.claimed_at is not null&#x27;)
+            .getRawMany();
+
+        let user_promo: any;
+        for (let i &#x3D; 0; i &lt; codes.length; i++) {
+            user_promo &#x3D; await this.userSubscriptionRepository
+                        .createQueryBuilder(&#x27;user_subscription&#x27;)
+                        .select([
+                            &#x27;user_subscription.user_label as user_label&#x27;,
+                            &#x27;user_subscription.order_id as code&#x27;
+                        ])
+                        .where(&#x27;user_subscription.order_id &#x3D; :code&#x27;, { code: codes[i].code })
+                        .getRawOne();
+                        
+            if(user_promo !&#x3D;&#x3D; undefined) {
+                let user_data &#x3D; await this.userRepository
+                                .createQueryBuilder(&#x27;users&#x27;)
+                                .select([
+                                    &#x27;users.email as email&#x27;
+                                ])
+                                .where(&#x27;users.user_label &#x3D; :label&#x27;, {label: user_promo.user_label})
+                                .getRawOne()
+                if(user_data !&#x3D;&#x3D; undefined) {
+                    let current_label &#x3D; user_promo.user_label;
+                    await this.promotionalCodeRepository.update(
+                        {code : codes[i].code }, 
+                        {user_label : current_label}
+                    );
+                }
+            }
+        }
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PromotionalCodesService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

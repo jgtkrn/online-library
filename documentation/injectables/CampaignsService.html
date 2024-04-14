@@ -1,0 +1,1515 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >CampaignsService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/campaigns/campaigns.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createCampaign" >createCampaign</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findAll" >findAll</a>
+                            </li>
+                            <li>
+                                <a href="#findCampaignsWithCategory" >findCampaignsWithCategory</a>
+                            </li>
+                            <li>
+                                <a href="#findCampaignsWithoutCategory" >findCampaignsWithoutCategory</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findOne" >findOne</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getCampaignLabelSequence" >getCampaignLabelSequence</a>
+                            </li>
+                            <li>
+                                <a href="#joinWithCampaignTranslate" >joinWithCampaignTranslate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateBookCount" >updateBookCount</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateCampaign" >updateCampaign</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateCampaignStatus" >updateCampaignStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(i18n: I18nService, response: <a href="../injectables/Response.html" target="_self">Response</a>, booksService: <a href="../injectables/BooksService.html" target="_self">BooksService</a>, userService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>, campaignRepository: <a href="../interfaces/Campaign.html" target="_self">Repository&lt;CampaignEntity&gt;</a>, campaignBooksRepository: <a href="../entitys/CampaignBooksEntity.html" target="_self">Repository&lt;CampaignBooksEntity&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/modules/campaigns/campaigns.service.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18nService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>response</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Response.html" target="_self" >Response</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>booksService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BooksService.html" target="_self" >BooksService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>campaignRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Campaign.html" target="_self" >Repository&lt;CampaignEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>campaignBooksRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../entitys/CampaignBooksEntity.html" target="_self" >Repository&lt;CampaignBooksEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCampaign"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createCampaign</b></span>
+                        <a href="#createCampaign"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCampaign(campaignData: <a href="../interfaces/Campaign.html" target="_self">CampaignBodyDto</a>, user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="315"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:315</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>campaignData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Campaign.html" target="_self" >CampaignBodyDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAll"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findAll(query: <a href="../classes/queryDto.html" target="_self">queryDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/queryDto.html" target="_self" >queryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;CampaignsList&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findCampaignsWithCategory"></a>
+                    <span class="name">
+                        <span ><b>findCampaignsWithCategory</b></span>
+                        <a href="#findCampaignsWithCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findCampaignsWithCategory(joinedCampaigns: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, category: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>joinedCampaigns</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>category</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findCampaignsWithoutCategory"></a>
+                    <span class="name">
+                        <span ><b>findCampaignsWithoutCategory</b></span>
+                        <a href="#findCampaignsWithoutCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findCampaignsWithoutCategory(joinedCampaigns: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>joinedCampaigns</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findOne"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findOne</b></span>
+                        <a href="#findOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findOne(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, user: null)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                            <code>null</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;CampaignDetailWithActive&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCampaignLabelSequence"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getCampaignLabelSequence</b></span>
+                        <a href="#getCampaignLabelSequence"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCampaignLabelSequence()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="431"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:431</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="joinWithCampaignTranslate"></a>
+                    <span class="name">
+                        <span ><b>joinWithCampaignTranslate</b></span>
+                        <a href="#joinWithCampaignTranslate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>joinWithCampaignTranslate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBookCount"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateBookCount</b></span>
+                        <a href="#updateBookCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateBookCount()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="450"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:450</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateCampaign"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateCampaign</b></span>
+                        <a href="#updateCampaign"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateCampaign(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, campaignData: <a href="../interfaces/Campaign.html" target="_self">CampaignBodyDto</a>, user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="360"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:360</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>campaignData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Campaign.html" target="_self" >CampaignBodyDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateCampaignStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateCampaignStatus</b></span>
+                        <a href="#updateCampaignStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateCampaignStatus(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, activeData: <a href="../interfaces/Campaign.html" target="_self">CampaignStatusDto</a>, user: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="416"
+                            class="link-to-prism">src/modules/campaigns/campaigns.service.ts:416</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>activeData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Campaign.html" target="_self" >CampaignStatusDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable , HttpException, HttpStatus } from &#x27;@nestjs/common&#x27;
+import { InjectRepository} from &#x27;@nestjs/typeorm&#x27;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+
+import 
+{ 
+    Campaign, 
+    CampaignsList, 
+    CampaignDetail, 
+    CampaignDetailWithoutBooks, 
+    CampaignWithLabel, 
+    CampaignDetailWithActive 
+} from &#x27;./campaigns.interface&#x27;
+import { BookDetail } from &#x27;../books/books.interface&#x27;
+
+import { CampaignEntity, CampaignBooksEntity, CampaignTranslateEntity} from &#x27;./entities&#x27;
+import { BookEntity, BooksCampaignEntity, BooksCategoriesEntity, BookTranslateEntity } from &#x27;../books/entities&#x27;
+
+import { AuthorBookEntity, AuthorTranslateEntity } from &#x27;../authors/entities&#x27;
+import { ChaptersEntity , AudioEntity} from &#x27;../chapters/entities&#x27;
+
+import { Repository, getConnection } from &#x27;typeorm&#x27;
+import { queryDto } from &#x27;../app/dto&#x27;
+import { CampaignBodyDto, CampaignStatusDto } from &#x27;./dto&#x27;
+import { Response } from &#x27;../../helpers/response&#x27;
+
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import { sort_by, sort, status, default_daily_book, member_type} from &#x27;../../helpers/util&#x27;
+import { BooksService } from &#x27;../books/books.service&#x27;;
+import { UsersService } from &#x27;../users/users.service&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { Campaigns } from &#x27;aws-sdk/clients/personalize&#x27;;
+
+
+@Injectable()
+export class CampaignsService {
+    constructor (
+        private readonly i18n: I18nService,
+        private readonly response: Response,
+        private readonly booksService : BooksService,
+        private readonly userService : UsersService,
+        @InjectRepository(CampaignEntity)
+        private campaignRepository: Repository&lt;CampaignEntity&gt;,
+
+        @InjectRepository(CampaignBooksEntity)
+        private campaignBooksRepository: Repository&lt;CampaignBooksEntity&gt;
+    ) {}
+
+
+    findCampaignsWithoutCategory (joinedCampaigns: any) {
+        return joinedCampaigns
+        .select(
+            [&#x27;campaign._id as id&#x27;, &#x27;campaignTranslate.title as title&#x27;, &#x27;campaign.campaign_label as label&#x27;,
+             &#x27;campaign.thumbnail as thumbnail&#x27;, &#x27;campaign.books_count as book_count&#x27;,
+             &#x27;campaign._created_at as created_at&#x27;, &#x27;campaign._updated_at as updated_at&#x27;,
+             &#x27;campaign.active as active&#x27;,
+             &#x27;campaign.campaign_label as campaign_label&#x27;,
+             &#x27;campaign.priority as priority&#x27;
+            ])
+    }
+
+    findCampaignsWithCategory(joinedCampaigns: any, category: string) {
+        return joinedCampaigns
+            .innerJoin(BooksCampaignEntity, &#x27;books_campaign&#x27;, &#x27;books_campaign.campaign_label &#x3D; campaign.campaign_label&#x27;)
+            .innerJoin(BooksCategoriesEntity, &#x27;books_categories&#x27;, &#x27;books_campaign.book_label &#x3D; books_categories.book_label&#x27;)
+            .select(
+                [&#x27;DISTINCT campaign._id as id&#x27;, &#x27;campaignTranslate.title as title&#x27;, &#x27;campaign.campaign_label as label&#x27;,
+                    &#x27;campaign.thumbnail as thumbnail&#x27;, &#x27;campaign.books_count as book_count&#x27;,
+                    &#x27;campaign._created_at as created_at&#x27;, &#x27;campaign._updated_at as updated_at&#x27;,
+                    &#x27;campaign.active as active&#x27;, &#x27;campaign.priority as priority&#x27;
+                ])
+            .where(&#x27;books_categories.category_label IN (:...label)&#x27;, { label: category.split(&#x27;,&#x27;) })
+    }
+
+    joinWithCampaignTranslate () {
+        return this.campaignRepository
+        .createQueryBuilder(&#x27;campaign&#x27;)
+        .innerJoin(CampaignTranslateEntity, &#x27;campaignTranslate&#x27;, &#x27;&quot;campaignTranslate&quot;.&quot;campaign_label&quot; &#x3D; &quot;campaign&quot;.&quot;campaign_label&quot;&#x27;)
+    }
+
+    async findAll(query: queryDto):  Promise&lt;CampaignsList&gt; {
+        const joinedCampaigns &#x3D; this.joinWithCampaignTranslate()
+
+        let selectedCampaigns &#x3D; null
+        if (!query.category) {
+            selectedCampaigns &#x3D; this.findCampaignsWithoutCategory(joinedCampaigns)
+        } else {
+            selectedCampaigns &#x3D; this.findCampaignsWithCategory(joinedCampaigns, query.category)
+        }
+
+        if (query.status) {
+            selectedCampaigns &#x3D; selectedCampaigns.andWhere(&#x27;campaign.active &#x3D; :active&#x27;, {
+                active: query.status &#x3D;&#x3D;&#x3D; status.ACTIVE
+            })
+        }
+
+        selectedCampaigns &#x3D; selectedCampaigns
+            .andWhere(&quot;lower(campaignTranslate.title) like &#x27;%&#x27; || :title || &#x27;%&#x27;&quot;, {title: query.title.toLowerCase()})
+            
+        if(!query.priority) {
+            selectedCampaigns.orderBy(&#x27;campaign._created_at&#x27;, query.sort &#x3D;&#x3D;&#x3D; sort_by.ASC ? sort_by.ASC : sort_by.DESC)
+        }
+
+        if(query.priority) {
+            selectedCampaigns
+            .orderBy(&#x27;campaign.priority&#x27;, query.priority &#x3D;&#x3D;&#x3D; sort_by.DESC ? sort_by.DESC : sort_by.ASC)
+            .addOrderBy(&#x27;campaign._created_at&#x27;, query.sort &#x3D;&#x3D;&#x3D; sort_by.ASC ? sort_by.ASC : sort_by.DESC)
+        }
+
+        const total: number &#x3D; await selectedCampaigns.getCount()
+
+        const offset: number &#x3D; (query.page - 1) * query.size
+        selectedCampaigns &#x3D; selectedCampaigns.offset(offset)
+
+        let campaigns: CampaignWithLabel[] &#x3D; []
+        try {
+            if (query.size) {
+                campaigns &#x3D; await selectedCampaigns.limit(query.size).getRawMany()
+            } else {
+                campaigns &#x3D; await selectedCampaigns.getRawMany()
+            }
+        } catch (err) {
+            Logger.error(&#x60;failed to get campaigns, error: ${err}&#x60;)
+            throw new HttpException(await this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.INVALID_GET_DATA&#x27;, { lang: await userLang(null) }),
+                null, null), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        }
+
+        // get real book count
+        let books: any[];
+        let active_books: any[];
+        for (let i &#x3D; 0; i &lt; campaigns.length; i++) {
+            if (campaigns[i].thumbnail) {
+                campaigns[i].thumbnail &#x3D; &#x60;${process.env.ASSEST_BASE_URL}${campaigns[i].thumbnail}&#x60;
+            }
+
+
+                books &#x3D; await this.campaignBooksRepository
+                            .createQueryBuilder(&#x27;books_campaign&#x27;)
+                            .select([&#x27;*&#x27;])
+                            .where(&#x27;books_campaign.campaign_label &#x3D; :label&#x27;, 
+                                { label: campaigns[i].campaign_label 
+                            })
+                            .getRawMany();
+
+                campaigns[i].book_count &#x3D; books.length;
+            
+
+            active_books &#x3D; await this.campaignBooksRepository
+                        .createQueryBuilder(&#x27;book_active&#x27;)
+                        .select([&#x27;*&#x27;])
+                        .innerJoin(BookEntity, &#x27;books&#x27;, &#x27;books.book_label &#x3D; book_active.book_label&#x27;)
+                        .where(&#x27;book_active.campaign_label &#x3D; :label AND books.status &#x3D; :status&#x27;, 
+                            { 
+                                label: campaigns[i].campaign_label,
+                                status: status.ACTIVE
+                            }
+                        )
+                        .getRawMany();
+
+            campaigns[i].active_books &#x3D; (active_books.length &gt; 0) ? active_books.length : 0;
+        }
+
+        return {
+            page: query.page,
+            size: query.size,
+            total,
+            campaigns
+        }
+    }
+
+    async findOne(id: string, user &#x3D; null): Promise&lt;CampaignDetailWithActive&gt; {
+        // First, fetch campaign detail
+        const campaignDetail: CampaignDetailWithoutBooks &#x3D; await this.campaignRepository
+        .createQueryBuilder(&#x27;campaign&#x27;)
+        .innerJoin(CampaignTranslateEntity, &#x27;campaignTranslate&#x27;, &#x27;&quot;campaignTranslate&quot;.&quot;campaign_label&quot; &#x3D; &quot;campaign&quot;.&quot;campaign_label&quot;&#x27;)
+        .select(
+            [&#x27;campaign._id as id&#x27;,
+            &#x27;campaign._created_at as created_at&#x27;,
+            &#x27;campaign._updated_at as updated_at&#x27;,
+            &#x27;campaign.active as active&#x27;,
+            &#x27;campaign.campaign_label as label&#x27;,
+            &#x27;campaignTranslate.title as title&#x27;,
+            &#x27;campaignTranslate.subtitle as subtitle&#x27;,
+            &#x27;campaign.thumbnail as thumbnail&#x27;,
+            &#x27;campaign.priority as priority&#x27;,
+            ])
+        .where(&#x27;campaign._id &#x3D; :id&#x27;, { id })
+        .getRawOne()
+        .catch((err) &#x3D;&gt; {
+            Logger.error(&#x60;failed to get campaign for id: ${id}, error: ${err}&#x60;)
+            throw new HttpException(this.response.response(&#x60;Failed to find campaign detail&#x60;, null, null), HttpStatus.INTERNAL_SERVER_ERROR)
+        })
+
+        if (!campaignDetail) {
+            Logger.error(&#x60;campaign not found for id: ${id}&#x60;)
+            throw new HttpException(await this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(null) }),
+                null, null), HttpStatus.NOT_FOUND
+            )
+        }
+
+        if (campaignDetail.thumbnail) {
+            campaignDetail.thumbnail &#x3D; &#x60;${process.env.ASSEST_BASE_URL}${campaignDetail.thumbnail}&#x60;
+        }
+
+        const detail_active_books &#x3D; await this.campaignBooksRepository
+                        .createQueryBuilder(&#x27;book_active&#x27;)
+                        .select([&#x27;*&#x27;])
+                        .innerJoin(BookEntity, &#x27;books&#x27;, &#x27;books.book_label &#x3D; book_active.book_label&#x27;)
+                        .where(&#x27;book_active.campaign_label &#x3D; :label AND books.status &#x3D; :status&#x27;, 
+                            { 
+                                label: campaignDetail.label,
+                                status: status.ACTIVE
+                            }
+                        )
+                        .getRawMany();
+
+        const books_count &#x3D; await this.campaignBooksRepository
+                .createQueryBuilder(&#x27;book_active&#x27;)
+                .select([&#x27;*&#x27;])
+                .where(&#x27;book_active.campaign_label &#x3D; :label&#x27;, 
+                    { 
+                        label: campaignDetail.label,
+                    }
+                )
+                .getRawMany();
+
+        campaignDetail.book_count &#x3D; books_count.length;
+
+        // Then, fetch books by campaign label
+        const books &#x3D; await this.campaignBooksRepository
+        .createQueryBuilder(&#x27;books_campaign&#x27;)
+        .select([
+            &#x27;books._created_at as created_at&#x27;,
+            &#x27;books.note as note&#x27;,
+            &#x27;books._id as id&#x27;, &#x27;title&#x27;,
+            &#x27;json_agg(audio.language) AS languages&#x27;,
+            &#x27;books.cover_image as cover_image&#x27;,
+            &#x27;books.deleted_by as deleted_by&#x27;,
+            &#x27;books.book_label as label, books.status as status&#x27;,
+            &#x60;json_agg(DISTINCT jsonb_build_object(&#x27;label&#x27;, author.author_label, &#x27;name&#x27;, author.author_name, &#x27;about&#x27;, author.author_intro)) AS authors &#x60;,
+            &#x27;bookTranslate.subtitle as subtitle&#x27;, &#x27;bookTranslate.duration as duration&#x27;,
+        ])
+        .innerJoin(BookEntity, &#x27;books&#x27;, &#x27;books.book_label &#x3D; books_campaign.book_label&#x27;)
+        .innerJoin(BookTranslateEntity, &#x27;bookTranslate&#x27;, &#x27;bookTranslate.book_label &#x3D; books.book_label&#x27;)
+        .leftJoin(AuthorBookEntity, &#x27;authorBook&#x27;, &#x27;authorBook.book_label &#x3D; books.book_label&#x27; )
+        .leftJoin(AuthorTranslateEntity, &#x27;author&#x27;, &#x27;authorBook.author_label &#x3D; author.author_label&#x27;)
+        .leftJoin(ChaptersEntity, &#x27;chapters&#x27;, &#x27;books.book_label &#x3D; chapters.book_label&#x27;)
+        .leftJoin(AudioEntity, &#x27;audio&#x27;, &#x27;audio.chapter_label &#x3D; chapters.chapter_label&#x27; )
+        .where(&#x27;books_campaign.campaign_label &#x3D; :label&#x27;, { label: campaignDetail.label })
+        .groupBy(
+                &#x60;books._id, bookTranslate.title, 
+                books.cover_image, books.deleted_by, 
+                books.book_label, books.status, 
+                books._created_at, books.note, 
+                bookTranslate.subtitle, bookTranslate.duration,
+                books_campaign.priority
+                &#x60;)
+        .orderBy(&#x27;books_campaign.priority&#x27;)
+        .getRawMany()
+        .catch((err) &#x3D;&gt; {
+            Logger.error(&#x60;failed to get campaign for id: ${id}, error: ${err}&#x60;)
+            throw new HttpException(this.response.response(&#x60;Failed to find campaign detail&#x60;, null, null), HttpStatus.INTERNAL_SERVER_ERROR)
+        })
+
+        for (let i &#x3D; 0; i &lt; books.length; i++) {
+            let checkAudio &#x3D; await this.booksService.checkIfAudioExist(books[i][&#x27;label&#x27;]);
+            books[i].active &#x3D; books[i].status &#x3D;&#x3D;&#x3D; &#x27;ACTIVE&#x27;;
+            // books[i].is_contain_mandarin_audio &#x3D; books[i].languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-TW&#x27;);
+            // books[i].is_contain_cantonese_audio &#x3D; books[i].languages.some(language &#x3D;&gt; language &#x3D;&#x3D;&#x3D; &#x27;zh-HK&#x27;);
+            books[i].is_contain_mandarin_audio &#x3D; (checkAudio as any).is_contain_mandarin_audio;
+            books[i].is_contain_cantonese_audio &#x3D; (checkAudio as any).is_contain_cantonese_audio;
+            delete books[i].languages
+
+            const authors &#x3D; []
+            books[i].authors.forEach((author) &#x3D;&gt; {
+                if (author.label || author.name) {
+                    authors.push(author)
+                }
+            })
+            books[i].authors &#x3D; authors
+
+            if (books[i].cover_image) {
+                books[i].cover_image &#x3D; &#x60;${process.env.ASSEST_BASE_URL}${books[i].cover_image}&#x60;
+            }
+
+            delete books[i].deleted_by
+        }
+
+        let freebie &#x3D; default_daily_book;
+        let isLocked &#x3D; true;
+
+        if(user){
+            const userData &#x3D; await this.userService.findOne(user.sub, null);
+            isLocked &#x3D; userData[&#x27;member_type&#x27;] &#x3D;&#x3D;&#x3D; member_type.PAID ? false : true;
+            // get user freebie book
+            const freebieBook &#x3D; await this.booksService.freebieBook(user);
+            freebie &#x3D; freebieBook ? freebieBook[&#x27;label&#x27;] : default_daily_book;
+        }
+
+        books.map(async(el) &#x3D;&gt; {
+            el.is_locked &#x3D; isLocked
+            if (el.label &#x3D;&#x3D;&#x3D; freebie) el.is_locked &#x3D; false
+        })
+         const active_books &#x3D; (detail_active_books.length &gt; 0) ? 
+                detail_active_books.length : 0;
+
+        return { ...campaignDetail, active_books, books}
+    }
+
+    async createCampaign(campaignData: CampaignBodyDto, user: any): Promise&lt;void&gt; {
+        const queryRunner &#x3D; getConnection().createQueryRunner()
+        await queryRunner.connect()
+        await queryRunner.startTransaction()
+        const { active, title, subtitle, thumbnail, books, priority } &#x3D; campaignData
+        let priority_not_min &#x3D; (priority &gt;&#x3D; 0) ? priority : 99;
+
+        try {
+
+            const label &#x3D; await this.getCampaignLabelSequence()
+            const campaign: CampaignEntity &#x3D; new CampaignEntity(active, priority_not_min, thumbnail, &#x27;&#x27;, user.sub, user.sub, label)
+            const { campaign_label } &#x3D; await queryRunner.manager.save(campaign)
+
+            const campaignTranslate: CampaignTranslateEntity &#x3D;
+                new CampaignTranslateEntity(campaign_label, title, subtitle, &#x27;&#x27;,
+                    thumbnail, &#x27;&#x27;, user.sub, user.sub)
+
+            const campaignTranslateArr: CampaignTranslateEntity[] &#x3D; [campaignTranslate]
+            await queryRunner.manager.save(campaignTranslateArr)
+
+            // Append all campaignBooks first, then bulk insert
+            const campaignBooksArr: CampaignBooksEntity[] &#x3D; []
+            let book_priority &#x3D; 1
+            books.forEach((bookLabel) &#x3D;&gt; {
+                const campaignBooks &#x3D;
+                    new CampaignBooksEntity(campaign_label, book_priority, bookLabel, &#x27;&#x27;, user.sub, user.sub)
+
+                campaignBooksArr.push(campaignBooks)
+                book_priority +&#x3D; 1
+            })
+            await queryRunner.manager.save(campaignBooksArr)
+            await queryRunner.commitTransaction()
+
+        } catch (err) {
+            await queryRunner.rollbackTransaction()
+            Logger.error(&#x60;failed to create campaign ,userId: ${user.sub}, error:${err}&#x60;)
+            throw new HttpException(await this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(null) }),
+                null, null), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        } finally {
+            await queryRunner.release()
+        }
+    }
+
+    async updateCampaign (id: string, campaignData: CampaignBodyDto, user: any): Promise&lt;void&gt; {
+        const queryRunner &#x3D; getConnection().createQueryRunner();
+        await queryRunner.connect();
+        await queryRunner.startTransaction();
+        const existingCampaign &#x3D; await queryRunner.manager.findOne(CampaignEntity, {
+            where: {_id: id}
+        })
+        const { active, title, subtitle, thumbnail, books, priority } &#x3D; campaignData;
+        let priority_not_min &#x3D; (priority &gt;&#x3D; 0) ? priority : 99;
+
+        const campaignTranslate &#x3D; {
+            title,
+            subtitle,
+            thumbnail,
+            _updated_by: user.sub
+        }
+
+        const campaign &#x3D; {
+            active,
+            thumbnail,
+            priority
+        }
+
+        try {
+            await queryRunner.manager.update(CampaignEntity, { _id: id }, campaign )
+            await queryRunner.manager.update(CampaignTranslateEntity, {
+                campaign_label: existingCampaign.campaign_label
+            }, campaignTranslate )
+
+            // Delete books
+            await queryRunner.manager.createQueryBuilder().delete().from(CampaignBooksEntity)
+            .where(&#x27;campaign_label &#x3D; :label&#x27;, { label: existingCampaign.campaign_label }).execute()
+
+            // Append all campaignBooks first, then bulk insert
+            const campaignBooksArr: CampaignBooksEntity[] &#x3D; []
+            let book_priority &#x3D; 1
+            books.forEach((bookLabel) &#x3D;&gt; {
+                const campaignBooks &#x3D; new CampaignBooksEntity(existingCampaign.campaign_label, book_priority, bookLabel, &#x27;&#x27;, user.sub, user.sub)
+                campaignBooksArr.push(campaignBooks)
+                book_priority +&#x3D; 1
+            })
+            await queryRunner.manager.save(campaignBooksArr)
+            await queryRunner.commitTransaction()
+
+        } catch (err) {
+            await queryRunner.rollbackTransaction()
+            Logger.error(&#x60;failed to update campaign ,userId: ${user.sub}, error:${err}&#x60;)
+            throw new HttpException(await this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(null) }),
+                null, null), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        } finally {
+            await queryRunner.release()
+        }
+    }
+
+    async updateCampaignStatus (id: string, activeData: CampaignStatusDto, user: any): Promise&lt;void&gt; {
+        const { active } &#x3D; activeData
+        await this.campaignRepository.createQueryBuilder().update(CampaignEntity)
+        .set({ active, _updated_by: user.sub })
+        .where(&quot;_id &#x3D; :id&quot;, { id })
+        .execute()
+        .catch(async(err) &#x3D;&gt; {
+            Logger.error(&#x60;failed to update campaign active status ,userId: ${user.sub}, error:${err}&#x60;)
+            throw new HttpException(await this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(null) }),
+                null, null), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        })
+    }
+
+    async getCampaignLabelSequence() : Promise&lt;any&gt;{
+        const date &#x3D;  moment().format(&#x27;YYYYMMDD&#x27;);
+        const pattern &#x3D; &#x27;C&#x27; + date;
+
+        const data &#x3D; await this.campaignRepository
+        .createQueryBuilder(&quot;campaign&quot;)
+        .where(&quot;campaign.campaign_label like :pattern&quot;, { pattern:&#x60;%${pattern}%&#x60; })
+        .select([
+            &#x27;campaign._id as id&#x27;,
+            &#x27;campaign.campaign_label as campaign_label&#x27;,
+            &#x27;campaign._created_at as created_at&#x27;
+        ])
+        .orderBy(&#x27;campaign._created_at&#x27;, &#x27;DESC&#x27;)
+
+        let count &#x3D; await data.getCount();
+
+        return pattern + &#x27;_&#x27; + (++count)
+    }
+
+    async updateBookCount() : Promise&lt;any&gt;{
+        const data &#x3D; await this.campaignRepository
+        .createQueryBuilder(&quot;campaign&quot;)
+        .leftJoin(BooksCampaignEntity, &#x27;books_campaign&#x27;, &#x27;books_campaign.campaign_label &#x3D; campaign.campaign_label&#x27;)
+        .innerJoin(BookEntity, &#x27;books&#x27;, &#x27;books.book_label &#x3D; books_campaign.book_label AND &quot;books&quot;.status &#x3D; :status&#x27;, { status : &#x27;ACTIVE&#x27;})
+        .select([
+            &#x27;campaign._id as id&#x27;,
+            &#x27;campaign.campaign_label as campaign_label&#x27;,
+            &#x27;campaign.books_count as books_count&#x27;,
+            &#x27;campaign._created_at as created_at&#x27;,
+            &#x60;json_agg(DISTINCT jsonb_build_object(&#x27;book_id&#x27;, books._id, &#x27;book_label&#x27;, books.book_label, &#x27;status&#x27;, books.status)) AS books&#x60;,
+            // &#x60;json_agg(DISTINCT jsonb_build_object(&#x27;books_campaign_id&#x27;, books_campaign._id, &#x27;label_campaign&#x27;, books_campaign.campaign_label, &#x27;book_label&#x27;, books_campaign.book_label)) AS books_campaign&#x60;,
+        ])
+        .groupBy(
+            &#x60;campaign._id, campaign.campaign_label, 
+            campaign.books_count, campaign._created_at
+            &#x60;)
+        .orderBy(&#x27;campaign._created_at&#x27;, &#x27;DESC&#x27;)
+
+        const campaigns &#x3D; await data.getRawMany();
+
+        for(let i &#x3D; 0; i &lt; campaigns.length; i++){
+            const books &#x3D; campaigns[i].books;
+            const books_count &#x3D; books.length
+            if(books[0].book_label !&#x3D; null &amp;&amp; books_count !&#x3D;&#x3D; campaigns[i].books_count){
+                await this.campaignRepository.createQueryBuilder().update(CampaignEntity)
+                .set({ books_count })
+                .where(&quot;_id &#x3D; :id&quot;, { id: campaigns[i].id })
+                .execute()
+                .catch(async(err) &#x3D;&gt; {
+                    Logger.error(&#x60;failed to update campaign books count ,error:${err}&#x60;)
+                    throw new HttpException(await this.response.response(
+                        await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(null) }),
+                        null, null), HttpStatus.INTERNAL_SERVER_ERROR
+                    )
+                })
+                console.log(campaigns[i].campaign_label + &#x27;book count updated from &#x27; +campaigns[i].books_count+ &#x27; to &#x27; + books_count);
+            }
+        }
+
+        return campaigns
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CampaignsService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1556 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content controller">
+                   <div class="content-data">
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Controllers</li>
+  <li >BooksController</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/books/books.controller.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Prefix</h3>
+            </p>
+            <p class="comment">
+                <code>books</code>
+            </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addMyFav" >addMyFav</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createBook" >createBook</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createProgress" >createProgress</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteFav" >deleteFav</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findAll" >findAll</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findOne" >findOne</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getCategories" >getCategories</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDailyBook" >getDailyBook</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMyDesk" >getMyDesk</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#surpriseMe" >surpriseMe</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateBook" >updateBook</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateBookStatus" >updateBookStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addMyFav"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addMyFav</b></span>
+                        <a href="#addMyFav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addMyFav(user, bookData: <a href="../interfaces/Book.html" target="_self">myFavBookDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;add into fav&#x27;})<br />@ApiBody({type: myFavBookDto})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Post(&#x27;/my-fav&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="245"
+                            class="link-to-prism">src/modules/books/books.controller.ts:245</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bookData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Book.html" target="_self" >myFavBookDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createBook</b></span>
+                        <a href="#createBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createBook(user, bookData: <a href="../interfaces/Book.html" target="_self">CreateBookDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;create new book&#x27;})<br />@ApiBody({type: CreateBookDto})<br />@Post()<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/modules/books/books.controller.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bookData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Book.html" target="_self" >CreateBookDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createProgress"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createProgress</b></span>
+                        <a href="#createProgress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createProgress(user, chapterData: <a href="../classes/myProgressDTo.html" target="_self">myProgressDTo</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;update chapter progress&#x27;})<br />@ApiBody({type: myProgressDTo})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Post(&#x27;/my-progress&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="230"
+                            class="link-to-prism">src/modules/books/books.controller.ts:230</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>chapterData</td>
+                                    <td>
+                                                <code><a href="../classes/myProgressDTo.html" target="_self" >myProgressDTo</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteFav"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteFav</b></span>
+                        <a href="#deleteFav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteFav(user, label)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;delete user fav&#x27;})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Delete(&#x27;/my-fav/:label&#x27;)<br />@ApiParam(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/modules/books/books.controller.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAll"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findAll(query: <a href="../classes/queryDto.html" target="_self">queryDto</a>, user)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Get all books&#x27;})<br />@ApiResponse({status: 200})<br />@ApiResponse({status: 403, description: &#x27;Forbidden.&#x27;})<br />@Get()<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/modules/books/books.controller.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/queryDto.html" target="_self" >queryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findOne"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findOne</b></span>
+                        <a href="#findOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findOne(id, user, query: <a href="../classes/labelDto.html" target="_self">labelDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Get book by id&#x27;})<br />@ApiResponse({status: 200})<br />@ApiResponse({status: 403, description: &#x27;Forbidden.&#x27;})<br />@ApiQuery(undefined)<br />@Get(&#x27;:id&#x27;)<br />@ApiParam(undefined)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/modules/books/books.controller.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/labelDto.html" target="_self" >labelDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCategories"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getCategories</b></span>
+                        <a href="#getCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCategories(query: <a href="../classes/queryDto.html" target="_self">queryDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Get all books categories&#x27;})<br />@ApiResponse({status: 200})<br />@ApiResponse({status: 403, description: &#x27;Forbidden.&#x27;})<br />@Get(&#x27;/categories&#x27;)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/modules/books/books.controller.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/queryDto.html" target="_self" >queryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDailyBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getDailyBook</b></span>
+                        <a href="#getDailyBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDailyBook(user)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;get free daily book(freebie book)&#x27;})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Get(&#x27;/daily&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/modules/books/books.controller.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMyDesk"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getMyDesk</b></span>
+                        <a href="#getMyDesk"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMyDesk(user, query: <a href="../classes/myDeskQueryDto.html" target="_self">myDeskQueryDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Get My Desk&#x27;})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Get(&#x27;/my-desk&#x27;)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br />@ApiQuery(undefined)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/modules/books/books.controller.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="../classes/myDeskQueryDto.html" target="_self" >myDeskQueryDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="surpriseMe"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>surpriseMe</b></span>
+                        <a href="#surpriseMe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>surpriseMe(user)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;Surprise Me&#x27;})<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Get(&#x27;/surprise-me&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/modules/books/books.controller.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBook"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateBook</b></span>
+                        <a href="#updateBook"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateBook(id, user, bookData: <a href="../interfaces/Book.html" target="_self">CreateBookDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;update book&#x27;})<br />@ApiBody({type: CreateBookDto})<br />@ApiParam(undefined)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Put(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/modules/books/books.controller.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bookData</td>
+                                    <td>
+                                                <code><a href="../interfaces/Book.html" target="_self" >CreateBookDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBookStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateBookStatus</b></span>
+                        <a href="#updateBookStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateBookStatus(id, user, status: <a href="../classes/statusDto.html" target="_self">statusDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOperation({summary: &#x27;update book status&#x27;})<br />@ApiBody({type: statusDto})<br />@ApiParam(undefined)<br />@ApiBearerAuth(&#x27;access-token&#x27;)<br />@Put(&#x27;status/:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">src/modules/books/books.controller.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                                <code><a href="../classes/statusDto.html" target="_self" >statusDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Get, Post, Put, Delete, Query, Param, Controller, Body } from &#x27;@nestjs/common&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { BooksService } from &#x27;./books.service&#x27;;
+import { User } from &#x27;../auth/auth.decorator&#x27;;
+import { Response } from &#x27;../../helpers/response&#x27;;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import {    
+    CreateBookDto, 
+    queryDto, 
+    statusDto, 
+    labelDto, 
+    myDeskQueryDto, 
+    myProgressDTo, 
+    myFavBookDto } 
+from &#x27;./dto&#x27;;
+
+import {
+    ApiResponse, ApiBody,
+    ApiOperation, ApiTags, ApiParam,
+    ApiBearerAuth, ApiQuery
+  } from &#x27;@nestjs/swagger&#x27;;
+  
+@ApiTags(&#x27;books&#x27;)
+@Controller(&#x27;books&#x27;)
+export class BooksController {
+
+    constructor(
+        private readonly booksService: BooksService,
+        private readonly response: Response,
+        private readonly i18n: I18nService,
+    ){}
+
+    @ApiOperation({ summary: &#x27;Get My Desk&#x27; })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Get(&#x27;/my-desk&#x27;)
+
+    @ApiQuery(({ name: &#x27;page&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;size&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;sort&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;is_completed&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;status&#x27;, allowEmptyValue: true, required: false }))
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getMyDesk(@User() user, @Query() query: myDeskQueryDto): Promise&lt;Object&gt; {
+   
+        query.page &#x3D; Number(query.page) || 1
+        query.size &#x3D; Number(query.size) || 0
+
+        const data &#x3D; await this.booksService.getMyDesk(query, user);
+
+        Logger.info(&#x60;success get my desk data: ${user.sub}, data ${JSON.stringify(data)}&#x60;);
+        return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+                { lang: await userLang(user) }), 
+                data, null
+            );
+    }
+
+    @ApiOperation({ summary: &#x27;Surprise Me&#x27; })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Get(&#x27;/surprise-me&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async surpriseMe(@User() user): Promise&lt;Object&gt; {
+        const data &#x3D; await this.booksService.surpriseMe(user);
+
+        Logger.info(&#x60;success get surprise book&#x60;);
+        return this.response.response(
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+                { lang: await userLang(null) }), 
+                data, null
+            );
+    }
+
+    // swagger summary
+    @ApiOperation({ summary: &#x27;Get all books&#x27; })
+
+    // swagger api response
+    @ApiResponse({ status: 200 })
+    @ApiResponse({ status: 403, description: &#x27;Forbidden.&#x27; })
+
+    // get all books
+    @Get()
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+   
+    @ApiQuery(({ name: &#x27;page&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;size&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;title&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;status&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;category&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;sort&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;search&#x27;, allowEmptyValue: true, required: false }))
+
+    async findAll(@Query() query: queryDto,@User() user ): Promise&lt;Object&gt; {
+    
+        query.page &#x3D; Number(query.page) || 1
+        query.size &#x3D; Number(query.size) || 0
+
+        const data &#x3D; await this.booksService.findAll(query, user);
+        Logger.info(&#x60;success get all book, data ${JSON.stringify(data)}&#x60;);
+        return this.response.response( 
+                await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+                { lang: await userLang(user) }), 
+                data, null
+            );
+    }
+
+        // swagger summary
+    @ApiOperation({ summary: &#x27;Get all books categories&#x27; })
+
+    // swagger api response
+    @ApiResponse({ status: 200 })
+    @ApiResponse({ status: 403, description: &#x27;Forbidden.&#x27; })
+
+    // get all books categories
+    @Get(&#x27;/categories&#x27;)
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+   
+    @ApiQuery(({ name: &#x27;page&#x27;, allowEmptyValue: true, required: false }))
+    @ApiQuery(({ name: &#x27;size&#x27;, allowEmptyValue: true, required: false }))
+
+    async getCategories(@Query() query: queryDto): Promise&lt;Object&gt; {
+
+        query.page &#x3D; Number(query.page) || 1
+        query.size &#x3D; Number(query.size) || 0
+        query.title &#x3D; query.title || &#x27;&#x27;
+
+        const data &#x3D; await this.booksService.getCategories(query);
+        Logger.info(&#x60;success get all book categories&#x60;, data);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+    }
+
+    @ApiOperation({ summary: &#x27;get free daily book(freebie book)&#x27; })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Get(&#x27;/daily&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async getDailyBook( @User() user ): Promise&lt;Object&gt; {
+        const data &#x3D; await this.booksService.getDailyBook( user );
+        Logger.info(&#x60;success get freebie book&#x60;, { user: user, data });
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27; , 
+            { lang: await userLang(null) }), 
+            data, null
+        );
+    }
+
+
+    // swagger summary for get book detail
+    @ApiOperation({ summary: &#x27;Get book by id&#x27; })
+    @ApiResponse({ status: 200 })
+    @ApiResponse({ status: 403, description: &#x27;Forbidden.&#x27; })
+
+    @ApiQuery(({ name: &#x27;label&#x27;, allowEmptyValue: true, required: false }))
+    @Get(&#x27;:id&#x27;)
+    @ApiParam(({ name: &#x27;id&#x27;,  allowEmptyValue: false,  required: true}))
+
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    async findOne(@Param(&#x27;id&#x27;) id, @User() user, @Query() query: labelDto): Promise&lt;Object&gt; {
+       
+        const data &#x3D; await this.booksService.findOne(id, query, user);
+        Logger.info(&#x60;success get book with id: ${id}&#x60;, data);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_GET&#x27;, 
+            { lang: await userLang(user) }), 
+            data, null
+        );
+    }
+  
+    // swagger summary for create new book
+    @ApiOperation({ summary: &#x27;create new book&#x27; })
+    @ApiBody({ type: CreateBookDto })
+
+    @Post()
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async createBook( @User() user, @Body() bookData: CreateBookDto) : Promise&lt;Object&gt; {
+        await this.booksService.createBook(bookData, user)
+        Logger.info(&#x60;success create book ,UserId: ${user.sub}&#x60;, { data: bookData });
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_CREATE&#x27;, 
+            { lang: await userLang(user) }), 
+            [], null
+        );
+    }
+
+    // swagger summary for update book
+    @ApiOperation({ summary: &#x27;update book&#x27; })
+    @ApiBody({ type: CreateBookDto })
+    @ApiParam(({ name: &#x27;id&#x27;,  allowEmptyValue: false,  required: true}))
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Put(&#x27;:id&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async updateBook( @Param(&#x27;id&#x27;) id, @User() user, @Body() bookData: CreateBookDto ) : Promise&lt;Object&gt; {
+        await this.booksService.updateBook(id, bookData, user )
+        Logger.info(&#x60;success update book ,UserId: ${user.sub}&#x60;,{ data: bookData });
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_UPDATE&#x27;, 
+            { lang: await userLang(user) }), 
+            [], null
+        );
+    }
+
+
+    @ApiOperation({ summary: &#x27;update book status&#x27; })
+    @ApiBody({ type: statusDto })
+    @ApiParam(({ name: &#x27;id&#x27;,  allowEmptyValue: false,  required: true}))
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Put(&#x27;status/:id&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async updateBookStatus( @Param(&#x27;id&#x27;) id, @User() user, @Body() status: statusDto ) : Promise&lt;Object&gt; {
+        await this.booksService.updateBookStatus(id, status, user )
+        Logger.info(&#x60;success update book&#x27;s status ,UserId: ${user.sub}, status: ${status}&#x60;);
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_UPDATE&#x27;, 
+            { lang: await userLang(user) }), 
+            [], null
+        );
+    }
+
+    // swagger summary for update chapter progress
+    @ApiOperation({ summary: &#x27;update chapter progress&#x27; })
+    @ApiBody({ type: myProgressDTo })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Post(&#x27;/my-progress&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async createProgress(  @User() user, @Body() chapterData: myProgressDTo ) : Promise&lt;Object&gt; {
+        await this.booksService.updateBookChapterProgress(chapterData ,user )
+        Logger.info(&#x60;success update book ,UserId: ${user.sub}&#x60;,{ data: chapterData });
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_UPDATE&#x27;,
+            { lang: await userLang(user) }),
+            [], null
+        );
+    }
+
+    @ApiOperation({ summary: &#x27;add into fav&#x27; })
+    @ApiBody({ type: myFavBookDto })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Post(&#x27;/my-fav&#x27;)
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async addMyFav(  @User() user, @Body() bookData: myFavBookDto ) : Promise&lt;Object&gt; {
+        await this.booksService.addFav(bookData, user)
+        Logger.info(&#x60;success add fav book ,UserId: ${user.sub}&#x60;,{ data: bookData });
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_CREATE&#x27;, 
+            { lang: await userLang(user) }), 
+            [], null
+        );
+    }
+
+    @ApiOperation({ summary: &#x27;delete user fav&#x27; })
+    @ApiBearerAuth(&#x27;access-token&#x27;)
+    @Delete(&#x27;/my-fav/:label&#x27;)
+
+    @ApiParam(({ name: &#x27;label&#x27;,  allowEmptyValue: false,  required: true}))
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    async deleteFav(  @User() user, @Param(&#x27;label&#x27;) label ) : Promise&lt;Object&gt; {
+        await this.booksService.removeFav(label, user)
+        Logger.info(&#x60;success delete fav book ,UserId: ${user.sub}&#x60;,{ label });
+        return this.response.response(
+            await this.i18n.translate(&#x27;message.GENERAL.SUCCESS.SUCCESS_DELETE&#x27;, 
+            { lang: await userLang(user) }), 
+            [], null
+        );
+    }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'BooksController.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

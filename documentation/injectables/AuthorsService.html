@@ -1,0 +1,846 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >AuthorsService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/authors/authors.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createAuthor" >createAuthor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findAll" >findAll</a>
+                            </li>
+                            <li>
+                                <a href="#findAuthors" >findAuthors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#findOne" >findOne</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAuthorLabelSequence" >getAuthorLabelSequence</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateAuthor" >updateAuthor</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(response: <a href="../injectables/Response.html" target="_self">Response</a>, i18n: I18nService, authorRepository: <a href="../interfaces/Author.html" target="_self">Repository&lt;AuthorEntity&gt;</a>, authorTranslateEntityRepository: <a href="../interfaces/Author.html" target="_self">Repository&lt;AuthorTranslateEntity&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/modules/authors/authors.service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>response</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Response.html" target="_self" >Response</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18nService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authorRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Author.html" target="_self" >Repository&lt;AuthorEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authorTranslateEntityRepository</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Author.html" target="_self" >Repository&lt;AuthorTranslateEntity&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createAuthor"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createAuthor</b></span>
+                        <a href="#createAuthor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createAuthor(authorData, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/modules/authors/authors.service.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>authorData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAll"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findAll(query)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/modules/authors/authors.service.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Object&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAuthors"></a>
+                    <span class="name">
+                        <span ><b>findAuthors</b></span>
+                        <a href="#findAuthors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findAuthors(name)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/modules/authors/authors.service.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findOne"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>findOne</b></span>
+                        <a href="#findOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findOne(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/modules/authors/authors.service.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Author.html" target="_self" >Promise&lt;Author&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAuthorLabelSequence"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getAuthorLabelSequence</b></span>
+                        <a href="#getAuthorLabelSequence"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAuthorLabelSequence()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/modules/authors/authors.service.ts:135</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAuthor"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateAuthor</b></span>
+                        <a href="#updateAuthor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateAuthor(id, authorData, user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/modules/authors/authors.service.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>authorData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, HttpException, HttpStatus } from &#x27;@nestjs/common&#x27;;
+import { InjectRepository} from &#x27;@nestjs/typeorm&#x27;;
+import { Repository, getConnection } from &#x27;typeorm&#x27;;
+import { I18nService } from &#x27;nestjs-i18n&#x27;;
+
+import { userLang } from &#x27;../../helpers/app.helpers&#x27;;
+import { Author } from &#x27;./authors.interface&#x27;;
+import { AuthorBookEntity, AuthorTranslateEntity, AuthorEntity } from &#x27;./entities&#x27;
+import { Response } from &#x27;../../helpers/response&#x27;;
+import { Logger } from &#x27;../../helpers/logger&#x27;;
+import { sort_by, new_language_code } from &#x27;../../helpers/util&#x27;
+
+@Injectable()
+export class AuthorsService {
+
+    constructor(
+        private readonly response: Response,
+        private readonly i18n: I18nService,
+
+        @InjectRepository(AuthorEntity)
+        private authorRepository: Repository&lt;AuthorEntity&gt;,
+
+        @InjectRepository(AuthorTranslateEntity)
+        private authorTranslateEntityRepository: Repository&lt;AuthorTranslateEntity&gt;,
+
+      ) {}
+
+    findAuthors(name) {
+        return this.authorRepository
+        .createQueryBuilder(&#x27;authors&#x27;)
+        .select([
+            &#x27;authors._id as id&#x27;, &#x27;authors.author_label as label&#x27;, 
+            &#x27;authorTranslate.author_name as name&#x27;, 
+            &#x60;json_array_length(case when count(authorBook.book_label)&#x3D; 0 then &#x27;[]&#x27; ELSE json_agg(authorBook.book_label)END) AS book_on_apps&#x60;,
+            &#x27;authorTranslate.author_intro as about&#x27;])
+        .innerJoin( AuthorTranslateEntity, &#x27;authorTranslate&#x27;, &#x27;authorTranslate.author_label &#x3D; authors.author_label&#x27;)
+        .leftJoin( AuthorBookEntity, &#x27;authorBook&#x27;, &#x27;authorBook.author_label &#x3D; authors.author_label&#x27;)
+        .where(&quot;lower(authorTranslate.author_name) like &#x27;%&#x27; || :name || &#x27;%&#x27;&quot;, { name: name.toLowerCase() })
+        .groupBy(&#x27;authors._id, authors.author_label , authorTranslate.author_name, authorTranslate.author_intro, authors._created_at&#x27;)
+    }
+
+    async findAll(query):  Promise&lt;Object&gt; {
+
+        const skippedItems: number &#x3D; (query.page - 1) * query.size
+        const selectedAuthors &#x3D; this.findAuthors(query.name)
+                                    .orderBy(&#x27;authors._created_at&#x27;, query.sort &#x3D;&#x3D;&#x3D; sort_by.ASC ? sort_by.ASC : sort_by.DESC)
+                                    .offset(skippedItems)
+        let authors &#x3D; []
+
+        try {
+             if (query.size) {
+                authors &#x3D; await selectedAuthors.limit(query.size).getRawMany();
+            } else {
+                authors &#x3D; await selectedAuthors.getRawMany();
+            }
+        } catch (err) {
+            Logger.error(&#x60;failed to get authors, error: ${err}&#x60;, { query })
+            throw new HttpException(await this.response.response(  
+                await this.i18n.translate(&#x27;message.GENERAL.ERROR.INVALID_GET_DATA&#x27;, { lang: await userLang(null) }), 
+                null, null), HttpStatus.INTERNAL_SERVER_ERROR
+            )
+        }
+
+        const total: number &#x3D;  await this.findAuthors(query.name).getCount()
+
+        return {
+            page: query.page,
+            size: query.size,
+            total,
+            authors
+        }
+    }
+
+    async findOne(id: string): Promise&lt;Author&gt; {
+
+        const author &#x3D; await (await this.findAuthors(&#x27;&#x27;))
+        .where(&#x27;authors._id &#x3D; :id&#x27;, { id })
+        .getRawOne();
+        return author
+
+    }
+    async createAuthor(authorData, user): Promise&lt;void&gt; {
+
+        const queryRunner &#x3D; getConnection().createQueryRunner();
+        await queryRunner.connect();
+
+        const author_label &#x3D; await this.getAuthorLabelSequence();
+        const { name, about } &#x3D; authorData
+        const chapter: AuthorEntity &#x3D; new AuthorEntity(null, &#x27;&#x27;, user.sub, user.sub, author_label);
+        const language &#x3D; new_language_code.CANTONESE
+
+        await queryRunner.startTransaction();
+
+       try{
+            const createAuthor &#x3D; await queryRunner.manager.save(chapter)
+            const authorTranlate: AuthorTranslateEntity &#x3D; new AuthorTranslateEntity(createAuthor.author_label, name, about, language, &#x27;&#x27;, user.sub, user.sub  ) 
+            await queryRunner.manager.save(authorTranlate)
+            await queryRunner.commitTransaction();
+       }catch(err){
+            await queryRunner.rollbackTransaction();
+            Logger.error(&#x60;failed to create author ,userId: ${user.sub}, error:${err}&#x60;, { body: authorData });
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_CREATE&#x27;, { lang: await userLang(null) })
+            const error &#x3D; [{ &quot;author&quot; : errorMessage}]
+            throw new HttpException(await this.response.response(errorMessage, null, error), HttpStatus.INTERNAL_SERVER_ERROR); 
+        }finally{
+            await queryRunner.release();
+        }        
+    } 
+
+    async updateAuthor(id, authorData, user): Promise&lt;void&gt; {
+        const author &#x3D; await this.findOne(id)
+
+        if ( !author || (author as any).length &#x3D;&#x3D;&#x3D; 0 ) {
+            Logger.error(&#x60;failed to update author ,userId: ${user.sub}, error: chapter not found&#x60;, { data:authorData } );
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.NOT_FOUND&#x27;, { lang: await userLang(null) })
+            const error &#x3D; [{ &quot;author&quot; : errorMessage}]
+            throw new HttpException(await this.response.response(errorMessage, null, error), HttpStatus.NOT_FOUND); 
+        }
+        const authorTranslate &#x3D; {
+            author_name: authorData.name,
+            author_intro: authorData.about
+        }
+        try{
+            await this.authorTranslateEntityRepository.update(
+                { author_label: (author as any).label }, authorTranslate
+            )
+        }catch(err){
+            Logger.error(&#x60;failed to update author ,userId: ${user.sub}, error:${err}&#x60;, { data:authorData });
+            const errorMessage &#x3D;  await this.i18n.translate(&#x27;message.GENERAL.ERROR.UNPROCESSED_UPDATE&#x27;, { lang: await userLang(null) })
+            const error &#x3D; [{ &quot;author&quot; : errorMessage}]
+            throw new HttpException(await this.response.response(errorMessage, null, error), HttpStatus.INTERNAL_SERVER_ERROR); 
+        }
+    }
+
+    async getAuthorLabelSequence() : Promise&lt;any&gt;{
+        const data &#x3D; await this.authorRepository
+        .createQueryBuilder(&quot;author&quot;)
+        .where(&quot;author.author_label like :pattern&quot;, { pattern:&#x60;%A_%&#x60; })
+        .select([
+            &#x27;author._id as id&#x27;, 
+            &#x27;author.author_label as author_label&#x27;, 
+            &#x27;author._created_at as created_at&#x27;
+        ])
+        .orderBy(&#x27;author._created_at&#x27;, &#x27;DESC&#x27;)
+        .getRawOne();
+        
+        const last_label &#x3D; data.author_label.split(&#x27;_&#x27;)[1];
+        const number &#x3D; Number(last_label) + 1 ;
+        let result &#x3D; &quot;&quot;;
+        for(let i &#x3D; 5 - number.toString().length; i &gt; 0; i--) {
+          result +&#x3D; &quot;0&quot;
+        }
+        return &#x27;A_&#x27; + (result + number);
+    
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AuthorsService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

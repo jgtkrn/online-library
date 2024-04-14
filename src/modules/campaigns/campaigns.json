@@ -1,0 +1,108 @@
+{
+    "pagination" : {
+        "limit": 10,
+        "size": 10,
+        "offset": 0,
+        "total": 20
+    },
+    "campaigns" : [
+        {
+            "id": 1,
+            "label": "LBL1",
+            "priority": 1,
+            "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+            "book_count": "12",
+            "created_at":  "2020-01-25 01:23:45",
+            "updated_at":  "2020-01-25 01:23:45",
+            "status": "active"
+        },
+        {
+            "id": 2,
+            "label": "LBL2",
+            "priority": 1,
+            "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+            "book_count": "12",
+            "created_at":  "2020-01-25 01:23:45",
+            "updated_at":  "2020-01-25 01:23:45",
+            "status": "active"
+        },
+        {
+            "id": 3,
+            "label": "LBL3",
+            "priority": 1,
+            "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+            "book_count": "12",
+            "created_at":  "2020-01-25 01:23:45",
+            "updated_at":  "2020-01-25 01:23:45",
+            "status": "active"
+        },
+        {
+            "id": 4,
+            "label": "LBL4",
+            "priority": 1,
+            "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+            "book_count": "12",
+            "created_at":  "2020-01-25 01:23:45",
+            "updated_at":  "2020-01-25 01:23:45",
+            "status": "active"
+        },
+        {
+            "id": 5,
+            "label": "LBL5",
+            "priority": 1,
+            "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+            "book_count": "12",
+            "created_at":  "2020-01-25 01:23:45",
+            "updated_at":  "2020-01-25 01:23:45",
+            "status": "active"
+        },
+        {
+            "id": 6,
+            "label": "LBL6",
+            "priority": 1,
+            "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+            "book_count": "12",
+            "created_at":  "2020-01-25 01:23:45",
+            "updated_at":  "2020-01-25 01:23:45",
+            "status": "active"
+        },
+        {
+            "id": 7,
+            "label": "LBL7",
+            "priority": 1,
+            "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+            "book_count": "12",
+            "created_at":  "2020-01-25 01:23:45",
+            "updated_at":  "2020-01-25 01:23:45",
+            "status": "active"
+        }
+    ],
+    "campaign":{
+            "id": 2,
+            "created_at": "2020-01-25 01:23:45",
+            "updated_at": "2020-01-25 01:23:45",
+            "setting": {
+                "status": "active",
+                "label": "LBL1",
+                "title": "lorem ipsum",
+                "thumbnail": "https://dummyimage.com/200x300&text=dummyimage.com+rocks!",
+                "priority": 10
+            },
+            "content": {
+                "title": "Lorem ipsum dolor sit amet,",
+                "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            "books": [
+            {
+                "id": 1,
+                "title": "Lorem ipsum dolor sit amet,",
+                "label": "ABC"
+            },      
+            {
+                "id": 2,
+                "title": "Lorem ipsum dolor sit amet,",
+                "label": "ABC"
+            }
+            ]
+        } 
+}

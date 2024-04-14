@@ -1,0 +1,1 @@
+export { AssetsEntity } from './assets.entity'

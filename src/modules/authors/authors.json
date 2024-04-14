@@ -1,0 +1,76 @@
+{
+    "pagination" : {
+        "limit": 10,
+        "size": 10,
+        "offset": 0,
+        "total": 20
+    },
+    "authors" : [
+        {
+            "id": 1,
+            "name": "author name 1",
+            "label": "author label 1",
+            "book_on_apps": "book 1"
+        },
+        {
+            "id": 2,
+            "name": "author name 2",
+            "label": "author label 2",
+            "book_on_apps": "book 2"
+        },
+        {
+            "id": 3,
+            "name": "author name 3",
+            "label": "author label 3",
+            "book_on_apps": "book 3"
+        },
+        {
+            "id": 4,
+            "name": "author name 4",
+            "label": "author label 4",
+            "book_on_apps": "book 4"
+        },
+        {
+            "id": 5,
+            "name": "author name 5",
+            "label": "author label 5",
+            "book_on_apps": "book 5"
+        },
+        {
+            "id": 6,
+            "name": "author name 6",
+            "label": "author label 6",
+            "book_on_apps": "book 6"
+        },
+        {
+            "id": 7,
+            "name": "author name 7",
+            "label": "author label 7",
+            "book_on_apps": "book 7"
+        },
+        {
+            "id": 8,
+            "name": "author name 8",
+            "label": "author label 8",
+            "book_on_apps": "book 8"
+        },
+        {
+            "id": 9,
+            "name": "author name 9",
+            "label": "author label 9",
+            "book_on_apps": "book 9"
+        },
+        {
+            "id": 10,
+            "name": "author name 10",
+            "label": "author label 10",
+            "book_on_apps": "book 10"
+        }
+    ],
+    "author" : {
+            "id": 1,
+            "name": "author name 9",
+            "label": "author label 9",
+            "book_on_apps": "book 9"
+        }
+}
